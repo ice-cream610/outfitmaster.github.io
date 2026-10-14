@@ -1,0 +1,16 @@
+# 精选搭配图资产
+
+通过内置 image_gen 工具生成，基于已有四种人物形象与商品图参考。保留原图，CSS 3×2 网格展示，无图片后期修改。
+
+- public/assets/outfit-variants-a.png：短发与长直发的六种单品变体。
+- public/assets/outfit-variants-b.png：卷发与马尾的六种单品变体。
+- 完整映射见 src/data.ts renderedVariants，展示与推荐校验见 src/domain.ts。
+
+## 最终提示词 A
+
+Create an asset atlas of EXACTLY SIX full-body 3D fashion characters, 3 columns x 2 rows, every cell equal, each character fully contained head to shoes with margin, warm ivory background, NO text, NO labels, NO borders. Reference1 supplies identities, reference2 product designs. Preserve identity and clothing details precisely. TOP ROW: same E1 short dark brown tousled pixie hair, sleepy broad square-round face, same relaxed standing pose all three cells. Cell1 brown leather jacket + ivory rib knit sweater + SAND BEIGE straight trousers + burgundy loafers. Cell2 brown leather jacket + plain ivory T-SHIRT + washed blue wide straight denim jeans + burgundy loafers. Cell3 SAGE GREEN cable-knit cardigan + ivory rib knit sweater + washed blue wide straight denim jeans + burgundy loafers. BOTTOM ROW: same E2 long straight dark brown hair, rectangular glasses, thoughtful adult cartoon identity, same standing pose all three cells. Cell4 charcoal blazer + light blue collared shirt + CHARCOAL GRAY wide straight trousers + dark brown loafers. Cell5 charcoal blazer + IVORY RIB KNIT SWEATER + sand beige wide straight trousers + dark brown loafers. Cell6 BROWN LEATHER JACKET + light blue collared shirt + sand beige wide straight trousers + dark brown loafers. No accessories not specified. Exactly specified outfits; all have realistic fabric textures and same appealing rendering style as reference. 3 columns x2 rows, landscape overall aspect about 9:8. High resolution.
+
+## 最终提示词 B
+
+Create an asset atlas of EXACTLY SIX full-body 3D fashion characters, 3 columns x 2 rows, each cell equal, each character fully contained head to shoes with margin, warm ivory background, NO text, NO labels, NO borders. Reference1 supplies identities; reference2 product design. Preserve identity and clothing precisely. TOP ROW: E3 short-to-shoulder-length curly dark brown hair, round glasses, cute adult broad square-round face, playful smile, identical relaxed standing pose all three. Cell1 sage green cable knit cardigan + ivory plain T-shirt + WASHED BLUE STRAIGHT DENIM JEANS + ivory canvas low-top sneakers. Cell2 sage green cable knit cardigan + IVORY RIB KNIT SWEATER + dark indigo A-line midi denim skirt + ivory canvas low-top sneakers. Cell3 COBALT BLUE HOODED WINDBREAKER + ivory plain T-shirt + dark indigo A-line midi denim skirt + ivory canvas low-top sneakers. BOTTOM ROW: E4 long dark brown high ponytail, no glasses, winking playful adult cartoon identity, same relaxed standing pose all three. Cell4 cobalt blue hooded windbreaker + heather gray T-shirt + WASHED BLUE STRAIGHT JEANS + gray chunky sneakers. Cell5 cobalt blue hooded windbreaker + PLAIN IVORY T-SHIRT + charcoal cargo trousers + gray chunky sneakers. Cell6 CHARCOAL TAILORED BLAZER + heather gray T-shirt + charcoal cargo trousers + gray chunky sneakers. Exactly these clothes, preserve silhouettes and material colors; realistic leather knit denim and fabric textures with stylized face. 3 columns x2 rows, landscape overall aspect about 9:8. High resolution.
+
