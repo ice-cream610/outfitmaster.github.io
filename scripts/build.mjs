@@ -1,5 +1,5 @@
 import {build} from 'esbuild';
-import {mkdirSync,writeFileSync,rmSync} from 'node:fs';
+import {mkdirSync,writeFileSync,rmSync,cpSync} from 'node:fs';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
@@ -14,5 +14,6 @@ if(!entry)throw new Error('Missing app entry');
 const js='./'+path.relative('dist',entry[0]).replaceAll('\\','/');
 const css=entry[1].cssBundle?'./'+path.relative('dist',entry[1].cssBundle).replaceAll('\\','/'):null;
 mkdirSync('dist',{recursive:true});
+cpSync('public','dist',{recursive:true});
 writeFileSync('dist/index.html',`<!doctype html><html lang="zh-CN"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="theme-color" content="#fbf7f2"/><meta name="description" content="Outfit Master 电商 AI 穿搭交互演示：从一件喜欢的单品，找到整套搭配。"/><title>Outfit Master · AI 穿搭工作台</title>${css?`<link rel="stylesheet" href="${css}"/>`:''}</head><body><div id="root"></div><script type="module" src="${js}"></script></body></html>`);
 console.log('Production demo ready in dist/');

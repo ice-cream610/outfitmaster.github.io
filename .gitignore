@@ -17,3 +17,5 @@ Thumbs.db
 # Hosting provider local state
 .vercel/
 .netlify/
+.runtime/
+.qa/
