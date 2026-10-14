@@ -1,0 +1,1417 @@
+[
+  {
+    "id": "dj-162",
+    "name": "Blue Frock",
+    "slot": "dress",
+    "kind": "dress",
+    "priceCents": 21600,
+    "stock": 52,
+    "color": "蓝色",
+    "hex": "#8c9cb8",
+    "hue": 218.1818181818182,
+    "saturation": 0.2365591397849462,
+    "lightness": 0.6352941176470588,
+    "styles": [
+      "甜美可爱",
+      "优雅知性"
+    ],
+    "scenes": [
+      "日常休闲",
+      "拍照出片"
+    ],
+    "formality": 3,
+    "fit": "regular",
+    "pattern": "solid",
+    "seasons": [
+      "春",
+      "夏",
+      "秋"
+    ],
+    "images": [
+      "https://cdn.dummyjson.com/product-images/tops/blue-frock/1.webp",
+      "https://cdn.dummyjson.com/product-images/tops/blue-frock/2.webp",
+      "https://cdn.dummyjson.com/product-images/tops/blue-frock/3.webp",
+      "https://cdn.dummyjson.com/product-images/tops/blue-frock/4.webp"
+    ],
+    "cutout": "/catalog/external/dj-162.png",
+    "source": "dummyjson",
+    "sourceTitle": "Blue Frock",
+    "sourceUrl": "https://dummyjson.com/products/162",
+    "description": "The Blue Frock is a charming and stylish dress for various occasions. With a vibrant blue color and a comfortable design, it adds a touch of elegance to your wardrobe. 说明：风格与场景为演示粗标，不是经过专业标注的事实。",
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "currency": "CNY",
+    "priceNote": "公开演示数据；人民币价格按 USD×7.2 固定模拟，非实时汇率或真实报价"
+  },
+  {
+    "id": "dj-163",
+    "name": "Girl Summer Dress",
+    "slot": "dress",
+    "kind": "dress",
+    "priceCents": 14400,
+    "stock": 43,
+    "color": "图片提取色",
+    "hex": "#777675",
+    "hue": 30.000000000000213,
+    "saturation": 0.00847457627118647,
+    "lightness": 0.4627450980392157,
+    "styles": [
+      "甜美可爱",
+      "优雅知性"
+    ],
+    "scenes": [
+      "日常休闲",
+      "拍照出片"
+    ],
+    "formality": 3,
+    "fit": "regular",
+    "pattern": "solid",
+    "seasons": [
+      "春",
+      "夏",
+      "秋"
+    ],
+    "images": [
+      "https://cdn.dummyjson.com/product-images/tops/girl-summer-dress/1.webp",
+      "https://cdn.dummyjson.com/product-images/tops/girl-summer-dress/2.webp",
+      "https://cdn.dummyjson.com/product-images/tops/girl-summer-dress/3.webp",
+      "https://cdn.dummyjson.com/product-images/tops/girl-summer-dress/4.webp"
+    ],
+    "cutout": "/catalog/external/dj-163.png",
+    "source": "dummyjson",
+    "sourceTitle": "Girl Summer Dress",
+    "sourceUrl": "https://dummyjson.com/products/163",
+    "description": "The Girl Summer Dress is a cute and breezy dress designed for warm weather. With playful patterns and lightweight fabric, it's perfect for keeping cool and stylish during the summer. 说明：风格与场景为演示粗标，不是经过专业标注的事实。",
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "currency": "CNY",
+    "priceNote": "公开演示数据；人民币价格按 USD×7.2 固定模拟，非实时汇率或真实报价"
+  },
+  {
+    "id": "dj-164",
+    "name": "Gray Dress",
+    "slot": "dress",
+    "kind": "dress",
+    "priceCents": 25200,
+    "stock": 55,
+    "color": "灰色",
+    "hex": "#c1beae",
+    "hue": 50.52631578947371,
+    "saturation": 0.13286713286713278,
+    "lightness": 0.7196078431372549,
+    "styles": [
+      "甜美可爱",
+      "优雅知性"
+    ],
+    "scenes": [
+      "日常休闲",
+      "拍照出片"
+    ],
+    "formality": 3,
+    "fit": "regular",
+    "pattern": "solid",
+    "seasons": [
+      "春",
+      "夏",
+      "秋"
+    ],
+    "images": [
+      "https://cdn.dummyjson.com/product-images/tops/gray-dress/1.webp",
+      "https://cdn.dummyjson.com/product-images/tops/gray-dress/2.webp",
+      "https://cdn.dummyjson.com/product-images/tops/gray-dress/3.webp",
+      "https://cdn.dummyjson.com/product-images/tops/gray-dress/4.webp"
+    ],
+    "cutout": "/catalog/external/dj-164.png",
+    "source": "dummyjson",
+    "sourceTitle": "Gray Dress",
+    "sourceUrl": "https://dummyjson.com/products/164",
+    "description": "The Gray Dress is a versatile and chic option for various occasions. With a neutral gray color, it can be dressed up or down, making it a wardrobe staple for any fashion-forward individual. 说明：风格与场景为演示粗标，不是经过专业标注的事实。",
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "currency": "CNY",
+    "priceNote": "公开演示数据；人民币价格按 USD×7.2 固定模拟，非实时汇率或真实报价"
+  },
+  {
+    "id": "dj-165",
+    "name": "Short Frock",
+    "slot": "dress",
+    "kind": "dress",
+    "priceCents": 18000,
+    "stock": 22,
+    "color": "图片提取色",
+    "hex": "#617b78",
+    "hue": 173.0769230769231,
+    "saturation": 0.11818181818181821,
+    "lightness": 0.43137254901960786,
+    "styles": [
+      "甜美可爱",
+      "优雅知性"
+    ],
+    "scenes": [
+      "日常休闲",
+      "拍照出片"
+    ],
+    "formality": 3,
+    "fit": "regular",
+    "pattern": "solid",
+    "seasons": [
+      "春",
+      "夏",
+      "秋"
+    ],
+    "images": [
+      "https://cdn.dummyjson.com/product-images/tops/short-frock/1.webp",
+      "https://cdn.dummyjson.com/product-images/tops/short-frock/2.webp",
+      "https://cdn.dummyjson.com/product-images/tops/short-frock/3.webp",
+      "https://cdn.dummyjson.com/product-images/tops/short-frock/4.webp"
+    ],
+    "cutout": "/catalog/external/dj-165.png",
+    "source": "dummyjson",
+    "sourceTitle": "Short Frock",
+    "sourceUrl": "https://dummyjson.com/products/165",
+    "description": "The Short Frock is a playful and trendy dress with a shorter length. Ideal for casual outings or special occasions, it combines style and comfort for a fashionable look. 说明：风格与场景为演示粗标，不是经过专业标注的事实。",
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "currency": "CNY",
+    "priceNote": "公开演示数据；人民币价格按 USD×7.2 固定模拟，非实时汇率或真实报价"
+  },
+  {
+    "id": "dj-166",
+    "name": "Tartan Dress",
+    "slot": "dress",
+    "kind": "dress",
+    "priceCents": 28800,
+    "stock": 73,
+    "color": "图片提取色",
+    "hex": "#767676",
+    "hue": 0.0,
+    "saturation": 0.0,
+    "lightness": 0.4627450980392157,
+    "styles": [
+      "甜美可爱",
+      "优雅知性"
+    ],
+    "scenes": [
+      "日常休闲",
+      "拍照出片"
+    ],
+    "formality": 3,
+    "fit": "regular",
+    "pattern": "solid",
+    "seasons": [
+      "春",
+      "夏",
+      "秋"
+    ],
+    "images": [
+      "https://cdn.dummyjson.com/product-images/tops/tartan-dress/1.webp",
+      "https://cdn.dummyjson.com/product-images/tops/tartan-dress/2.webp",
+      "https://cdn.dummyjson.com/product-images/tops/tartan-dress/3.webp",
+      "https://cdn.dummyjson.com/product-images/tops/tartan-dress/4.webp"
+    ],
+    "cutout": "/catalog/external/dj-166.png",
+    "source": "dummyjson",
+    "sourceTitle": "Tartan Dress",
+    "sourceUrl": "https://dummyjson.com/products/166",
+    "description": "The Tartan Dress features a classic tartan pattern, bringing a timeless and sophisticated touch to your wardrobe. Perfect for fall and winter, it adds a hint of traditional charm. 说明：风格与场景为演示粗标，不是经过专业标注的事实。",
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "currency": "CNY",
+    "priceNote": "公开演示数据；人民币价格按 USD×7.2 固定模拟，非实时汇率或真实报价"
+  },
+  {
+    "id": "dj-172",
+    "name": "Blue Women's Handbag",
+    "slot": "bag",
+    "kind": "bag",
+    "priceCents": 36000,
+    "stock": 76,
+    "color": "蓝色",
+    "hex": "#2a305f",
+    "hue": 233.20754716981133,
+    "saturation": 0.38686131386861317,
+    "lightness": 0.26862745098039215,
+    "styles": [
+      "简约大气",
+      "优雅知性"
+    ],
+    "scenes": [
+      "职业商务",
+      "拍照出片"
+    ],
+    "formality": 3,
+    "fit": "regular",
+    "pattern": "solid",
+    "seasons": [
+      "春",
+      "夏",
+      "秋"
+    ],
+    "images": [
+      "https://cdn.dummyjson.com/product-images/womens-bags/blue-women's-handbag/1.webp",
+      "https://cdn.dummyjson.com/product-images/womens-bags/blue-women's-handbag/2.webp",
+      "https://cdn.dummyjson.com/product-images/womens-bags/blue-women's-handbag/3.webp"
+    ],
+    "cutout": "/catalog/external/dj-172.png",
+    "source": "dummyjson",
+    "sourceTitle": "Blue Women's Handbag",
+    "sourceUrl": "https://dummyjson.com/products/172",
+    "description": "The Blue Women's Handbag is a stylish and spacious accessory for everyday use. With a vibrant blue color and multiple compartments, it combines fashion and functionality. 说明：风格与场景为演示粗标，不是经过专业标注的事实。",
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "currency": "CNY",
+    "priceNote": "公开演示数据；人民币价格按 USD×7.2 固定模拟，非实时汇率或真实报价"
+  },
+  {
+    "id": "dj-173",
+    "name": "Heshe Women's Leather Bag",
+    "slot": "bag",
+    "kind": "bag",
+    "priceCents": 93600,
+    "stock": 99,
+    "color": "图片提取色",
+    "hex": "#7e482d",
+    "hue": 19.999999999999996,
+    "saturation": 0.4736842105263157,
+    "lightness": 0.33529411764705885,
+    "styles": [
+      "简约大气",
+      "优雅知性"
+    ],
+    "scenes": [
+      "职业商务",
+      "拍照出片"
+    ],
+    "formality": 3,
+    "fit": "regular",
+    "pattern": "solid",
+    "seasons": [
+      "春",
+      "夏",
+      "秋"
+    ],
+    "images": [
+      "https://cdn.dummyjson.com/product-images/womens-bags/heshe-women's-leather-bag/1.webp",
+      "https://cdn.dummyjson.com/product-images/womens-bags/heshe-women's-leather-bag/2.webp",
+      "https://cdn.dummyjson.com/product-images/womens-bags/heshe-women's-leather-bag/3.webp"
+    ],
+    "cutout": "/catalog/external/dj-173.png",
+    "source": "dummyjson",
+    "sourceTitle": "Heshe Women's Leather Bag",
+    "sourceUrl": "https://dummyjson.com/products/173",
+    "description": "The Heshe Women's Leather Bag is a luxurious and high-quality leather bag for the sophisticated woman. With a timeless design and durable craftsmanship, it's a versatile accessory. 说明：风格与场景为演示粗标，不是经过专业标注的事实。",
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "currency": "CNY",
+    "priceNote": "公开演示数据；人民币价格按 USD×7.2 固定模拟，非实时汇率或真实报价"
+  },
+  {
+    "id": "dj-174",
+    "name": "Prada Women Bag",
+    "slot": "bag",
+    "kind": "bag",
+    "priceCents": 432000,
+    "stock": 75,
+    "color": "图片提取色",
+    "hex": "#86bac5",
+    "hue": 190.4761904761905,
+    "saturation": 0.3519553072625698,
+    "lightness": 0.6490196078431373,
+    "styles": [
+      "简约大气",
+      "优雅知性"
+    ],
+    "scenes": [
+      "职业商务",
+      "拍照出片"
+    ],
+    "formality": 3,
+    "fit": "regular",
+    "pattern": "solid",
+    "seasons": [
+      "春",
+      "夏",
+      "秋"
+    ],
+    "images": [
+      "https://cdn.dummyjson.com/product-images/womens-bags/prada-women-bag/1.webp",
+      "https://cdn.dummyjson.com/product-images/womens-bags/prada-women-bag/2.webp",
+      "https://cdn.dummyjson.com/product-images/womens-bags/prada-women-bag/3.webp"
+    ],
+    "cutout": "/catalog/external/dj-174.png",
+    "source": "dummyjson",
+    "sourceTitle": "Prada Women Bag",
+    "sourceUrl": "https://dummyjson.com/products/174",
+    "description": "The Prada Women Bag is an iconic designer bag that exudes elegance and luxury. Crafted with precision and featuring the Prada logo, it's a statement piece for fashion enthusiasts. 说明：风格与场景为演示粗标，不是经过专业标注的事实。",
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "currency": "CNY",
+    "priceNote": "公开演示数据；人民币价格按 USD×7.2 固定模拟，非实时汇率或真实报价"
+  },
+  {
+    "id": "dj-175",
+    "name": "White Faux Leather Backpack",
+    "slot": "bag",
+    "kind": "bag",
+    "priceCents": 28800,
+    "stock": 39,
+    "color": "白色",
+    "hex": "#786d5c",
+    "hue": 36.428571428571416,
+    "saturation": 0.1320754716981132,
+    "lightness": 0.4156862745098039,
+    "styles": [
+      "简约大气",
+      "优雅知性"
+    ],
+    "scenes": [
+      "职业商务",
+      "拍照出片"
+    ],
+    "formality": 3,
+    "fit": "regular",
+    "pattern": "solid",
+    "seasons": [
+      "春",
+      "夏",
+      "秋"
+    ],
+    "images": [
+      "https://cdn.dummyjson.com/product-images/womens-bags/white-faux-leather-backpack/1.webp",
+      "https://cdn.dummyjson.com/product-images/womens-bags/white-faux-leather-backpack/2.webp",
+      "https://cdn.dummyjson.com/product-images/womens-bags/white-faux-leather-backpack/3.webp"
+    ],
+    "cutout": "/catalog/external/dj-175.png",
+    "source": "dummyjson",
+    "sourceTitle": "White Faux Leather Backpack",
+    "sourceUrl": "https://dummyjson.com/products/175",
+    "description": "The White Faux Leather Backpack is a trendy and practical backpack for the modern woman. With a sleek white design and ample storage space, it's perfect for both casual and on-the-go styles. 说明：风格与场景为演示粗标，不是经过专业标注的事实。",
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "currency": "CNY",
+    "priceNote": "公开演示数据；人民币价格按 USD×7.2 固定模拟，非实时汇率或真实报价"
+  },
+  {
+    "id": "dj-176",
+    "name": "Women Handbag Black",
+    "slot": "bag",
+    "kind": "bag",
+    "priceCents": 43200,
+    "stock": 11,
+    "color": "黑色",
+    "hex": "#202022",
+    "hue": 240.0,
+    "saturation": 0.030303030303030307,
+    "lightness": 0.12941176470588234,
+    "styles": [
+      "简约大气",
+      "优雅知性"
+    ],
+    "scenes": [
+      "职业商务",
+      "拍照出片"
+    ],
+    "formality": 3,
+    "fit": "regular",
+    "pattern": "solid",
+    "seasons": [
+      "春",
+      "夏",
+      "秋"
+    ],
+    "images": [
+      "https://cdn.dummyjson.com/product-images/womens-bags/women-handbag-black/1.webp",
+      "https://cdn.dummyjson.com/product-images/womens-bags/women-handbag-black/2.webp",
+      "https://cdn.dummyjson.com/product-images/womens-bags/women-handbag-black/3.webp"
+    ],
+    "cutout": "/catalog/external/dj-176.png",
+    "source": "dummyjson",
+    "sourceTitle": "Women Handbag Black",
+    "sourceUrl": "https://dummyjson.com/products/176",
+    "description": "The Women Handbag in Black is a classic and versatile accessory that complements various outfits. With a timeless black color and functional design, it's a must-have in every woman's wardrobe. 说明：风格与场景为演示粗标，不是经过专业标注的事实。",
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "currency": "CNY",
+    "priceNote": "公开演示数据；人民币价格按 USD×7.2 固定模拟，非实时汇率或真实报价"
+  },
+  {
+    "id": "dj-177",
+    "name": "Black Women's Gown",
+    "slot": "dress",
+    "kind": "dress",
+    "priceCents": 93600,
+    "stock": 25,
+    "color": "黑色",
+    "hex": "#504a58",
+    "hue": 265.71428571428567,
+    "saturation": 0.0864197530864197,
+    "lightness": 0.3176470588235294,
+    "styles": [
+      "优雅知性",
+      "甜美可爱"
+    ],
+    "scenes": [
+      "正式礼服",
+      "拍照出片"
+    ],
+    "formality": 4,
+    "fit": "regular",
+    "pattern": "solid",
+    "seasons": [
+      "春",
+      "夏",
+      "秋"
+    ],
+    "images": [
+      "https://cdn.dummyjson.com/product-images/womens-dresses/black-women's-gown/1.webp",
+      "https://cdn.dummyjson.com/product-images/womens-dresses/black-women's-gown/2.webp",
+      "https://cdn.dummyjson.com/product-images/womens-dresses/black-women's-gown/3.webp",
+      "https://cdn.dummyjson.com/product-images/womens-dresses/black-women's-gown/4.webp"
+    ],
+    "cutout": "/catalog/external/dj-177.png",
+    "source": "dummyjson",
+    "sourceTitle": "Black Women's Gown",
+    "sourceUrl": "https://dummyjson.com/products/177",
+    "description": "The Black Women's Gown is an elegant and timeless evening gown. With a sleek black design, it's perfect for formal events and special occasions, exuding sophistication and style. 说明：风格与场景为演示粗标，不是经过专业标注的事实。",
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "currency": "CNY",
+    "priceNote": "公开演示数据；人民币价格按 USD×7.2 固定模拟，非实时汇率或真实报价"
+  },
+  {
+    "id": "dj-178",
+    "name": "Corset Leather With Skirt",
+    "slot": "dress",
+    "kind": "dress",
+    "priceCents": 64800,
+    "stock": 30,
+    "color": "图片提取色",
+    "hex": "#a61313",
+    "hue": 0.0,
+    "saturation": 0.7945945945945947,
+    "lightness": 0.3627450980392157,
+    "styles": [
+      "优雅知性",
+      "甜美可爱"
+    ],
+    "scenes": [
+      "正式礼服",
+      "拍照出片"
+    ],
+    "formality": 4,
+    "fit": "regular",
+    "pattern": "solid",
+    "seasons": [
+      "春",
+      "夏",
+      "秋"
+    ],
+    "images": [
+      "https://cdn.dummyjson.com/product-images/womens-dresses/corset-leather-with-skirt/1.webp",
+      "https://cdn.dummyjson.com/product-images/womens-dresses/corset-leather-with-skirt/2.webp",
+      "https://cdn.dummyjson.com/product-images/womens-dresses/corset-leather-with-skirt/3.webp",
+      "https://cdn.dummyjson.com/product-images/womens-dresses/corset-leather-with-skirt/4.webp"
+    ],
+    "cutout": "/catalog/external/dj-178.png",
+    "source": "dummyjson",
+    "sourceTitle": "Corset Leather With Skirt",
+    "sourceUrl": "https://dummyjson.com/products/178",
+    "description": "The Corset Leather With Skirt is a bold and edgy ensemble that combines a stylish corset with a matching skirt. Ideal for fashion-forward individuals, it makes a statement at any event. 说明：风格与场景为演示粗标，不是经过专业标注的事实。",
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "currency": "CNY",
+    "priceNote": "公开演示数据；人民币价格按 USD×7.2 固定模拟，非实时汇率或真实报价"
+  },
+  {
+    "id": "dj-179",
+    "name": "Corset With Black Skirt",
+    "slot": "dress",
+    "kind": "dress",
+    "priceCents": 57600,
+    "stock": 33,
+    "color": "黑色",
+    "hex": "#101010",
+    "hue": 0.0,
+    "saturation": 0.0,
+    "lightness": 0.06274509803921569,
+    "styles": [
+      "优雅知性",
+      "甜美可爱"
+    ],
+    "scenes": [
+      "正式礼服",
+      "拍照出片"
+    ],
+    "formality": 4,
+    "fit": "regular",
+    "pattern": "solid",
+    "seasons": [
+      "春",
+      "夏",
+      "秋"
+    ],
+    "images": [
+      "https://cdn.dummyjson.com/product-images/womens-dresses/corset-with-black-skirt/1.webp",
+      "https://cdn.dummyjson.com/product-images/womens-dresses/corset-with-black-skirt/2.webp",
+      "https://cdn.dummyjson.com/product-images/womens-dresses/corset-with-black-skirt/3.webp",
+      "https://cdn.dummyjson.com/product-images/womens-dresses/corset-with-black-skirt/4.webp"
+    ],
+    "cutout": "/catalog/external/dj-179.png",
+    "source": "dummyjson",
+    "sourceTitle": "Corset With Black Skirt",
+    "sourceUrl": "https://dummyjson.com/products/179",
+    "description": "The Corset With Black Skirt is a chic and versatile outfit that pairs a fashionable corset with a classic black skirt. It offers a trendy and coordinated look for various occasions. 说明：风格与场景为演示粗标，不是经过专业标注的事实。",
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "currency": "CNY",
+    "priceNote": "公开演示数据；人民币价格按 USD×7.2 固定模拟，非实时汇率或真实报价"
+  },
+  {
+    "id": "dj-180",
+    "name": "Dress Pea",
+    "slot": "dress",
+    "kind": "dress",
+    "priceCents": 36000,
+    "stock": 6,
+    "color": "图片提取色",
+    "hex": "#9a8587",
+    "hue": 354.28571428571433,
+    "saturation": 0.09417040358744387,
+    "lightness": 0.5627450980392157,
+    "styles": [
+      "优雅知性",
+      "甜美可爱"
+    ],
+    "scenes": [
+      "正式礼服",
+      "拍照出片"
+    ],
+    "formality": 4,
+    "fit": "regular",
+    "pattern": "solid",
+    "seasons": [
+      "春",
+      "夏",
+      "秋"
+    ],
+    "images": [
+      "https://cdn.dummyjson.com/product-images/womens-dresses/dress-pea/1.webp",
+      "https://cdn.dummyjson.com/product-images/womens-dresses/dress-pea/2.webp",
+      "https://cdn.dummyjson.com/product-images/womens-dresses/dress-pea/3.webp",
+      "https://cdn.dummyjson.com/product-images/womens-dresses/dress-pea/4.webp"
+    ],
+    "cutout": "/catalog/external/dj-180.png",
+    "source": "dummyjson",
+    "sourceTitle": "Dress Pea",
+    "sourceUrl": "https://dummyjson.com/products/180",
+    "description": "The Dress Pea is a stylish and comfortable dress with a pea pattern. Perfect for casual outings, it adds a playful and fun element to your wardrobe, making it a great choice for day-to-day wear. 说明：风格与场景为演示粗标，不是经过专业标注的事实。",
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "currency": "CNY",
+    "priceNote": "公开演示数据；人民币价格按 USD×7.2 固定模拟，非实时汇率或真实报价"
+  },
+  {
+    "id": "dj-181",
+    "name": "Marni Red & Black Suit",
+    "slot": "dress",
+    "kind": "dress",
+    "priceCents": 129600,
+    "stock": 62,
+    "color": "黑色",
+    "hex": "#5b0a1a",
+    "hue": 348.14814814814815,
+    "saturation": 0.8019801980198019,
+    "lightness": 0.19803921568627453,
+    "styles": [
+      "优雅知性",
+      "甜美可爱"
+    ],
+    "scenes": [
+      "正式礼服",
+      "拍照出片"
+    ],
+    "formality": 4,
+    "fit": "regular",
+    "pattern": "solid",
+    "seasons": [
+      "春",
+      "夏",
+      "秋"
+    ],
+    "images": [
+      "https://cdn.dummyjson.com/product-images/womens-dresses/marni-red-&-black-suit/1.webp",
+      "https://cdn.dummyjson.com/product-images/womens-dresses/marni-red-&-black-suit/2.webp",
+      "https://cdn.dummyjson.com/product-images/womens-dresses/marni-red-&-black-suit/3.webp",
+      "https://cdn.dummyjson.com/product-images/womens-dresses/marni-red-&-black-suit/4.webp"
+    ],
+    "cutout": "/catalog/external/dj-181.png",
+    "source": "dummyjson",
+    "sourceTitle": "Marni Red & Black Suit",
+    "sourceUrl": "https://dummyjson.com/products/181",
+    "description": "The Marni Red & Black Suit is a sophisticated and fashion-forward suit ensemble. With a combination of red and black tones, it showcases a modern design for a bold and confident look. 说明：风格与场景为演示粗标，不是经过专业标注的事实。",
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "currency": "CNY",
+    "priceNote": "公开演示数据；人民币价格按 USD×7.2 固定模拟，非实时汇率或真实报价"
+  },
+  {
+    "id": "dj-185",
+    "name": "Black & Brown Slipper",
+    "slot": "shoes",
+    "kind": "heel",
+    "priceCents": 14400,
+    "stock": 3,
+    "color": "黑色",
+    "hex": "#5c3721",
+    "hue": 22.372881355932204,
+    "saturation": 0.4719999999999999,
+    "lightness": 0.2450980392156863,
+    "styles": [
+      "简约大气",
+      "优雅知性"
+    ],
+    "scenes": [
+      "职业商务",
+      "拍照出片"
+    ],
+    "formality": 3,
+    "fit": "regular",
+    "pattern": "solid",
+    "seasons": [
+      "春",
+      "夏",
+      "秋"
+    ],
+    "images": [
+      "https://cdn.dummyjson.com/product-images/womens-shoes/black-&-brown-slipper/1.webp",
+      "https://cdn.dummyjson.com/product-images/womens-shoes/black-&-brown-slipper/2.webp",
+      "https://cdn.dummyjson.com/product-images/womens-shoes/black-&-brown-slipper/3.webp",
+      "https://cdn.dummyjson.com/product-images/womens-shoes/black-&-brown-slipper/4.webp"
+    ],
+    "cutout": "/catalog/external/dj-185.png",
+    "source": "dummyjson",
+    "sourceTitle": "Black & Brown Slipper",
+    "sourceUrl": "https://dummyjson.com/products/185",
+    "description": "The Black & Brown Slipper is a comfortable and stylish choice for casual wear. Featuring a blend of black and brown colors, it adds a touch of sophistication to your relaxation. 说明：风格与场景为演示粗标，不是经过专业标注的事实。",
+    "sizes": [
+      "36",
+      "37",
+      "38",
+      "39"
+    ],
+    "currency": "CNY",
+    "priceNote": "公开演示数据；人民币价格按 USD×7.2 固定模拟，非实时汇率或真实报价"
+  },
+  {
+    "id": "dj-186",
+    "name": "Calvin Klein Heel Shoes",
+    "slot": "shoes",
+    "kind": "heel",
+    "priceCents": 57600,
+    "stock": 93,
+    "color": "图片提取色",
+    "hex": "#323232",
+    "hue": 0.0,
+    "saturation": 0.0,
+    "lightness": 0.19607843137254902,
+    "styles": [
+      "简约大气",
+      "优雅知性"
+    ],
+    "scenes": [
+      "职业商务",
+      "拍照出片"
+    ],
+    "formality": 3,
+    "fit": "regular",
+    "pattern": "solid",
+    "seasons": [
+      "春",
+      "夏",
+      "秋"
+    ],
+    "images": [
+      "https://cdn.dummyjson.com/product-images/womens-shoes/calvin-klein-heel-shoes/1.webp",
+      "https://cdn.dummyjson.com/product-images/womens-shoes/calvin-klein-heel-shoes/2.webp",
+      "https://cdn.dummyjson.com/product-images/womens-shoes/calvin-klein-heel-shoes/3.webp",
+      "https://cdn.dummyjson.com/product-images/womens-shoes/calvin-klein-heel-shoes/4.webp"
+    ],
+    "cutout": "/catalog/external/dj-186.png",
+    "source": "dummyjson",
+    "sourceTitle": "Calvin Klein Heel Shoes",
+    "sourceUrl": "https://dummyjson.com/products/186",
+    "description": "Calvin Klein Heel Shoes are elegant and sophisticated, designed for formal occasions. With a classic design and high-quality materials, they complement your stylish ensemble. 说明：风格与场景为演示粗标，不是经过专业标注的事实。",
+    "sizes": [
+      "36",
+      "37",
+      "38",
+      "39"
+    ],
+    "currency": "CNY",
+    "priceNote": "公开演示数据；人民币价格按 USD×7.2 固定模拟，非实时汇率或真实报价"
+  },
+  {
+    "id": "dj-187",
+    "name": "Golden Shoes Woman",
+    "slot": "shoes",
+    "kind": "heel",
+    "priceCents": 36000,
+    "stock": 88,
+    "color": "图片提取色",
+    "hex": "#b4957b",
+    "hue": 27.368421052631582,
+    "saturation": 0.2753623188405798,
+    "lightness": 0.5941176470588235,
+    "styles": [
+      "简约大气",
+      "优雅知性"
+    ],
+    "scenes": [
+      "职业商务",
+      "拍照出片"
+    ],
+    "formality": 3,
+    "fit": "regular",
+    "pattern": "solid",
+    "seasons": [
+      "春",
+      "夏",
+      "秋"
+    ],
+    "images": [
+      "https://cdn.dummyjson.com/product-images/womens-shoes/golden-shoes-woman/1.webp",
+      "https://cdn.dummyjson.com/product-images/womens-shoes/golden-shoes-woman/2.webp",
+      "https://cdn.dummyjson.com/product-images/womens-shoes/golden-shoes-woman/3.webp",
+      "https://cdn.dummyjson.com/product-images/womens-shoes/golden-shoes-woman/4.webp"
+    ],
+    "cutout": "/catalog/external/dj-187.png",
+    "source": "dummyjson",
+    "sourceTitle": "Golden Shoes Woman",
+    "sourceUrl": "https://dummyjson.com/products/187",
+    "description": "The Golden Shoes for Women are a glamorous choice for special occasions. Featuring a golden hue and stylish design, they add a touch of luxury to your outfit. 说明：风格与场景为演示粗标，不是经过专业标注的事实。",
+    "sizes": [
+      "36",
+      "37",
+      "38",
+      "39"
+    ],
+    "currency": "CNY",
+    "priceNote": "公开演示数据；人民币价格按 USD×7.2 固定模拟，非实时汇率或真实报价"
+  },
+  {
+    "id": "dj-188",
+    "name": "Pampi Shoes",
+    "slot": "shoes",
+    "kind": "heel",
+    "priceCents": 21600,
+    "stock": 49,
+    "color": "图片提取色",
+    "hex": "#b38d6b",
+    "hue": 28.333333333333343,
+    "saturation": 0.32142857142857134,
+    "lightness": 0.5607843137254902,
+    "styles": [
+      "简约大气",
+      "优雅知性"
+    ],
+    "scenes": [
+      "职业商务",
+      "拍照出片"
+    ],
+    "formality": 3,
+    "fit": "regular",
+    "pattern": "solid",
+    "seasons": [
+      "春",
+      "夏",
+      "秋"
+    ],
+    "images": [
+      "https://cdn.dummyjson.com/product-images/womens-shoes/pampi-shoes/1.webp",
+      "https://cdn.dummyjson.com/product-images/womens-shoes/pampi-shoes/2.webp",
+      "https://cdn.dummyjson.com/product-images/womens-shoes/pampi-shoes/3.webp",
+      "https://cdn.dummyjson.com/product-images/womens-shoes/pampi-shoes/4.webp"
+    ],
+    "cutout": "/catalog/external/dj-188.png",
+    "source": "dummyjson",
+    "sourceTitle": "Pampi Shoes",
+    "sourceUrl": "https://dummyjson.com/products/188",
+    "description": "Pampi Shoes offer a blend of comfort and style for everyday use. With a versatile design, they are suitable for various casual occasions, providing a trendy and relaxed look. 说明：风格与场景为演示粗标，不是经过专业标注的事实。",
+    "sizes": [
+      "36",
+      "37",
+      "38",
+      "39"
+    ],
+    "currency": "CNY",
+    "priceNote": "公开演示数据；人民币价格按 USD×7.2 固定模拟，非实时汇率或真实报价"
+  },
+  {
+    "id": "dj-189",
+    "name": "Red Shoes",
+    "slot": "shoes",
+    "kind": "heel",
+    "priceCents": 25200,
+    "stock": 7,
+    "color": "红色",
+    "hex": "#cf766b",
+    "hue": 6.599999999999999,
+    "saturation": 0.5102040816326531,
+    "lightness": 0.615686274509804,
+    "styles": [
+      "简约大气",
+      "优雅知性"
+    ],
+    "scenes": [
+      "职业商务",
+      "拍照出片"
+    ],
+    "formality": 3,
+    "fit": "regular",
+    "pattern": "solid",
+    "seasons": [
+      "春",
+      "夏",
+      "秋"
+    ],
+    "images": [
+      "https://cdn.dummyjson.com/product-images/womens-shoes/red-shoes/1.webp",
+      "https://cdn.dummyjson.com/product-images/womens-shoes/red-shoes/2.webp",
+      "https://cdn.dummyjson.com/product-images/womens-shoes/red-shoes/3.webp",
+      "https://cdn.dummyjson.com/product-images/womens-shoes/red-shoes/4.webp"
+    ],
+    "cutout": "/catalog/external/dj-189.png",
+    "source": "dummyjson",
+    "sourceTitle": "Red Shoes",
+    "sourceUrl": "https://dummyjson.com/products/189",
+    "description": "The Red Shoes make a bold statement with their vibrant red color. Whether for a party or a casual outing, these shoes add a pop of color and style to your wardrobe. 说明：风格与场景为演示粗标，不是经过专业标注的事实。",
+    "sizes": [
+      "36",
+      "37",
+      "38",
+      "39"
+    ],
+    "currency": "CNY",
+    "priceNote": "公开演示数据；人民币价格按 USD×7.2 固定模拟，非实时汇率或真实报价"
+  },
+  {
+    "id": "dj-83",
+    "name": "Blue & Black Check Shirt",
+    "slot": "top",
+    "kind": "shirt",
+    "priceCents": 21600,
+    "stock": 38,
+    "color": "黑色",
+    "hex": "#808ca2",
+    "hue": 218.8235294117647,
+    "saturation": 0.1545454545454545,
+    "lightness": 0.5686274509803921,
+    "styles": [
+      "简约大气",
+      "优雅知性"
+    ],
+    "scenes": [
+      "职业商务",
+      "拍照出片"
+    ],
+    "formality": 3,
+    "fit": "regular",
+    "pattern": "solid",
+    "seasons": [
+      "春",
+      "夏",
+      "秋"
+    ],
+    "images": [
+      "https://cdn.dummyjson.com/product-images/mens-shirts/blue-&-black-check-shirt/1.webp",
+      "https://cdn.dummyjson.com/product-images/mens-shirts/blue-&-black-check-shirt/2.webp",
+      "https://cdn.dummyjson.com/product-images/mens-shirts/blue-&-black-check-shirt/3.webp",
+      "https://cdn.dummyjson.com/product-images/mens-shirts/blue-&-black-check-shirt/4.webp"
+    ],
+    "cutout": "/catalog/external/dj-83.png",
+    "source": "dummyjson",
+    "sourceTitle": "Blue & Black Check Shirt",
+    "sourceUrl": "https://dummyjson.com/products/83",
+    "description": "The Blue & Black Check Shirt is a stylish and comfortable men's shirt featuring a classic check pattern. Made from high-quality fabric, it's suitable for both casual and semi-formal occasions. 说明：风格与场景为演示粗标，不是经过专业标注的事实。",
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "currency": "CNY",
+    "priceNote": "公开演示数据；人民币价格按 USD×7.2 固定模拟，非实时汇率或真实报价"
+  },
+  {
+    "id": "dj-84",
+    "name": "Gigabyte Aorus Men Tshirt",
+    "slot": "top",
+    "kind": "shirt",
+    "priceCents": 18000,
+    "stock": 90,
+    "color": "图片提取色",
+    "hex": "#b0b0b0",
+    "hue": 0.0,
+    "saturation": 0.0,
+    "lightness": 0.6901960784313725,
+    "styles": [
+      "简约大气",
+      "优雅知性"
+    ],
+    "scenes": [
+      "职业商务",
+      "拍照出片"
+    ],
+    "formality": 3,
+    "fit": "regular",
+    "pattern": "solid",
+    "seasons": [
+      "春",
+      "夏",
+      "秋"
+    ],
+    "images": [
+      "https://cdn.dummyjson.com/product-images/mens-shirts/gigabyte-aorus-men-tshirt/1.webp",
+      "https://cdn.dummyjson.com/product-images/mens-shirts/gigabyte-aorus-men-tshirt/2.webp",
+      "https://cdn.dummyjson.com/product-images/mens-shirts/gigabyte-aorus-men-tshirt/3.webp",
+      "https://cdn.dummyjson.com/product-images/mens-shirts/gigabyte-aorus-men-tshirt/4.webp"
+    ],
+    "cutout": "/catalog/external/dj-84.png",
+    "source": "dummyjson",
+    "sourceTitle": "Gigabyte Aorus Men Tshirt",
+    "sourceUrl": "https://dummyjson.com/products/84",
+    "description": "The Gigabyte Aorus Men Tshirt is a cool and casual shirt for gaming enthusiasts. With the Aorus logo and sleek design, it's perfect for expressing your gaming style. 说明：风格与场景为演示粗标，不是经过专业标注的事实。",
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "currency": "CNY",
+    "priceNote": "公开演示数据；人民币价格按 USD×7.2 固定模拟，非实时汇率或真实报价"
+  },
+  {
+    "id": "dj-85",
+    "name": "Man Plaid Shirt",
+    "slot": "top",
+    "kind": "shirt",
+    "priceCents": 25200,
+    "stock": 82,
+    "color": "图片提取色",
+    "hex": "#651115",
+    "hue": 357.14285714285717,
+    "saturation": 0.711864406779661,
+    "lightness": 0.23137254901960783,
+    "styles": [
+      "简约大气",
+      "优雅知性"
+    ],
+    "scenes": [
+      "职业商务",
+      "拍照出片"
+    ],
+    "formality": 3,
+    "fit": "regular",
+    "pattern": "solid",
+    "seasons": [
+      "春",
+      "夏",
+      "秋"
+    ],
+    "images": [
+      "https://cdn.dummyjson.com/product-images/mens-shirts/man-plaid-shirt/1.webp",
+      "https://cdn.dummyjson.com/product-images/mens-shirts/man-plaid-shirt/2.webp",
+      "https://cdn.dummyjson.com/product-images/mens-shirts/man-plaid-shirt/3.webp",
+      "https://cdn.dummyjson.com/product-images/mens-shirts/man-plaid-shirt/4.webp"
+    ],
+    "cutout": "/catalog/external/dj-85.png",
+    "source": "dummyjson",
+    "sourceTitle": "Man Plaid Shirt",
+    "sourceUrl": "https://dummyjson.com/products/85",
+    "description": "The Man Plaid Shirt is a timeless and versatile men's shirt with a classic plaid pattern. Its comfortable fit and casual style make it a wardrobe essential for various occasions. 说明：风格与场景为演示粗标，不是经过专业标注的事实。",
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "currency": "CNY",
+    "priceNote": "公开演示数据；人民币价格按 USD×7.2 固定模拟，非实时汇率或真实报价"
+  },
+  {
+    "id": "dj-86",
+    "name": "Man Short Sleeve Shirt",
+    "slot": "top",
+    "kind": "shirt",
+    "priceCents": 14400,
+    "stock": 2,
+    "color": "图片提取色",
+    "hex": "#496c8e",
+    "hue": 209.56521739130437,
+    "saturation": 0.32093023255813957,
+    "lightness": 0.4215686274509804,
+    "styles": [
+      "简约大气",
+      "优雅知性"
+    ],
+    "scenes": [
+      "职业商务",
+      "拍照出片"
+    ],
+    "formality": 3,
+    "fit": "regular",
+    "pattern": "solid",
+    "seasons": [
+      "春",
+      "夏",
+      "秋"
+    ],
+    "images": [
+      "https://cdn.dummyjson.com/product-images/mens-shirts/man-short-sleeve-shirt/1.webp",
+      "https://cdn.dummyjson.com/product-images/mens-shirts/man-short-sleeve-shirt/2.webp",
+      "https://cdn.dummyjson.com/product-images/mens-shirts/man-short-sleeve-shirt/3.webp",
+      "https://cdn.dummyjson.com/product-images/mens-shirts/man-short-sleeve-shirt/4.webp"
+    ],
+    "cutout": "/catalog/external/dj-86.png",
+    "source": "dummyjson",
+    "sourceTitle": "Man Short Sleeve Shirt",
+    "sourceUrl": "https://dummyjson.com/products/86",
+    "description": "The Man Short Sleeve Shirt is a breezy and stylish option for warm days. With a comfortable fit and short sleeves, it's perfect for a laid-back yet polished look. 说明：风格与场景为演示粗标，不是经过专业标注的事实。",
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "currency": "CNY",
+    "priceNote": "公开演示数据；人民币价格按 USD×7.2 固定模拟，非实时汇率或真实报价"
+  },
+  {
+    "id": "dj-87",
+    "name": "Men Check Shirt",
+    "slot": "top",
+    "kind": "shirt",
+    "priceCents": 20200,
+    "stock": 95,
+    "color": "图片提取色",
+    "hex": "#638083",
+    "hue": 185.625,
+    "saturation": 0.13913043478260864,
+    "lightness": 0.4509803921568627,
+    "styles": [
+      "简约大气",
+      "优雅知性"
+    ],
+    "scenes": [
+      "职业商务",
+      "拍照出片"
+    ],
+    "formality": 3,
+    "fit": "regular",
+    "pattern": "solid",
+    "seasons": [
+      "春",
+      "夏",
+      "秋"
+    ],
+    "images": [
+      "https://cdn.dummyjson.com/product-images/mens-shirts/men-check-shirt/1.webp",
+      "https://cdn.dummyjson.com/product-images/mens-shirts/men-check-shirt/2.webp",
+      "https://cdn.dummyjson.com/product-images/mens-shirts/men-check-shirt/3.webp",
+      "https://cdn.dummyjson.com/product-images/mens-shirts/men-check-shirt/4.webp"
+    ],
+    "cutout": "/catalog/external/dj-87.png",
+    "source": "dummyjson",
+    "sourceTitle": "Men Check Shirt",
+    "sourceUrl": "https://dummyjson.com/products/87",
+    "description": "The Men Check Shirt is a classic and versatile shirt featuring a stylish check pattern. Suitable for various occasions, it adds a smart and polished touch to your wardrobe. 说明：风格与场景为演示粗标，不是经过专业标注的事实。",
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "currency": "CNY",
+    "priceNote": "公开演示数据；人民币价格按 USD×7.2 固定模拟，非实时汇率或真实报价"
+  },
+  {
+    "id": "dj-88",
+    "name": "Nike Air Jordan 1 Red And Black",
+    "slot": "shoes",
+    "kind": "sneaker",
+    "priceCents": 108000,
+    "stock": 7,
+    "color": "黑色",
+    "hex": "#965151",
+    "hue": 0.0,
+    "saturation": 0.29870129870129875,
+    "lightness": 0.45294117647058824,
+    "styles": [
+      "冷酷中性",
+      "创意设计"
+    ],
+    "scenes": [
+      "日常休闲",
+      "拍照出片"
+    ],
+    "formality": 1,
+    "fit": "regular",
+    "pattern": "solid",
+    "seasons": [
+      "春",
+      "夏",
+      "秋"
+    ],
+    "images": [
+      "https://cdn.dummyjson.com/product-images/mens-shoes/nike-air-jordan-1-red-and-black/1.webp",
+      "https://cdn.dummyjson.com/product-images/mens-shoes/nike-air-jordan-1-red-and-black/2.webp",
+      "https://cdn.dummyjson.com/product-images/mens-shoes/nike-air-jordan-1-red-and-black/3.webp",
+      "https://cdn.dummyjson.com/product-images/mens-shoes/nike-air-jordan-1-red-and-black/4.webp"
+    ],
+    "cutout": "/catalog/external/dj-88.png",
+    "source": "dummyjson",
+    "sourceTitle": "Nike Air Jordan 1 Red And Black",
+    "sourceUrl": "https://dummyjson.com/products/88",
+    "description": "The Nike Air Jordan 1 in Red and Black is an iconic basketball sneaker known for its stylish design and high-performance features, making it a favorite among sneaker enthusiasts and athletes. 说明：风格与场景为演示粗标，不是经过专业标注的事实。",
+    "sizes": [
+      "36",
+      "37",
+      "38",
+      "39"
+    ],
+    "currency": "CNY",
+    "priceNote": "公开演示数据；人民币价格按 USD×7.2 固定模拟，非实时汇率或真实报价"
+  },
+  {
+    "id": "dj-89",
+    "name": "Nike Baseball Cleats",
+    "slot": "shoes",
+    "kind": "sneaker",
+    "priceCents": 57600,
+    "stock": 12,
+    "color": "图片提取色",
+    "hex": "#3d6257",
+    "hue": 162.16216216216216,
+    "saturation": 0.23270440251572327,
+    "lightness": 0.31176470588235294,
+    "styles": [
+      "冷酷中性",
+      "创意设计"
+    ],
+    "scenes": [
+      "日常休闲",
+      "拍照出片"
+    ],
+    "formality": 1,
+    "fit": "regular",
+    "pattern": "solid",
+    "seasons": [
+      "春",
+      "夏",
+      "秋"
+    ],
+    "images": [
+      "https://cdn.dummyjson.com/product-images/mens-shoes/nike-baseball-cleats/1.webp",
+      "https://cdn.dummyjson.com/product-images/mens-shoes/nike-baseball-cleats/2.webp",
+      "https://cdn.dummyjson.com/product-images/mens-shoes/nike-baseball-cleats/3.webp",
+      "https://cdn.dummyjson.com/product-images/mens-shoes/nike-baseball-cleats/4.webp"
+    ],
+    "cutout": "/catalog/external/dj-89.png",
+    "source": "dummyjson",
+    "sourceTitle": "Nike Baseball Cleats",
+    "sourceUrl": "https://dummyjson.com/products/89",
+    "description": "Nike Baseball Cleats are designed for maximum traction and performance on the baseball field. They provide stability and support for players during games and practices. 说明：风格与场景为演示粗标，不是经过专业标注的事实。",
+    "sizes": [
+      "36",
+      "37",
+      "38",
+      "39"
+    ],
+    "currency": "CNY",
+    "priceNote": "公开演示数据；人民币价格按 USD×7.2 固定模拟，非实时汇率或真实报价"
+  },
+  {
+    "id": "dj-90",
+    "name": "Puma Future Rider Trainers",
+    "slot": "shoes",
+    "kind": "sneaker",
+    "priceCents": 64800,
+    "stock": 90,
+    "color": "图片提取色",
+    "hex": "#aeb497",
+    "hue": 72.41379310344827,
+    "saturation": 0.16201117318435765,
+    "lightness": 0.6490196078431373,
+    "styles": [
+      "冷酷中性",
+      "创意设计"
+    ],
+    "scenes": [
+      "日常休闲",
+      "拍照出片"
+    ],
+    "formality": 1,
+    "fit": "regular",
+    "pattern": "solid",
+    "seasons": [
+      "春",
+      "夏",
+      "秋"
+    ],
+    "images": [
+      "https://cdn.dummyjson.com/product-images/mens-shoes/puma-future-rider-trainers/1.webp",
+      "https://cdn.dummyjson.com/product-images/mens-shoes/puma-future-rider-trainers/2.webp",
+      "https://cdn.dummyjson.com/product-images/mens-shoes/puma-future-rider-trainers/3.webp",
+      "https://cdn.dummyjson.com/product-images/mens-shoes/puma-future-rider-trainers/4.webp"
+    ],
+    "cutout": "/catalog/external/dj-90.png",
+    "source": "dummyjson",
+    "sourceTitle": "Puma Future Rider Trainers",
+    "sourceUrl": "https://dummyjson.com/products/90",
+    "description": "The Puma Future Rider Trainers offer a blend of retro style and modern comfort. Perfect for casual wear, these trainers provide a fashionable and comfortable option for everyday use. 说明：风格与场景为演示粗标，不是经过专业标注的事实。",
+    "sizes": [
+      "36",
+      "37",
+      "38",
+      "39"
+    ],
+    "currency": "CNY",
+    "priceNote": "公开演示数据；人民币价格按 USD×7.2 固定模拟，非实时汇率或真实报价"
+  },
+  {
+    "id": "dj-91",
+    "name": "Sports Sneakers Off White & Red",
+    "slot": "shoes",
+    "kind": "sneaker",
+    "priceCents": 86400,
+    "stock": 17,
+    "color": "白色",
+    "hex": "#92514f",
+    "hue": 1.7910447761193948,
+    "saturation": 0.29777777777777775,
+    "lightness": 0.4411764705882353,
+    "styles": [
+      "冷酷中性",
+      "创意设计"
+    ],
+    "scenes": [
+      "日常休闲",
+      "拍照出片"
+    ],
+    "formality": 1,
+    "fit": "regular",
+    "pattern": "solid",
+    "seasons": [
+      "春",
+      "夏",
+      "秋"
+    ],
+    "images": [
+      "https://cdn.dummyjson.com/product-images/mens-shoes/sports-sneakers-off-white-&-red/1.webp",
+      "https://cdn.dummyjson.com/product-images/mens-shoes/sports-sneakers-off-white-&-red/2.webp",
+      "https://cdn.dummyjson.com/product-images/mens-shoes/sports-sneakers-off-white-&-red/3.webp",
+      "https://cdn.dummyjson.com/product-images/mens-shoes/sports-sneakers-off-white-&-red/4.webp"
+    ],
+    "cutout": "/catalog/external/dj-91.png",
+    "source": "dummyjson",
+    "sourceTitle": "Sports Sneakers Off White & Red",
+    "sourceUrl": "https://dummyjson.com/products/91",
+    "description": "The Sports Sneakers in Off White and Red combine style and functionality, making them a fashionable choice for sports enthusiasts. The red and off-white color combination adds a bold and energetic touch. 说明：风格与场景为演示粗标，不是经过专业标注的事实。",
+    "sizes": [
+      "36",
+      "37",
+      "38",
+      "39"
+    ],
+    "currency": "CNY",
+    "priceNote": "公开演示数据；人民币价格按 USD×7.2 固定模拟，非实时汇率或真实报价"
+  },
+  {
+    "id": "dj-92",
+    "name": "Sports Sneakers Off White Red",
+    "slot": "shoes",
+    "kind": "sneaker",
+    "priceCents": 79200,
+    "stock": 62,
+    "color": "白色",
+    "hex": "#956262",
+    "hue": 0.0,
+    "saturation": 0.20647773279352225,
+    "lightness": 0.48431372549019613,
+    "styles": [
+      "冷酷中性",
+      "创意设计"
+    ],
+    "scenes": [
+      "日常休闲",
+      "拍照出片"
+    ],
+    "formality": 1,
+    "fit": "regular",
+    "pattern": "solid",
+    "seasons": [
+      "春",
+      "夏",
+      "秋"
+    ],
+    "images": [
+      "https://cdn.dummyjson.com/product-images/mens-shoes/sports-sneakers-off-white-red/1.webp",
+      "https://cdn.dummyjson.com/product-images/mens-shoes/sports-sneakers-off-white-red/2.webp",
+      "https://cdn.dummyjson.com/product-images/mens-shoes/sports-sneakers-off-white-red/3.webp",
+      "https://cdn.dummyjson.com/product-images/mens-shoes/sports-sneakers-off-white-red/4.webp"
+    ],
+    "cutout": "/catalog/external/dj-92.png",
+    "source": "dummyjson",
+    "sourceTitle": "Sports Sneakers Off White Red",
+    "sourceUrl": "https://dummyjson.com/products/92",
+    "description": "Another variant of the Sports Sneakers in Off White Red, featuring a unique design. These sneakers offer style and comfort for casual occasions. 说明：风格与场景为演示粗标，不是经过专业标注的事实。",
+    "sizes": [
+      "36",
+      "37",
+      "38",
+      "39"
+    ],
+    "currency": "CNY",
+    "priceNote": "公开演示数据；人民币价格按 USD×7.2 固定模拟，非实时汇率或真实报价"
+  }
+]

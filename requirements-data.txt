@@ -1,0 +1,2 @@
+# Only needed to regenerate/import image assets. Running the app needs Node.js only.
+Pillow>=11,<14

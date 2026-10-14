@@ -1,0 +1,18 @@
+{
+ "version":"0.1.0",
+ "kind":"human-authored heuristics informed by cited research; not a trained model",
+ "weights":{"color":0.21,"style":0.17,"scene":0.18,"proportion":0.10,"pattern":0.08,"preference":0.21,"value":0.05},
+ "principles":[
+  {"id":"complementarity","rule":"以整套跨品类兼容性评价组合，单件相似不等于搭配合适","source":"https://arxiv.org/abs/1803.09196"},
+  {"id":"balance","rule":"把比例、视觉重点、节奏与功能作为独立维度；避免将一种审美当成唯一正确答案","source":"https://www.fitnyc.edu/academics/academic-divisions/ccps/credit/design-practices.php"},
+  {"id":"palette","rule":"使用主色、低饱和色和中性色协调；色相接近或低饱和对比作为软加分","source":"https://experiments.withgoogle.com/business-of-fashion"},
+  {"id":"pattern","rule":"基础模板降低多个强图案竞争的评分，保留创意混搭的可能性","source":"local:design-hypothesis"},
+  {"id":"proportion","rule":"短或修身上衣搭配宽下装作为一种比例假设，双宽松仅软扣分","source":"local:design-hypothesis"}
+ ],
+ "formulas":[
+  {"scene":"日常休闲","structure":["top","bottom","shoes"],"example":"棉质短袖＋直筒裤＋运动鞋","note":"优先舒适轮廓与低正式度"},
+  {"scene":"职业商务","structure":["top","bottom","shoes"],"example":"翻领衬衫＋垂感长裤＋乐福鞋","note":"整体正式度一致，允许简约和中性风格"},
+  {"scene":"拍照出片","structure":["dress","shoes"],"example":"有重点的连衣裙＋呼应色鞋履","note":"视觉重点可以来自色彩、图案或轮廓"},
+  {"scene":"正式礼服","structure":["dress","shoes"],"example":"收腰长裙＋正式鞋履","note":"场景标签只是粗筛，现实着装规范须另行确认"}
+ ]
+}

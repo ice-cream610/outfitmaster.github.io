@@ -1,0 +1,66 @@
+{
+  "source": "https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=intitle%3A%22street+style%22+filetype%3Abitmap&gsrnamespace=6&gsrlimit=20&prop=imageinfo&iiprop=url%7Cextmetadata&iiurlwidth=500&format=json",
+  "items": [
+    {
+      "title": "File:African Street Style Festival, Shoreditch, London, 24 July 2016 01.jpg",
+      "image": "/references/commons-50318984.jpg",
+      "author": "Jwslubbock",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:African_Street_Style_Festival,_Shoreditch,_London,_24_July_2016_01.jpg",
+      "description": "Photographers shooting photos of models at the African Street Style Festival",
+      "usage": "研究参考；未训练模型；未自动推定该图片为用户偏好或搭配真值"
+    },
+    {
+      "title": "File:African Street Style Festival, Shoreditch, London, 24 July 2016 02.jpg",
+      "image": "/references/commons-50318982.jpg",
+      "author": "Jwslubbock",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:African_Street_Style_Festival,_Shoreditch,_London,_24_July_2016_02.jpg",
+      "description": "People at the African Street Style Festival",
+      "usage": "研究参考；未训练模型；未自动推定该图片为用户偏好或搭配真值"
+    },
+    {
+      "title": "File:African Street Style Festival, Shoreditch, London, 24 July 2016 03.jpg",
+      "image": "/references/commons-50318983.jpg",
+      "author": "Jwslubbock",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:African_Street_Style_Festival,_Shoreditch,_London,_24_July_2016_03.jpg",
+      "description": "People at the African Street Style Festival",
+      "usage": "研究参考；未训练模型；未自动推定该图片为用户偏好或搭配真值"
+    },
+    {
+      "title": "File:African Street Style Festival, Shoreditch, London, 24 July 2016 05.jpg",
+      "image": "/references/commons-50318986.jpg",
+      "author": "Jwslubbock",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:African_Street_Style_Festival,_Shoreditch,_London,_24_July_2016_05.jpg",
+      "description": "People at the African Street Style Festival",
+      "usage": "研究参考；未训练模型；未自动推定该图片为用户偏好或搭配真值"
+    },
+    {
+      "title": "File:African Street Style Festival, Shoreditch, London, 24 July 2016 07.jpg",
+      "image": "/references/commons-50318988.jpg",
+      "author": "Jwslubbock",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:African_Street_Style_Festival,_Shoreditch,_London,_24_July_2016_07.jpg",
+      "description": "People at the African Street Style Festival",
+      "usage": "研究参考；未训练模型；未自动推定该图片为用户偏好或搭配真值"
+    },
+    {
+      "title": "File:African Street Style Festival, Shoreditch, London, 24 July 2016 10.jpg",
+      "image": "/references/commons-50318993.jpg",
+      "author": "Jwslubbock",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:African_Street_Style_Festival,_Shoreditch,_London,_24_July_2016_10.jpg",
+      "description": "People at the African Street Style Festival",
+      "usage": "研究参考；未训练模型；未自动推定该图片为用户偏好或搭配真值"
+    }
+  ],
+  "errors": []
+}
