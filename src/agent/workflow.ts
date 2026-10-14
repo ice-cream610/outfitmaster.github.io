@@ -2,7 +2,7 @@ import type {CatalogItem,DemoUser,Behavior,Preferences,Constraints,SessionState,
 import {scenes,styles} from './types.ts';
 import {parseOffline} from './intent.ts';
 import knowledge from '../../data/styling-knowledge.json' with {type:'json'};
-export const defaultConstraints:Constraints={scene:'日常休闲',style:'自动',budgetCents:90000,excludeSlots:[],excludeKinds:[],excludeColors:[],preferColors:[],preferFit:'',includeAccessories:false};
+export const defaultConstraints:Constraints={scene:'日常休闲',style:'自动',budgetCents:1200000,excludeSlots:[],excludeKinds:[],excludeColors:[],preferColors:[],preferFit:'',includeAccessories:false};
 export const scoreWeights:Score=knowledge.weights;
 const clamp=(n:number)=>Math.min(1,Math.max(0,n));
 const mean=(ns:number[])=>ns.length?ns.reduce((s,n)=>s+n,0)/ns.length:.5;
@@ -151,7 +151,7 @@ export async function runWorkflow(request:WorkflowRequest,catalog:CatalogItem[],
  if(!selected.length)return result([],'本次候选搜索没有找到满足全部条件的完整搭配。可以提高预算、放宽排除条件，或更换入口商品。');
  log('校验硬约束','商品、结构、库存、预算和锁定项全部通过',selected.map(o=>({id:o.id,errors:validateOutfit(o.productIds,catalog,state,owned,preserved)})));
  state.version+=1;state.currentIds=selected[0].productIds;
- log('保存方案与合成','创建新版本；使用透明服饰图层，避免随机生图',{version:state.version,renderer:'deterministic SVG / image layers',note:'固定姿势的二维示意，不模拟布料与真实合身'});
+ log('保存方案与效果状态','保存商品组合；E 效果必须绑定同一组合与角色',{version:state.version,renderer:'original E identity + garment-reference image editing',imageStatus:'not_generated',note:'没有匹配效果图时显示商品原图与明确标注的角色参考，不用二维贴图或旧图片冒充上身效果'});
  return result(selected,`${selected.length} 套搭配已准备好。${replaceSlot?'仅替换指定品类，其他商品保持。':''}${selected[0].reasons[0]}`);
 }
 function weighted(score:Score){return (Object.keys(scoreWeights) as (keyof Score)[]).reduce((sum,key)=>sum+score[key]*scoreWeights[key],0)}

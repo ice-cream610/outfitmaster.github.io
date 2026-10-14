@@ -11,7 +11,8 @@
     "preview": "vite preview --host 127.0.0.1 --port 4176",
     "test": "node --test tests/*.test.ts tests/*.test.mjs",
     "data:seed": "python scripts/seed-catalog.py",
-    "data:import": "python scripts/import-public-data.py"
+    "data:import": "python scripts/import-merchant.py",
+    "data:import:legacy-demo": "python scripts/import-public-data.py"
   },
   "dependencies": {
     "lucide-react": "0.454.0",

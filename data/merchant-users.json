@@ -1,0 +1,804 @@
+[
+  {
+    "id": "user-0",
+    "name": "林小夏",
+    "subtitle": "通勤与周末之间",
+    "events": [
+      {
+        "id": "real-seed-0-0",
+        "productId": "tfs-15135618433184",
+        "type": "purchase",
+        "at": "2026-10-01T09:00:00+08:00",
+        "seconds": 20,
+        "simulated": true
+      },
+      {
+        "id": "real-seed-0-1",
+        "productId": "tfs-15744710344864",
+        "type": "view",
+        "at": "2026-10-01T09:00:00+08:00",
+        "seconds": 21,
+        "simulated": true
+      },
+      {
+        "id": "real-seed-0-2",
+        "productId": "tfs-15830335750304",
+        "type": "view",
+        "at": "2026-10-02T09:00:00+08:00",
+        "seconds": 22,
+        "simulated": true
+      },
+      {
+        "id": "real-seed-0-3",
+        "productId": "tfs-15821513457824",
+        "type": "view",
+        "at": "2026-10-02T09:00:00+08:00",
+        "seconds": 23,
+        "simulated": true
+      },
+      {
+        "id": "real-seed-0-4",
+        "productId": "tfs-15899158642848",
+        "type": "favorite",
+        "at": "2026-10-03T09:00:00+08:00",
+        "seconds": 24,
+        "simulated": true
+      },
+      {
+        "id": "real-seed-0-5",
+        "productId": "tfs-15821513818272",
+        "type": "view",
+        "at": "2026-10-03T09:00:00+08:00",
+        "seconds": 25,
+        "simulated": true
+      },
+      {
+        "id": "real-seed-0-6",
+        "productId": "tfs-15830335684768",
+        "type": "view",
+        "at": "2026-10-04T09:00:00+08:00",
+        "seconds": 26,
+        "simulated": true
+      },
+      {
+        "id": "real-seed-0-7",
+        "productId": "tfs-15621034115232",
+        "type": "view",
+        "at": "2026-10-04T09:00:00+08:00",
+        "seconds": 27,
+        "simulated": true
+      },
+      {
+        "id": "real-seed-0-8",
+        "productId": "tfs-15830335291552",
+        "type": "favorite",
+        "at": "2026-10-05T09:00:00+08:00",
+        "seconds": 28,
+        "simulated": true
+      },
+      {
+        "id": "real-seed-0-9",
+        "productId": "tfs-15830333882528",
+        "type": "purchase",
+        "at": "2026-10-05T09:00:00+08:00",
+        "seconds": 29,
+        "simulated": true
+      },
+      {
+        "id": "real-seed-0-10",
+        "productId": "tfs-15697624694944",
+        "type": "view",
+        "at": "2026-10-06T09:00:00+08:00",
+        "seconds": 30,
+        "simulated": true
+      },
+      {
+        "id": "real-seed-0-11",
+        "productId": "tfs-7567394209952",
+        "type": "view",
+        "at": "2026-10-06T09:00:00+08:00",
+        "seconds": 31,
+        "simulated": true
+      },
+      {
+        "id": "real-seed-0-12",
+        "productId": "tfs-15119194620064",
+        "type": "favorite",
+        "at": "2026-10-07T09:00:00+08:00",
+        "seconds": 32,
+        "simulated": true
+      },
+      {
+        "id": "real-seed-0-13",
+        "productId": "tfs-15689099313312",
+        "type": "view",
+        "at": "2026-10-07T09:00:00+08:00",
+        "seconds": 33,
+        "simulated": true
+      },
+      {
+        "id": "real-seed-0-14",
+        "productId": "tfs-15830333587616",
+        "type": "view",
+        "at": "2026-10-08T09:00:00+08:00",
+        "seconds": 34,
+        "simulated": true
+      },
+      {
+        "id": "real-seed-0-15",
+        "productId": "tfs-15830336372896",
+        "type": "view",
+        "at": "2026-10-08T09:00:00+08:00",
+        "seconds": 35,
+        "simulated": true
+      },
+      {
+        "id": "real-seed-0-16",
+        "productId": "tfs-15821513654432",
+        "type": "favorite",
+        "at": "2026-10-09T09:00:00+08:00",
+        "seconds": 36,
+        "simulated": true
+      },
+      {
+        "id": "real-seed-0-17",
+        "productId": "tfs-15685221843104",
+        "type": "view",
+        "at": "2026-10-09T09:00:00+08:00",
+        "seconds": 37,
+        "simulated": true
+      },
+      {
+        "id": "real-seed-0-18",
+        "productId": "tfs-15685220892832",
+        "type": "purchase",
+        "at": "2026-10-10T09:00:00+08:00",
+        "seconds": 38,
+        "simulated": true
+      },
+      {
+        "id": "real-seed-0-19",
+        "productId": "tfs-15830336176288",
+        "type": "view",
+        "at": "2026-10-10T09:00:00+08:00",
+        "seconds": 39,
+        "simulated": true
+      },
+      {
+        "id": "real-seed-0-20",
+        "productId": "tfs-15685701566624",
+        "type": "favorite",
+        "at": "2026-10-11T09:00:00+08:00",
+        "seconds": 40,
+        "simulated": true
+      },
+      {
+        "id": "real-seed-0-21",
+        "productId": "tfs-15830335881376",
+        "type": "view",
+        "at": "2026-10-11T09:00:00+08:00",
+        "seconds": 41,
+        "simulated": true
+      },
+      {
+        "id": "real-seed-0-22",
+        "productId": "tfs-15830333915296",
+        "type": "view",
+        "at": "2026-10-12T09:00:00+08:00",
+        "seconds": 42,
+        "simulated": true
+      },
+      {
+        "id": "real-seed-0-23",
+        "productId": "tfs-15697624989856",
+        "type": "view",
+        "at": "2026-10-12T09:00:00+08:00",
+        "seconds": 43,
+        "simulated": true
+      }
+    ]
+  },
+  {
+    "id": "user-1",
+    "name": "许知意",
+    "subtitle": "偏爱柔和与优雅",
+    "events": [
+      {
+        "id": "real-seed-1-0",
+        "productId": "tfs-15829183594656",
+        "type": "purchase",
+        "at": "2026-10-01T09:00:00+08:00",
+        "seconds": 20,
+        "simulated": true
+      },
+      {
+        "id": "real-seed-1-1",
+        "productId": "tfs-15803170422944",
+        "type": "view",
+        "at": "2026-10-01T09:00:00+08:00",
+        "seconds": 21,
+        "simulated": true
+      },
+      {
+        "id": "real-seed-1-2",
+        "productId": "tfs-15830333915296",
+        "type": "view",
+        "at": "2026-10-02T09:00:00+08:00",
+        "seconds": 22,
+        "simulated": true
+      },
+      {
+        "id": "real-seed-1-3",
+        "productId": "tfs-15846476120224",
+        "type": "view",
+        "at": "2026-10-02T09:00:00+08:00",
+        "seconds": 23,
+        "simulated": true
+      },
+      {
+        "id": "real-seed-1-4",
+        "productId": "tfs-15830335619232",
+        "type": "favorite",
+        "at": "2026-10-03T09:00:00+08:00",
+        "seconds": 24,
+        "simulated": true
+      },
+      {
+        "id": "real-seed-1-5",
+        "productId": "tfs-15621033951392",
+        "type": "view",
+        "at": "2026-10-03T09:00:00+08:00",
+        "seconds": 25,
+        "simulated": true
+      },
+      {
+        "id": "real-seed-1-6",
+        "productId": "tfs-15685226496160",
+        "type": "view",
+        "at": "2026-10-04T09:00:00+08:00",
+        "seconds": 26,
+        "simulated": true
+      },
+      {
+        "id": "real-seed-1-7",
+        "productId": "tfs-15830335094944",
+        "type": "view",
+        "at": "2026-10-04T09:00:00+08:00",
+        "seconds": 27,
+        "simulated": true
+      },
+      {
+        "id": "real-seed-1-8",
+        "productId": "tfs-15872074645664",
+        "type": "favorite",
+        "at": "2026-10-05T09:00:00+08:00",
+        "seconds": 28,
+        "simulated": true
+      },
+      {
+        "id": "real-seed-1-9",
+        "productId": "tfs-15775429361824",
+        "type": "purchase",
+        "at": "2026-10-05T09:00:00+08:00",
+        "seconds": 29,
+        "simulated": true
+      },
+      {
+        "id": "real-seed-1-10",
+        "productId": "tfs-15689099313312",
+        "type": "view",
+        "at": "2026-10-06T09:00:00+08:00",
+        "seconds": 30,
+        "simulated": true
+      },
+      {
+        "id": "real-seed-1-11",
+        "productId": "tfs-15821513818272",
+        "type": "view",
+        "at": "2026-10-06T09:00:00+08:00",
+        "seconds": 31,
+        "simulated": true
+      },
+      {
+        "id": "real-seed-1-12",
+        "productId": "tfs-15830335553696",
+        "type": "favorite",
+        "at": "2026-10-07T09:00:00+08:00",
+        "seconds": 32,
+        "simulated": true
+      },
+      {
+        "id": "real-seed-1-13",
+        "productId": "tfs-15830334210208",
+        "type": "view",
+        "at": "2026-10-07T09:00:00+08:00",
+        "seconds": 33,
+        "simulated": true
+      },
+      {
+        "id": "real-seed-1-14",
+        "productId": "tfs-15821513785504",
+        "type": "view",
+        "at": "2026-10-08T09:00:00+08:00",
+        "seconds": 34,
+        "simulated": true
+      },
+      {
+        "id": "real-seed-1-15",
+        "productId": "tfs-15872074514592",
+        "type": "view",
+        "at": "2026-10-08T09:00:00+08:00",
+        "seconds": 35,
+        "simulated": true
+      },
+      {
+        "id": "real-seed-1-16",
+        "productId": "tfs-15685226201248",
+        "type": "favorite",
+        "at": "2026-10-09T09:00:00+08:00",
+        "seconds": 36,
+        "simulated": true
+      },
+      {
+        "id": "real-seed-1-17",
+        "productId": "tfs-15899159003296",
+        "type": "view",
+        "at": "2026-10-09T09:00:00+08:00",
+        "seconds": 37,
+        "simulated": true
+      },
+      {
+        "id": "real-seed-1-18",
+        "productId": "tfs-15766086320288",
+        "type": "purchase",
+        "at": "2026-10-10T09:00:00+08:00",
+        "seconds": 38,
+        "simulated": true
+      },
+      {
+        "id": "real-seed-1-19",
+        "productId": "tfs-15766086484128",
+        "type": "view",
+        "at": "2026-10-10T09:00:00+08:00",
+        "seconds": 39,
+        "simulated": true
+      },
+      {
+        "id": "real-seed-1-20",
+        "productId": "tfs-15302194856096",
+        "type": "favorite",
+        "at": "2026-10-11T09:00:00+08:00",
+        "seconds": 40,
+        "simulated": true
+      },
+      {
+        "id": "real-seed-1-21",
+        "productId": "tfs-15905137623200",
+        "type": "view",
+        "at": "2026-10-11T09:00:00+08:00",
+        "seconds": 41,
+        "simulated": true
+      },
+      {
+        "id": "real-seed-1-22",
+        "productId": "tfs-15621034115232",
+        "type": "view",
+        "at": "2026-10-12T09:00:00+08:00",
+        "seconds": 42,
+        "simulated": true
+      },
+      {
+        "id": "real-seed-1-23",
+        "productId": "tfs-15685226135712",
+        "type": "view",
+        "at": "2026-10-12T09:00:00+08:00",
+        "seconds": 43,
+        "simulated": true
+      }
+    ]
+  },
+  {
+    "id": "user-2",
+    "name": "陈可可",
+    "subtitle": "甜美与拍照灵感",
+    "events": [
+      {
+        "id": "real-seed-2-0",
+        "productId": "tfs-15751907410080",
+        "type": "purchase",
+        "at": "2026-10-01T09:00:00+08:00",
+        "seconds": 20,
+        "simulated": true
+      },
+      {
+        "id": "real-seed-2-1",
+        "productId": "tfs-15830333587616",
+        "type": "view",
+        "at": "2026-10-01T09:00:00+08:00",
+        "seconds": 21,
+        "simulated": true
+      },
+      {
+        "id": "real-seed-2-2",
+        "productId": "tfs-7567394209952",
+        "type": "view",
+        "at": "2026-10-02T09:00:00+08:00",
+        "seconds": 22,
+        "simulated": true
+      },
+      {
+        "id": "real-seed-2-3",
+        "productId": "tfs-15875101655200",
+        "type": "view",
+        "at": "2026-10-02T09:00:00+08:00",
+        "seconds": 23,
+        "simulated": true
+      },
+      {
+        "id": "real-seed-2-4",
+        "productId": "tfs-15830335684768",
+        "type": "favorite",
+        "at": "2026-10-03T09:00:00+08:00",
+        "seconds": 24,
+        "simulated": true
+      },
+      {
+        "id": "real-seed-2-5",
+        "productId": "tfs-15744710344864",
+        "type": "view",
+        "at": "2026-10-03T09:00:00+08:00",
+        "seconds": 25,
+        "simulated": true
+      },
+      {
+        "id": "real-seed-2-6",
+        "productId": "tfs-15273087402144",
+        "type": "view",
+        "at": "2026-10-04T09:00:00+08:00",
+        "seconds": 26,
+        "simulated": true
+      },
+      {
+        "id": "real-seed-2-7",
+        "productId": "tfs-15697624989856",
+        "type": "view",
+        "at": "2026-10-04T09:00:00+08:00",
+        "seconds": 27,
+        "simulated": true
+      },
+      {
+        "id": "real-seed-2-8",
+        "productId": "tfs-15854910439584",
+        "type": "favorite",
+        "at": "2026-10-05T09:00:00+08:00",
+        "seconds": 28,
+        "simulated": true
+      },
+      {
+        "id": "real-seed-2-9",
+        "productId": "tfs-15751907410080",
+        "type": "purchase",
+        "at": "2026-10-05T09:00:00+08:00",
+        "seconds": 29,
+        "simulated": true
+      },
+      {
+        "id": "real-seed-2-10",
+        "productId": "tfs-15830333587616",
+        "type": "view",
+        "at": "2026-10-06T09:00:00+08:00",
+        "seconds": 30,
+        "simulated": true
+      },
+      {
+        "id": "real-seed-2-11",
+        "productId": "tfs-7567394209952",
+        "type": "view",
+        "at": "2026-10-06T09:00:00+08:00",
+        "seconds": 31,
+        "simulated": true
+      },
+      {
+        "id": "real-seed-2-12",
+        "productId": "tfs-15875101655200",
+        "type": "favorite",
+        "at": "2026-10-07T09:00:00+08:00",
+        "seconds": 32,
+        "simulated": true
+      },
+      {
+        "id": "real-seed-2-13",
+        "productId": "tfs-15830335684768",
+        "type": "view",
+        "at": "2026-10-07T09:00:00+08:00",
+        "seconds": 33,
+        "simulated": true
+      },
+      {
+        "id": "real-seed-2-14",
+        "productId": "tfs-15744710344864",
+        "type": "view",
+        "at": "2026-10-08T09:00:00+08:00",
+        "seconds": 34,
+        "simulated": true
+      },
+      {
+        "id": "real-seed-2-15",
+        "productId": "tfs-15273087402144",
+        "type": "view",
+        "at": "2026-10-08T09:00:00+08:00",
+        "seconds": 35,
+        "simulated": true
+      },
+      {
+        "id": "real-seed-2-16",
+        "productId": "tfs-15697624989856",
+        "type": "favorite",
+        "at": "2026-10-09T09:00:00+08:00",
+        "seconds": 36,
+        "simulated": true
+      },
+      {
+        "id": "real-seed-2-17",
+        "productId": "tfs-15854910439584",
+        "type": "view",
+        "at": "2026-10-09T09:00:00+08:00",
+        "seconds": 37,
+        "simulated": true
+      },
+      {
+        "id": "real-seed-2-18",
+        "productId": "tfs-15751907410080",
+        "type": "purchase",
+        "at": "2026-10-10T09:00:00+08:00",
+        "seconds": 38,
+        "simulated": true
+      },
+      {
+        "id": "real-seed-2-19",
+        "productId": "tfs-15830333587616",
+        "type": "view",
+        "at": "2026-10-10T09:00:00+08:00",
+        "seconds": 39,
+        "simulated": true
+      },
+      {
+        "id": "real-seed-2-20",
+        "productId": "tfs-7567394209952",
+        "type": "favorite",
+        "at": "2026-10-11T09:00:00+08:00",
+        "seconds": 40,
+        "simulated": true
+      },
+      {
+        "id": "real-seed-2-21",
+        "productId": "tfs-15875101655200",
+        "type": "view",
+        "at": "2026-10-11T09:00:00+08:00",
+        "seconds": 41,
+        "simulated": true
+      },
+      {
+        "id": "real-seed-2-22",
+        "productId": "tfs-15830335684768",
+        "type": "view",
+        "at": "2026-10-12T09:00:00+08:00",
+        "seconds": 42,
+        "simulated": true
+      },
+      {
+        "id": "real-seed-2-23",
+        "productId": "tfs-15744710344864",
+        "type": "view",
+        "at": "2026-10-12T09:00:00+08:00",
+        "seconds": 43,
+        "simulated": true
+      }
+    ]
+  },
+  {
+    "id": "user-3",
+    "name": "周予",
+    "subtitle": "中性与设计感",
+    "events": [
+      {
+        "id": "real-seed-3-0",
+        "productId": "tfs-15830435954848",
+        "type": "purchase",
+        "at": "2026-10-01T09:00:00+08:00",
+        "seconds": 20,
+        "simulated": true
+      },
+      {
+        "id": "real-seed-3-1",
+        "productId": "tfs-15830334701728",
+        "type": "view",
+        "at": "2026-10-01T09:00:00+08:00",
+        "seconds": 21,
+        "simulated": true
+      },
+      {
+        "id": "real-seed-3-2",
+        "productId": "tfs-15830336045216",
+        "type": "view",
+        "at": "2026-10-02T09:00:00+08:00",
+        "seconds": 22,
+        "simulated": true
+      },
+      {
+        "id": "real-seed-3-3",
+        "productId": "tfs-15830334865568",
+        "type": "view",
+        "at": "2026-10-02T09:00:00+08:00",
+        "seconds": 23,
+        "simulated": true
+      },
+      {
+        "id": "real-seed-3-4",
+        "productId": "tfs-15751907901600",
+        "type": "favorite",
+        "at": "2026-10-03T09:00:00+08:00",
+        "seconds": 24,
+        "simulated": true
+      },
+      {
+        "id": "real-seed-3-5",
+        "productId": "tfs-15110035407008",
+        "type": "view",
+        "at": "2026-10-03T09:00:00+08:00",
+        "seconds": 25,
+        "simulated": true
+      },
+      {
+        "id": "real-seed-3-6",
+        "productId": "tfs-15830335914144",
+        "type": "view",
+        "at": "2026-10-04T09:00:00+08:00",
+        "seconds": 26,
+        "simulated": true
+      },
+      {
+        "id": "real-seed-3-7",
+        "productId": "tfs-15830335586464",
+        "type": "view",
+        "at": "2026-10-04T09:00:00+08:00",
+        "seconds": 27,
+        "simulated": true
+      },
+      {
+        "id": "real-seed-3-8",
+        "productId": "tfs-15751906164896",
+        "type": "favorite",
+        "at": "2026-10-05T09:00:00+08:00",
+        "seconds": 28,
+        "simulated": true
+      },
+      {
+        "id": "real-seed-3-9",
+        "productId": "tfs-15830335291552",
+        "type": "purchase",
+        "at": "2026-10-05T09:00:00+08:00",
+        "seconds": 29,
+        "simulated": true
+      },
+      {
+        "id": "real-seed-3-10",
+        "productId": "tfs-15775429623968",
+        "type": "view",
+        "at": "2026-10-06T09:00:00+08:00",
+        "seconds": 30,
+        "simulated": true
+      },
+      {
+        "id": "real-seed-3-11",
+        "productId": "tfs-15068217704608",
+        "type": "view",
+        "at": "2026-10-06T09:00:00+08:00",
+        "seconds": 31,
+        "simulated": true
+      },
+      {
+        "id": "real-seed-3-12",
+        "productId": "tfs-15830336438432",
+        "type": "favorite",
+        "at": "2026-10-07T09:00:00+08:00",
+        "seconds": 32,
+        "simulated": true
+      },
+      {
+        "id": "real-seed-3-13",
+        "productId": "tfs-15830335750304",
+        "type": "view",
+        "at": "2026-10-07T09:00:00+08:00",
+        "seconds": 33,
+        "simulated": true
+      },
+      {
+        "id": "real-seed-3-14",
+        "productId": "tfs-15751907934368",
+        "type": "view",
+        "at": "2026-10-08T09:00:00+08:00",
+        "seconds": 34,
+        "simulated": true
+      },
+      {
+        "id": "real-seed-3-15",
+        "productId": "tfs-15685701566624",
+        "type": "view",
+        "at": "2026-10-08T09:00:00+08:00",
+        "seconds": 35,
+        "simulated": true
+      },
+      {
+        "id": "real-seed-3-16",
+        "productId": "tfs-15830333685920",
+        "type": "favorite",
+        "at": "2026-10-09T09:00:00+08:00",
+        "seconds": 36,
+        "simulated": true
+      },
+      {
+        "id": "real-seed-3-17",
+        "productId": "tfs-15068217639072",
+        "type": "view",
+        "at": "2026-10-09T09:00:00+08:00",
+        "seconds": 37,
+        "simulated": true
+      },
+      {
+        "id": "real-seed-3-18",
+        "productId": "tfs-15829183332512",
+        "type": "purchase",
+        "at": "2026-10-10T09:00:00+08:00",
+        "seconds": 38,
+        "simulated": true
+      },
+      {
+        "id": "real-seed-3-19",
+        "productId": "tfs-15830336372896",
+        "type": "view",
+        "at": "2026-10-10T09:00:00+08:00",
+        "seconds": 39,
+        "simulated": true
+      },
+      {
+        "id": "real-seed-3-20",
+        "productId": "tfs-15821512999072",
+        "type": "favorite",
+        "at": "2026-10-11T09:00:00+08:00",
+        "seconds": 40,
+        "simulated": true
+      },
+      {
+        "id": "real-seed-3-21",
+        "productId": "tfs-15830336176288",
+        "type": "view",
+        "at": "2026-10-11T09:00:00+08:00",
+        "seconds": 41,
+        "simulated": true
+      },
+      {
+        "id": "real-seed-3-22",
+        "productId": "tfs-15830333882528",
+        "type": "view",
+        "at": "2026-10-12T09:00:00+08:00",
+        "seconds": 42,
+        "simulated": true
+      },
+      {
+        "id": "real-seed-3-23",
+        "productId": "tfs-15067125448864",
+        "type": "view",
+        "at": "2026-10-12T09:00:00+08:00",
+        "seconds": 43,
+        "simulated": true
+      }
+    ]
+  },
+  {
+    "id": "user-4",
+    "name": "新朋友",
+    "subtitle": "没有历史，探索新的自己",
+    "events": []
+  }
+]

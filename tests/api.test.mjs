@@ -1,18 +1,19 @@
 import test from 'node:test';import assert from 'node:assert/strict';import {spawn} from 'node:child_process';import {once} from 'node:events';
 test('API persists sessions, rejects stale versions, retains valid result after failed refinement and validates cart',async(t)=>{
- const port=18000+process.pid%1000;const child=spawn(process.execPath,['server/index.mjs'],{cwd:new URL('..',import.meta.url),env:{...process.env,PORT:String(port),OUTFIT_DB_PATH:':memory:',MODEL_API_KEY:''},stdio:['ignore','pipe','pipe']});
+ const port=18000+process.pid%1000;const child=spawn(process.execPath,['server/index.mjs'],{cwd:new URL('..',import.meta.url),env:{...process.env,PORT:String(port),OUTFIT_DB_PATH:':memory:',MODEL_API_KEY:'',IMAGE_API_KEY:''},stdio:['ignore','pipe','pipe']});
  t.after(()=>child.kill());let stderr='';child.stderr.on('data',d=>stderr+=d);
  await Promise.race([once(child.stdout,'data'),once(child,'exit').then(()=>{throw new Error(stderr)}),new Promise((_,reject)=>{const timer=setTimeout(()=>reject(new Error('server start timeout '+stderr)),10000);timer.unref()})]);
  const url=`http://127.0.0.1:${port}`;
  const post=async(path,value)=>{const r=await fetch(url+path,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(value)});return {status:r.status,body:await r.json()}};
- const boot=await(await fetch(url+'/api/bootstrap')).json();assert.equal(boot.storage,'sqlite');assert.equal(boot.catalog.length,90);
- const initial=await post('/api/recommend',{userId:'user-0',anchorId:'studio-0-1'});assert.equal(initial.status,200);assert(initial.body.outfits.length);
- const first=initial.body;const next=await post('/api/recommend',{userId:'user-0',anchorId:'studio-0-1',state:first.state,currentIds:first.outfits[1].productIds,message:'只换裤子'});assert.equal(next.status,200);assert(next.body.outfits.length);
- const stale=await post('/api/recommend',{userId:'user-0',anchorId:'studio-0-1',state:first.state});assert.equal(stale.status,409);
+ const boot=await(await fetch(url+'/api/bootstrap')).json();assert.equal(boot.storage,'sqlite');assert.equal(boot.catalog.length,92);assert(boot.catalog.every(p=>p.source==='merchant'&&p.images.every(src=>src.startsWith('/merchant/'))));assert.equal(boot.renderConfigured,false);
+ const initial=await post('/api/recommend',{userId:'user-0',anchorId:'tfs-15135618433184'});assert.equal(initial.status,200);assert(initial.body.outfits.length);
+ const first=initial.body;const next=await post('/api/recommend',{userId:'user-0',anchorId:'tfs-15135618433184',state:first.state,currentIds:first.outfits[1].productIds,message:'只换裤子'});assert.equal(next.status,200);assert(next.body.outfits.length);
+ const stale=await post('/api/recommend',{userId:'user-0',anchorId:'tfs-15135618433184',state:first.state});assert.equal(stale.status,409);
  const current=next.body;
- const failed=await post('/api/recommend',{userId:'user-0',anchorId:'studio-0-1',state:current.state,currentIds:current.outfits[0].productIds,message:'预算改成1元'});assert.equal(failed.body.outfits.length,0);
- const recovered=await post('/api/recommend',{userId:'user-0',anchorId:'studio-0-1',state:current.state,currentIds:current.outfits[0].productIds,message:'预算改成900元'});assert(recovered.body.outfits.length);
+ const failed=await post('/api/recommend',{userId:'user-0',anchorId:'tfs-15135618433184',state:current.state,currentIds:current.outfits[0].productIds,message:'预算改成1元'});assert.equal(failed.body.outfits.length,0);
+ const recovered=await post('/api/recommend',{userId:'user-0',anchorId:'tfs-15135618433184',state:current.state,currentIds:current.outfits[0].productIds,message:'预算改成12000元'});assert(recovered.body.outfits.length);
  const result=recovered.body;const o=result.outfits[0];const p=boot.catalog.find(p=>p.id===o.productIds[0]);
+ const noImage=await post('/api/render-jobs',{userId:'user-0',sessionId:result.state.id,version:result.state.version,outfitId:o.id,avatar:'long'});assert.equal(noImage.status,400);assert(noImage.body.error.includes('IMAGE_API_KEY'));
  const invalid=await post('/api/cart',{userId:'user-0',sessionId:result.state.id,outfitId:o.id,items:[{productId:p.id,size:'INVALID',quantity:1}]});assert.equal(invalid.status,400);
  const cart=await post('/api/cart',{userId:'user-0',sessionId:result.state.id,outfitId:o.id,items:[{productId:p.id,size:p.sizes[0],quantity:1,priceCents:1}]});assert.equal(cart.status,200);assert.equal(cart.body.totalCents,p.priceCents);
  const wrongUser=await post('/api/cart',{userId:'user-1',sessionId:result.state.id,outfitId:o.id,items:[{productId:p.id,size:p.sizes[0],quantity:1}]});assert.equal(wrongUser.status,400);

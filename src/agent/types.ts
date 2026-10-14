@@ -8,8 +8,9 @@ export interface CatalogItem {
  color:string; hex:string; hue:number; saturation:number; lightness:number;
  styles:Style[]; scenes:Scene[]; formality:number; fit:'slim'|'regular'|'loose';
  pattern:'solid'|'stripe'|'print'; seasons:string[]; images:string[];
- cutout?:string; source:'studio'|'dummyjson'; sourceUrl:string; sourceTitle?:string;
+ cutout?:string; source:'studio'|'dummyjson'|'merchant'; sourceUrl:string; sourceTitle?:string;
  description:string; sizes:string[]; currency:'CNY'; priceNote:string;
+ merchant?:string;merchantProductId?:string;merchantCategory?:string;originalCurrency?:string;originalPrice?:string;originalPriceCents?:number;exchangeRate?:string;capturedAt?:string;availability?:string;stockNote?:string;materials?:string[];attributeSource?:string;sourceImages?:string[];imageRole?:string;variants?:{id:string;size:string;available:boolean;price:string;currency:string;sku?:string}[];
 }
 export interface Behavior {id:string; productId:string; type:'view'|'favorite'|'purchase'|'dismiss'; at:string; seconds?:number; simulated?:boolean}
 export interface DemoUser {id:string; name:string; subtitle:string; events:Behavior[]}

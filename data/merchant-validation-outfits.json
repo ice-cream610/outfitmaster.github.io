@@ -1,0 +1,1145 @@
+{
+  "anchorId": "tfs-15135618433184",
+  "outfits": [
+    {
+      "id": "122180da-289b-4b6c-ba7b-e75f91966f03",
+      "productIds": [
+        "tfs-15135618433184",
+        "tfs-14662803357856",
+        "tfs-15119194620064"
+      ],
+      "totalCents": 338400,
+      "purchaseCents": 277200,
+      "score": 90,
+      "breakdown": {
+        "color": 0.93,
+        "style": 1,
+        "scene": 1,
+        "proportion": 0.85,
+        "pattern": 1,
+        "preference": 0.7208583378331088,
+        "value": 0.769
+      },
+      "reasons": [
+        "以Laval Sculpted Sleeve T-Shirt - Cream为中心，简约大气贯穿整套。",
+        "颜色协调 93 分，场景适配 100 分；用纯色留白突出主要单品。",
+        "待购 ¥2772，1 件已有衣物不重复计价。"
+      ],
+      "formula": "上衣 ＋ 下装 ＋ 鞋履",
+      "products": [
+        {
+          "id": "tfs-15135618433184",
+          "name": "Laval Sculpted Sleeve T-Shirt - Cream",
+          "slot": "top",
+          "kind": "tee",
+          "priceCents": 61200,
+          "stock": 1,
+          "color": "奶油白",
+          "hex": "#ece5d7",
+          "hue": 40,
+          "saturation": 0.3559322033898307,
+          "lightness": 0.884313725490196,
+          "styles": [
+            "创意设计",
+            "简约大气"
+          ],
+          "scenes": [
+            "日常休闲",
+            "拍照出片"
+          ],
+          "formality": 2,
+          "fit": "loose",
+          "pattern": "solid",
+          "seasons": [
+            "春",
+            "夏",
+            "秋"
+          ],
+          "images": [
+            "/merchant/tfs-15135618433184-0.jpg",
+            "/merchant/tfs-15135618433184-1.jpg",
+            "/merchant/tfs-15135618433184-2.jpg"
+          ],
+          "sourceImages": [
+            "https://cdn.shopify.com/s/files/1/1527/0993/files/LAVAL-SCULPTED-SLEEVE-TSHIRT-CREAM-PACKSHOT.jpg?v=1756281552",
+            "https://cdn.shopify.com/s/files/1/1527/0993/files/LAVAL-SCULPTED-SLEEVE-TSHIRT-CREAM-LILLI-1580_31fe8b9b-32e0-48a1-a8ae-ec5b8529e5af.jpg?v=1756281552",
+            "https://cdn.shopify.com/s/files/1/1527/0993/files/LAVAL-SCULPTED-SLEEVE-TSHIRT-CREAM-LILLI-1572_ea0ffc4a-9a3d-44fd-a1bb-6176aa19da16.jpg?v=1756281552"
+          ],
+          "source": "merchant",
+          "sourceUrl": "https://thefrankieshop.com/products/laval-sculpted-sleeve-t-shirt-cream",
+          "sourceTitle": "Laval Sculpted Sleeve T-Shirt - Cream",
+          "description": "Color: Cream\nLightweight cotton blend fabric\nRelaxed fit\nRound neck\nStructured shoulders\nShort sleeves\nSlip-on style\nUnlined\n60% Cotton 35% Polyester 5% Elastane\nDry Clean\nBy The Frankie Shop.\nMade in South Korea",
+          "sizes": [
+            "S"
+          ],
+          "currency": "CNY",
+          "priceNote": "官网 USD 价格快照；人民币仅按 1 USD=7.20 CNY 估算，不含运费税费，非实时汇率",
+          "merchant": "The Frankie Shop",
+          "merchantProductId": "15135618433184",
+          "merchantCategory": "T-Shirt",
+          "originalCurrency": "USD",
+          "originalPrice": "85.00",
+          "originalPriceCents": 8500,
+          "exchangeRate": "7.20",
+          "capturedAt": "2026-10-14T13:08:08.307009+00:00",
+          "availability": "available",
+          "stockNote": "官网有可售规格；库存件数未公开，stock=1 仅为可售标志",
+          "materials": [
+            "Lightweight cotton blend fabric",
+            "60% Cotton 35% Polyester 5% Elastane"
+          ],
+          "attributeSource": "品类/介绍/颜色/面料来自官网；风格、场景与色相为可校正的规则标注",
+          "variants": [
+            {
+              "id": "52653532446880",
+              "sku": "TSFS215600060103",
+              "size": "S",
+              "available": true,
+              "price": "85.00",
+              "currency": "USD"
+            },
+            {
+              "id": "52653532479648",
+              "sku": "TSFS215600060104",
+              "size": "M",
+              "available": false,
+              "price": "85.00",
+              "currency": "USD"
+            },
+            {
+              "id": "52653532512416",
+              "sku": "TSFS215600060105",
+              "size": "L",
+              "available": false,
+              "price": "85.00",
+              "currency": "USD"
+            }
+          ],
+          "imageRole": "packshot",
+          "cacheFiles": [
+            {
+              "url": "/merchant/tfs-15135618433184-0.jpg",
+              "sha256": "a7ea1017ad1d851de3a34b6371e6f09cbf13c81bf4763a2aa51e3e5dd030cbb2",
+              "sourceUrl": "https://cdn.shopify.com/s/files/1/1527/0993/files/LAVAL-SCULPTED-SLEEVE-TSHIRT-CREAM-PACKSHOT.jpg?v=1756281552"
+            },
+            {
+              "url": "/merchant/tfs-15135618433184-1.jpg",
+              "sha256": "1bbc74f8452d1363fb038f49cbd12c6a9232bee6c75a5a019755b363d2f7d329",
+              "sourceUrl": "https://cdn.shopify.com/s/files/1/1527/0993/files/LAVAL-SCULPTED-SLEEVE-TSHIRT-CREAM-LILLI-1580_31fe8b9b-32e0-48a1-a8ae-ec5b8529e5af.jpg?v=1756281552"
+            },
+            {
+              "url": "/merchant/tfs-15135618433184-2.jpg",
+              "sha256": "29aefe01e2cd283f81bca194e111c28b361af7d6ec28d6c1527615fd9fdb08c6",
+              "sourceUrl": "https://cdn.shopify.com/s/files/1/1527/0993/files/LAVAL-SCULPTED-SLEEVE-TSHIRT-CREAM-LILLI-1572_ea0ffc4a-9a3d-44fd-a1bb-6176aa19da16.jpg?v=1756281552"
+            }
+          ]
+        },
+        {
+          "id": "tfs-14662803357856",
+          "name": "Pomona Shorts - Burgundy",
+          "slot": "bottom",
+          "kind": "pants",
+          "priceCents": 82800,
+          "stock": 1,
+          "color": "Burgundy",
+          "hex": "#98928a",
+          "hue": 34.28571428571427,
+          "saturation": 0.06363636363636367,
+          "lightness": 0.5686274509803921,
+          "styles": [
+            "简约大气",
+            "冷酷中性"
+          ],
+          "scenes": [
+            "日常休闲",
+            "拍照出片"
+          ],
+          "formality": 2,
+          "fit": "regular",
+          "pattern": "solid",
+          "seasons": [
+            "春",
+            "夏",
+            "秋"
+          ],
+          "images": [
+            "/merchant/tfs-14662803357856-0.jpg",
+            "/merchant/tfs-14662803357856-1.jpg",
+            "/merchant/tfs-14662803357856-2.jpg"
+          ],
+          "sourceImages": [
+            "https://cdn.shopify.com/s/files/1/1527/0993/files/POMONA-SHORTS-BURGUNDY-ATIKAH-0002_da53e7b6-226c-4299-95dc-fbf755696fc9.jpg?v=1729549590",
+            "https://cdn.shopify.com/s/files/1/1527/0993/files/POMONA-SHORTS-BURGUNDY-ATIKAH-0008_7c724381-6ba8-4c14-a234-41230acac056.jpg?v=1729549591",
+            "https://cdn.shopify.com/s/files/1/1527/0993/files/POMONA-SHORTS-BURGUNDY-ATIKAH-0001_b0efa6fc-52c6-4125-9164-6a869dd51829.jpg?v=1729549591"
+          ],
+          "source": "merchant",
+          "sourceUrl": "https://thefrankieshop.com/products/pomona-shorts-burgundy",
+          "sourceTitle": "Pomona Shorts - Burgundy",
+          "description": "Color: Burgundy\nLightweight cotton fabric\nRegular fit\nMini length\nFlared silhouette\nHigh rise\nElasticated waistband with drawstring\nSlip-on style\nUnlined\n100% Cotton\nBy The Frankie Shop.\nMade in South Korea",
+          "sizes": [
+            "XS/S",
+            "M/L"
+          ],
+          "currency": "CNY",
+          "priceNote": "官网 USD 价格快照；人民币仅按 1 USD=7.20 CNY 估算，不含运费税费，非实时汇率",
+          "merchant": "The Frankie Shop",
+          "merchantProductId": "14662803357856",
+          "merchantCategory": "Shorts",
+          "originalCurrency": "USD",
+          "originalPrice": "115.00",
+          "originalPriceCents": 11500,
+          "exchangeRate": "7.20",
+          "capturedAt": "2026-10-14T13:08:08.307009+00:00",
+          "availability": "available",
+          "stockNote": "官网有可售规格；库存件数未公开，stock=1 仅为可售标志",
+          "materials": [
+            "Lightweight cotton fabric",
+            "100% Cotton"
+          ],
+          "attributeSource": "品类/介绍/颜色/面料来自官网；风格、场景与色相为可校正的规则标注",
+          "variants": [
+            {
+              "id": "51699939868832",
+              "sku": "SHFS159767110203",
+              "size": "XS/S",
+              "available": true,
+              "price": "115.00",
+              "currency": "USD"
+            },
+            {
+              "id": "51699940098208",
+              "sku": "SHFS159777110205",
+              "size": "M/L",
+              "available": true,
+              "price": "115.00",
+              "currency": "USD"
+            }
+          ],
+          "imageRole": "model-or-detail",
+          "cacheFiles": [
+            {
+              "url": "/merchant/tfs-14662803357856-0.jpg",
+              "sha256": "846fd2569d7029b5206d641b9622fe6ce29f99e1a9a0eb405d9ce61157f04e58",
+              "sourceUrl": "https://cdn.shopify.com/s/files/1/1527/0993/files/POMONA-SHORTS-BURGUNDY-ATIKAH-0002_da53e7b6-226c-4299-95dc-fbf755696fc9.jpg?v=1729549590"
+            },
+            {
+              "url": "/merchant/tfs-14662803357856-1.jpg",
+              "sha256": "88dd47f84f3bb01b0b99ba9deedd761a6cf483fa1345887c4b9a52c1334d3d34",
+              "sourceUrl": "https://cdn.shopify.com/s/files/1/1527/0993/files/POMONA-SHORTS-BURGUNDY-ATIKAH-0008_7c724381-6ba8-4c14-a234-41230acac056.jpg?v=1729549591"
+            },
+            {
+              "url": "/merchant/tfs-14662803357856-2.jpg",
+              "sha256": "1cef75488a8959d3ef5812d0e285649101eefc52c2a21874bd9566f85595e4b2",
+              "sourceUrl": "https://cdn.shopify.com/s/files/1/1527/0993/files/POMONA-SHORTS-BURGUNDY-ATIKAH-0001_b0efa6fc-52c6-4125-9164-6a869dd51829.jpg?v=1729549591"
+            }
+          ]
+        },
+        {
+          "id": "tfs-15119194620064",
+          "name": "A.Emery The Maude Flats - Patent Black",
+          "slot": "shoes",
+          "kind": "loafer",
+          "priceCents": 194400,
+          "stock": 1,
+          "color": "黑色",
+          "hex": "#29292b",
+          "hue": 240,
+          "saturation": 0.023809523809523805,
+          "lightness": 0.1647058823529412,
+          "styles": [
+            "简约大气",
+            "冷酷中性"
+          ],
+          "scenes": [
+            "日常休闲",
+            "拍照出片"
+          ],
+          "formality": 2,
+          "fit": "regular",
+          "pattern": "solid",
+          "seasons": [
+            "春",
+            "夏",
+            "秋"
+          ],
+          "images": [
+            "/merchant/tfs-15119194620064-0.jpg",
+            "/merchant/tfs-15119194620064-1.jpg",
+            "/merchant/tfs-15119194620064-2.jpg"
+          ],
+          "sourceImages": [
+            "https://cdn.shopify.com/s/files/1/1527/0993/files/A-EMERY-THE-MAUDE-FLAT-BLACK-PATENT-LEATHER-BRAND-1.jpg?v=1753172739",
+            "https://cdn.shopify.com/s/files/1/1527/0993/files/A-EMERY-THE-MAUDE-FLAT-BLACK-PATENT-LEATHER-BRAND-4.jpg?v=1753172739",
+            "https://cdn.shopify.com/s/files/1/1527/0993/files/A-EMERY-THE-MAUDE-FLAT-BLACK-PATENT-LEATHER-BRAND-5.jpg?v=1753172739"
+          ],
+          "source": "merchant",
+          "sourceUrl": "https://thefrankieshop.com/products/a-emery-the-maude-flats-patent-black",
+          "sourceTitle": "A.Emery The Maude Flats - Patent Black",
+          "description": "Color: Patent Black\nPatent leather ballet flats\nPointed toe\nSlingback silhouette\nLong lace-up straps around the ankle\nUpper: 100% Cow Leather\nInsole: 100% Sheep Leather\nOutsole: 100% Buffalo Leather\nBy A.Emery.\nMade in India",
+          "sizes": [
+            "36 EU"
+          ],
+          "currency": "CNY",
+          "priceNote": "官网 USD 价格快照；人民币仅按 1 USD=7.20 CNY 估算，不含运费税费，非实时汇率",
+          "merchant": "The Frankie Shop",
+          "merchantProductId": "15119194620064",
+          "merchantCategory": "Shoes",
+          "originalCurrency": "USD",
+          "originalPrice": "270.00",
+          "originalPriceCents": 27000,
+          "exchangeRate": "7.20",
+          "capturedAt": "2026-10-14T13:08:08.307009+00:00",
+          "availability": "available",
+          "stockNote": "官网有可售规格；库存件数未公开，stock=1 仅为可售标志",
+          "materials": [
+            "Patent leather ballet flats",
+            "Upper: 100% Cow Leather",
+            "Insole: 100% Sheep Leather",
+            "Outsole: 100% Buffalo Leather"
+          ],
+          "attributeSource": "品类/介绍/颜色/面料来自官网；风格、场景与色相为可校正的规则标注",
+          "variants": [
+            {
+              "id": "52597019082912",
+              "sku": "FLAE001481001302",
+              "size": "36 EU",
+              "available": true,
+              "price": "270.00",
+              "currency": "USD"
+            },
+            {
+              "id": "52597019115680",
+              "sku": "FLAE001481001305",
+              "size": "37 EU",
+              "available": false,
+              "price": "270.00",
+              "currency": "USD"
+            },
+            {
+              "id": "52597019148448",
+              "sku": "FLAE001481001306",
+              "size": "38 EU",
+              "available": false,
+              "price": "270.00",
+              "currency": "USD"
+            },
+            {
+              "id": "52597019181216",
+              "sku": "FLAE001481001308",
+              "size": "39 EU",
+              "available": false,
+              "price": "270.00",
+              "currency": "USD"
+            },
+            {
+              "id": "52597019213984",
+              "sku": "FLAE001481001310",
+              "size": "40 EU",
+              "available": false,
+              "price": "270.00",
+              "currency": "USD"
+            }
+          ],
+          "imageRole": "model-or-detail",
+          "cacheFiles": [
+            {
+              "url": "/merchant/tfs-15119194620064-0.jpg",
+              "sha256": "fd97f63f42b406f826b482f784bc87af9bea5d4ebc67c27f28d6aeffbb3746e4",
+              "sourceUrl": "https://cdn.shopify.com/s/files/1/1527/0993/files/A-EMERY-THE-MAUDE-FLAT-BLACK-PATENT-LEATHER-BRAND-1.jpg?v=1753172739"
+            },
+            {
+              "url": "/merchant/tfs-15119194620064-1.jpg",
+              "sha256": "d9912bae0806c1710a161b410b6cf7cb8fc47ad93ad4f367e6d726410e790e7a",
+              "sourceUrl": "https://cdn.shopify.com/s/files/1/1527/0993/files/A-EMERY-THE-MAUDE-FLAT-BLACK-PATENT-LEATHER-BRAND-4.jpg?v=1753172739"
+            },
+            {
+              "url": "/merchant/tfs-15119194620064-2.jpg",
+              "sha256": "52d51f859a686d66a07421e09fde201659074fc177a07e7b752d0de1122f7429",
+              "sourceUrl": "https://cdn.shopify.com/s/files/1/1527/0993/files/A-EMERY-THE-MAUDE-FLAT-BLACK-PATENT-LEATHER-BRAND-5.jpg?v=1753172739"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ecbac4f0-db79-4cb4-a5ce-1b39537c47fc",
+      "productIds": [
+        "tfs-15135618433184",
+        "tfs-15830335914144",
+        "tfs-15129428164768"
+      ],
+      "totalCents": 475200,
+      "purchaseCents": 414000,
+      "score": 89,
+      "breakdown": {
+        "color": 0.9266666666666667,
+        "style": 1,
+        "scene": 1,
+        "proportion": 0.85,
+        "pattern": 1,
+        "preference": 0.7208583378331088,
+        "value": 0.655
+      },
+      "reasons": [
+        "以Laval Sculpted Sleeve T-Shirt - Cream为中心，简约大气贯穿整套。",
+        "颜色协调 93 分，场景适配 100 分；用纯色留白突出主要单品。",
+        "待购 ¥4140，1 件已有衣物不重复计价。"
+      ],
+      "formula": "上衣 ＋ 下装 ＋ 鞋履",
+      "products": [
+        {
+          "id": "tfs-15135618433184",
+          "name": "Laval Sculpted Sleeve T-Shirt - Cream",
+          "slot": "top",
+          "kind": "tee",
+          "priceCents": 61200,
+          "stock": 1,
+          "color": "奶油白",
+          "hex": "#ece5d7",
+          "hue": 40,
+          "saturation": 0.3559322033898307,
+          "lightness": 0.884313725490196,
+          "styles": [
+            "创意设计",
+            "简约大气"
+          ],
+          "scenes": [
+            "日常休闲",
+            "拍照出片"
+          ],
+          "formality": 2,
+          "fit": "loose",
+          "pattern": "solid",
+          "seasons": [
+            "春",
+            "夏",
+            "秋"
+          ],
+          "images": [
+            "/merchant/tfs-15135618433184-0.jpg",
+            "/merchant/tfs-15135618433184-1.jpg",
+            "/merchant/tfs-15135618433184-2.jpg"
+          ],
+          "sourceImages": [
+            "https://cdn.shopify.com/s/files/1/1527/0993/files/LAVAL-SCULPTED-SLEEVE-TSHIRT-CREAM-PACKSHOT.jpg?v=1756281552",
+            "https://cdn.shopify.com/s/files/1/1527/0993/files/LAVAL-SCULPTED-SLEEVE-TSHIRT-CREAM-LILLI-1580_31fe8b9b-32e0-48a1-a8ae-ec5b8529e5af.jpg?v=1756281552",
+            "https://cdn.shopify.com/s/files/1/1527/0993/files/LAVAL-SCULPTED-SLEEVE-TSHIRT-CREAM-LILLI-1572_ea0ffc4a-9a3d-44fd-a1bb-6176aa19da16.jpg?v=1756281552"
+          ],
+          "source": "merchant",
+          "sourceUrl": "https://thefrankieshop.com/products/laval-sculpted-sleeve-t-shirt-cream",
+          "sourceTitle": "Laval Sculpted Sleeve T-Shirt - Cream",
+          "description": "Color: Cream\nLightweight cotton blend fabric\nRelaxed fit\nRound neck\nStructured shoulders\nShort sleeves\nSlip-on style\nUnlined\n60% Cotton 35% Polyester 5% Elastane\nDry Clean\nBy The Frankie Shop.\nMade in South Korea",
+          "sizes": [
+            "S"
+          ],
+          "currency": "CNY",
+          "priceNote": "官网 USD 价格快照；人民币仅按 1 USD=7.20 CNY 估算，不含运费税费，非实时汇率",
+          "merchant": "The Frankie Shop",
+          "merchantProductId": "15135618433184",
+          "merchantCategory": "T-Shirt",
+          "originalCurrency": "USD",
+          "originalPrice": "85.00",
+          "originalPriceCents": 8500,
+          "exchangeRate": "7.20",
+          "capturedAt": "2026-10-14T13:08:08.307009+00:00",
+          "availability": "available",
+          "stockNote": "官网有可售规格；库存件数未公开，stock=1 仅为可售标志",
+          "materials": [
+            "Lightweight cotton blend fabric",
+            "60% Cotton 35% Polyester 5% Elastane"
+          ],
+          "attributeSource": "品类/介绍/颜色/面料来自官网；风格、场景与色相为可校正的规则标注",
+          "variants": [
+            {
+              "id": "52653532446880",
+              "sku": "TSFS215600060103",
+              "size": "S",
+              "available": true,
+              "price": "85.00",
+              "currency": "USD"
+            },
+            {
+              "id": "52653532479648",
+              "sku": "TSFS215600060104",
+              "size": "M",
+              "available": false,
+              "price": "85.00",
+              "currency": "USD"
+            },
+            {
+              "id": "52653532512416",
+              "sku": "TSFS215600060105",
+              "size": "L",
+              "available": false,
+              "price": "85.00",
+              "currency": "USD"
+            }
+          ],
+          "imageRole": "packshot",
+          "cacheFiles": [
+            {
+              "url": "/merchant/tfs-15135618433184-0.jpg",
+              "sha256": "a7ea1017ad1d851de3a34b6371e6f09cbf13c81bf4763a2aa51e3e5dd030cbb2",
+              "sourceUrl": "https://cdn.shopify.com/s/files/1/1527/0993/files/LAVAL-SCULPTED-SLEEVE-TSHIRT-CREAM-PACKSHOT.jpg?v=1756281552"
+            },
+            {
+              "url": "/merchant/tfs-15135618433184-1.jpg",
+              "sha256": "1bbc74f8452d1363fb038f49cbd12c6a9232bee6c75a5a019755b363d2f7d329",
+              "sourceUrl": "https://cdn.shopify.com/s/files/1/1527/0993/files/LAVAL-SCULPTED-SLEEVE-TSHIRT-CREAM-LILLI-1580_31fe8b9b-32e0-48a1-a8ae-ec5b8529e5af.jpg?v=1756281552"
+            },
+            {
+              "url": "/merchant/tfs-15135618433184-2.jpg",
+              "sha256": "29aefe01e2cd283f81bca194e111c28b361af7d6ec28d6c1527615fd9fdb08c6",
+              "sourceUrl": "https://cdn.shopify.com/s/files/1/1527/0993/files/LAVAL-SCULPTED-SLEEVE-TSHIRT-CREAM-LILLI-1572_ea0ffc4a-9a3d-44fd-a1bb-6176aa19da16.jpg?v=1756281552"
+            }
+          ]
+        },
+        {
+          "id": "tfs-15830335914144",
+          "name": "Kate Mini Shorts - Grey Melange",
+          "slot": "bottom",
+          "kind": "pants",
+          "priceCents": 118800,
+          "stock": 1,
+          "color": "灰色",
+          "hex": "#808086",
+          "hue": 240,
+          "saturation": 0.0241935483870968,
+          "lightness": 0.5137254901960784,
+          "styles": [
+            "简约大气",
+            "冷酷中性"
+          ],
+          "scenes": [
+            "日常休闲",
+            "拍照出片"
+          ],
+          "formality": 2,
+          "fit": "regular",
+          "pattern": "solid",
+          "seasons": [
+            "春",
+            "夏",
+            "秋"
+          ],
+          "images": [
+            "/merchant/tfs-15830335914144-0.jpg",
+            "/merchant/tfs-15830335914144-1.jpg",
+            "/merchant/tfs-15830335914144-2.jpg"
+          ],
+          "sourceImages": [
+            "https://cdn.shopify.com/s/files/1/1527/0993/files/KATE-MINI-SHORTS-GREY-MELANGE-V2-PACKSHOT.jpg?v=1791811142",
+            "https://cdn.shopify.com/s/files/1/1527/0993/files/KATE-MINI-SHORTS-GREY-MELANGE-NYALUAK-0543-W.jpg?v=1787153545",
+            "https://cdn.shopify.com/s/files/1/1527/0993/files/KATE-MINI-SHORTS-GREY-MELANGE-NYALUAK-0534-V2-W.jpg?v=1791879925"
+          ],
+          "source": "merchant",
+          "sourceUrl": "https://thefrankieshop.com/products/kate-mini-shorts-grey-melange",
+          "sourceTitle": "Kate Mini Shorts - Grey Melange",
+          "description": "Color: Grey Melange\nSoft brushed fabric\nRegular fit\nMini length\nBelt loops\nSide seam pockets\nBack faux welt pockets\nZip fly\nHook and bar closure\nLined\n64% Viscose 25% Cotton 7% Polyester 4% Other Fibers\nDry Clean\nBy The Frankie Shop\nMade in Bulgaria",
+          "sizes": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL"
+          ],
+          "currency": "CNY",
+          "priceNote": "官网 USD 价格快照；人民币仅按 1 USD=7.20 CNY 估算，不含运费税费，非实时汇率",
+          "merchant": "The Frankie Shop",
+          "merchantProductId": "15830335914144",
+          "merchantCategory": "Shorts",
+          "originalCurrency": "USD",
+          "originalPrice": "165.00",
+          "originalPriceCents": 16500,
+          "exchangeRate": "7.20",
+          "capturedAt": "2026-10-14T13:08:08.307009+00:00",
+          "availability": "available",
+          "stockNote": "官网有可售规格；库存件数未公开，stock=1 仅为可售标志",
+          "materials": [
+            "64% Viscose 25% Cotton 7% Polyester 4% Other Fibers"
+          ],
+          "attributeSource": "品类/介绍/颜色/面料来自官网；风格、场景与色相为可校正的规则标注",
+          "variants": [
+            {
+              "id": "58720442351776",
+              "sku": "SHFS230581070101",
+              "size": "XXS",
+              "available": false,
+              "price": "165.00",
+              "currency": "USD"
+            },
+            {
+              "id": "58720442384544",
+              "sku": "SHFS230581070102",
+              "size": "XS",
+              "available": true,
+              "price": "165.00",
+              "currency": "USD"
+            },
+            {
+              "id": "58720442417312",
+              "sku": "SHFS230581070103",
+              "size": "S",
+              "available": true,
+              "price": "165.00",
+              "currency": "USD"
+            },
+            {
+              "id": "58720442450080",
+              "sku": "SHFS230581070104",
+              "size": "M",
+              "available": true,
+              "price": "165.00",
+              "currency": "USD"
+            },
+            {
+              "id": "58720442482848",
+              "sku": "SHFS230581070105",
+              "size": "L",
+              "available": true,
+              "price": "165.00",
+              "currency": "USD"
+            },
+            {
+              "id": "58720442515616",
+              "sku": "SHFS230581070106",
+              "size": "XL",
+              "available": true,
+              "price": "165.00",
+              "currency": "USD"
+            }
+          ],
+          "imageRole": "packshot",
+          "cacheFiles": [
+            {
+              "url": "/merchant/tfs-15830335914144-0.jpg",
+              "sha256": "0dca891e284c156aaccab7cca5a7857afdf7c6feec7155d7ad91a2b985d25b69",
+              "sourceUrl": "https://cdn.shopify.com/s/files/1/1527/0993/files/KATE-MINI-SHORTS-GREY-MELANGE-V2-PACKSHOT.jpg?v=1791811142"
+            },
+            {
+              "url": "/merchant/tfs-15830335914144-1.jpg",
+              "sha256": "bbd56f79eae0facb59d416e2a6c2f64ee5c27b4789472d06f6388731e0b498c5",
+              "sourceUrl": "https://cdn.shopify.com/s/files/1/1527/0993/files/KATE-MINI-SHORTS-GREY-MELANGE-NYALUAK-0543-W.jpg?v=1787153545"
+            },
+            {
+              "url": "/merchant/tfs-15830335914144-2.jpg",
+              "sha256": "34b9682293bcf57cdcd0543b69f34b7d36b14a5a28c99941058a5254885917ba",
+              "sourceUrl": "https://cdn.shopify.com/s/files/1/1527/0993/files/KATE-MINI-SHORTS-GREY-MELANGE-NYALUAK-0534-V2-W.jpg?v=1791879925"
+            }
+          ]
+        },
+        {
+          "id": "tfs-15129428164768",
+          "name": "Low Classic Shearling Moccasin - Dark Brown",
+          "slot": "shoes",
+          "kind": "loafer",
+          "priceCents": 295200,
+          "stock": 1,
+          "color": "棕色",
+          "hex": "#765443",
+          "hue": 19.999999999999996,
+          "saturation": 0.27567567567567564,
+          "lightness": 0.36274509803921573,
+          "styles": [
+            "简约大气",
+            "冷酷中性"
+          ],
+          "scenes": [
+            "日常休闲",
+            "拍照出片"
+          ],
+          "formality": 2,
+          "fit": "regular",
+          "pattern": "solid",
+          "seasons": [
+            "春",
+            "夏",
+            "秋"
+          ],
+          "images": [
+            "/merchant/tfs-15129428164768-0.jpg",
+            "/merchant/tfs-15129428164768-1.jpg",
+            "/merchant/tfs-15129428164768-2.jpg"
+          ],
+          "sourceImages": [
+            "https://cdn.shopify.com/s/files/1/1527/0993/files/LOW-CLASSIC-SHEARLING-MOCCASIN-DARK-BROWN-2_f7353607-18de-403f-a64a-893a0811fe7e.jpg?v=1761127530",
+            "https://cdn.shopify.com/s/files/1/1527/0993/files/LOW-CLASSIC-SHEARLING-MOCCASIN-DARK-BROWN-3_d0451b85-a551-4c82-b2ca-98d183377322.jpg?v=1761127530",
+            "https://cdn.shopify.com/s/files/1/1527/0993/files/LOW-CLASSIC-SHEARLING-MOCCASIN-DARK-BROWN-1.jpg?v=1761127530"
+          ],
+          "source": "merchant",
+          "sourceUrl": "https://thefrankieshop.com/products/low-classic-shearling-moccasin-dark-brown",
+          "sourceTitle": "Low Classic Shearling Moccasin - Dark Brown",
+          "description": "Color: Dark Brown\nFuzzy shearling leather\nRound toe\nBrand embossed charm\nFaux fur lining\nLace-up closure\n100% Cow Leather\nLining: 100% Polyester\nBy Low Classic. Exclusive to The Frankie Shop\nMade in South Korea",
+          "sizes": [
+            "37 EU",
+            "38 EU"
+          ],
+          "currency": "CNY",
+          "priceNote": "官网 USD 价格快照；人民币仅按 1 USD=7.20 CNY 估算，不含运费税费，非实时汇率",
+          "merchant": "The Frankie Shop",
+          "merchantProductId": "15129428164768",
+          "merchantCategory": "Shoes",
+          "originalCurrency": "USD",
+          "originalPrice": "410.00",
+          "originalPriceCents": 41000,
+          "exchangeRate": "7.20",
+          "capturedAt": "2026-10-14T13:08:08.307009+00:00",
+          "availability": "available",
+          "stockNote": "官网有可售规格；库存件数未公开，stock=1 仅为可售标志",
+          "materials": [
+            "Fuzzy shearling leather",
+            "100% Cow Leather",
+            "Lining: 100% Polyester"
+          ],
+          "attributeSource": "品类/介绍/颜色/面料来自官网；风格、场景与色相为可校正的规则标注",
+          "variants": [
+            {
+              "id": "52968799043744",
+              "sku": "FLLW002372001305",
+              "size": "36 EU",
+              "available": false,
+              "price": "410.00",
+              "currency": "USD"
+            },
+            {
+              "id": "52630212640928",
+              "sku": "FLLW002372001306",
+              "size": "37 EU",
+              "available": true,
+              "price": "410.00",
+              "currency": "USD"
+            },
+            {
+              "id": "52630212673696",
+              "sku": "FLLW002372001308",
+              "size": "38 EU",
+              "available": true,
+              "price": "410.00",
+              "currency": "USD"
+            },
+            {
+              "id": "52630212706464",
+              "sku": "FLLW002372001310",
+              "size": "39 EU",
+              "available": false,
+              "price": "410.00",
+              "currency": "USD"
+            },
+            {
+              "id": "52630212739232",
+              "sku": null,
+              "size": "40 EU",
+              "available": false,
+              "price": "410.00",
+              "currency": "USD"
+            }
+          ],
+          "imageRole": "model-or-detail",
+          "cacheFiles": [
+            {
+              "url": "/merchant/tfs-15129428164768-0.jpg",
+              "sha256": "51545f31091b5f19e9a029feb2b3a12187617b2c1c8f187d1dda225dd8892980",
+              "sourceUrl": "https://cdn.shopify.com/s/files/1/1527/0993/files/LOW-CLASSIC-SHEARLING-MOCCASIN-DARK-BROWN-2_f7353607-18de-403f-a64a-893a0811fe7e.jpg?v=1761127530"
+            },
+            {
+              "url": "/merchant/tfs-15129428164768-1.jpg",
+              "sha256": "f33530eede106de8a9b46b29b01a4dc64d336e9ffa5e6cd3f4bf4d2dae2ea9c8",
+              "sourceUrl": "https://cdn.shopify.com/s/files/1/1527/0993/files/LOW-CLASSIC-SHEARLING-MOCCASIN-DARK-BROWN-3_d0451b85-a551-4c82-b2ca-98d183377322.jpg?v=1761127530"
+            },
+            {
+              "url": "/merchant/tfs-15129428164768-2.jpg",
+              "sha256": "d2032302046cd9d4e61d4435905c29c3b0db1d588598e2af7bdaec0564bad62b",
+              "sourceUrl": "https://cdn.shopify.com/s/files/1/1527/0993/files/LOW-CLASSIC-SHEARLING-MOCCASIN-DARK-BROWN-1.jpg?v=1761127530"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fefa9195-475a-4b48-abc8-1014d28a3a43",
+      "productIds": [
+        "tfs-15135618433184",
+        "tfs-15685225054368",
+        "tfs-15129426002080"
+      ],
+      "totalCents": 716400,
+      "purchaseCents": 655200,
+      "score": 88,
+      "breakdown": {
+        "color": 0.92,
+        "style": 1,
+        "scene": 1,
+        "proportion": 0.85,
+        "pattern": 1,
+        "preference": 0.7208583378331088,
+        "value": 0.45399999999999996
+      },
+      "reasons": [
+        "以Laval Sculpted Sleeve T-Shirt - Cream为中心，简约大气贯穿整套。",
+        "颜色协调 92 分，场景适配 100 分；用纯色留白突出主要单品。",
+        "待购 ¥6552，1 件已有衣物不重复计价。"
+      ],
+      "formula": "上衣 ＋ 下装 ＋ 鞋履",
+      "products": [
+        {
+          "id": "tfs-15135618433184",
+          "name": "Laval Sculpted Sleeve T-Shirt - Cream",
+          "slot": "top",
+          "kind": "tee",
+          "priceCents": 61200,
+          "stock": 1,
+          "color": "奶油白",
+          "hex": "#ece5d7",
+          "hue": 40,
+          "saturation": 0.3559322033898307,
+          "lightness": 0.884313725490196,
+          "styles": [
+            "创意设计",
+            "简约大气"
+          ],
+          "scenes": [
+            "日常休闲",
+            "拍照出片"
+          ],
+          "formality": 2,
+          "fit": "loose",
+          "pattern": "solid",
+          "seasons": [
+            "春",
+            "夏",
+            "秋"
+          ],
+          "images": [
+            "/merchant/tfs-15135618433184-0.jpg",
+            "/merchant/tfs-15135618433184-1.jpg",
+            "/merchant/tfs-15135618433184-2.jpg"
+          ],
+          "sourceImages": [
+            "https://cdn.shopify.com/s/files/1/1527/0993/files/LAVAL-SCULPTED-SLEEVE-TSHIRT-CREAM-PACKSHOT.jpg?v=1756281552",
+            "https://cdn.shopify.com/s/files/1/1527/0993/files/LAVAL-SCULPTED-SLEEVE-TSHIRT-CREAM-LILLI-1580_31fe8b9b-32e0-48a1-a8ae-ec5b8529e5af.jpg?v=1756281552",
+            "https://cdn.shopify.com/s/files/1/1527/0993/files/LAVAL-SCULPTED-SLEEVE-TSHIRT-CREAM-LILLI-1572_ea0ffc4a-9a3d-44fd-a1bb-6176aa19da16.jpg?v=1756281552"
+          ],
+          "source": "merchant",
+          "sourceUrl": "https://thefrankieshop.com/products/laval-sculpted-sleeve-t-shirt-cream",
+          "sourceTitle": "Laval Sculpted Sleeve T-Shirt - Cream",
+          "description": "Color: Cream\nLightweight cotton blend fabric\nRelaxed fit\nRound neck\nStructured shoulders\nShort sleeves\nSlip-on style\nUnlined\n60% Cotton 35% Polyester 5% Elastane\nDry Clean\nBy The Frankie Shop.\nMade in South Korea",
+          "sizes": [
+            "S"
+          ],
+          "currency": "CNY",
+          "priceNote": "官网 USD 价格快照；人民币仅按 1 USD=7.20 CNY 估算，不含运费税费，非实时汇率",
+          "merchant": "The Frankie Shop",
+          "merchantProductId": "15135618433184",
+          "merchantCategory": "T-Shirt",
+          "originalCurrency": "USD",
+          "originalPrice": "85.00",
+          "originalPriceCents": 8500,
+          "exchangeRate": "7.20",
+          "capturedAt": "2026-10-14T13:08:08.307009+00:00",
+          "availability": "available",
+          "stockNote": "官网有可售规格；库存件数未公开，stock=1 仅为可售标志",
+          "materials": [
+            "Lightweight cotton blend fabric",
+            "60% Cotton 35% Polyester 5% Elastane"
+          ],
+          "attributeSource": "品类/介绍/颜色/面料来自官网；风格、场景与色相为可校正的规则标注",
+          "variants": [
+            {
+              "id": "52653532446880",
+              "sku": "TSFS215600060103",
+              "size": "S",
+              "available": true,
+              "price": "85.00",
+              "currency": "USD"
+            },
+            {
+              "id": "52653532479648",
+              "sku": "TSFS215600060104",
+              "size": "M",
+              "available": false,
+              "price": "85.00",
+              "currency": "USD"
+            },
+            {
+              "id": "52653532512416",
+              "sku": "TSFS215600060105",
+              "size": "L",
+              "available": false,
+              "price": "85.00",
+              "currency": "USD"
+            }
+          ],
+          "imageRole": "packshot",
+          "cacheFiles": [
+            {
+              "url": "/merchant/tfs-15135618433184-0.jpg",
+              "sha256": "a7ea1017ad1d851de3a34b6371e6f09cbf13c81bf4763a2aa51e3e5dd030cbb2",
+              "sourceUrl": "https://cdn.shopify.com/s/files/1/1527/0993/files/LAVAL-SCULPTED-SLEEVE-TSHIRT-CREAM-PACKSHOT.jpg?v=1756281552"
+            },
+            {
+              "url": "/merchant/tfs-15135618433184-1.jpg",
+              "sha256": "1bbc74f8452d1363fb038f49cbd12c6a9232bee6c75a5a019755b363d2f7d329",
+              "sourceUrl": "https://cdn.shopify.com/s/files/1/1527/0993/files/LAVAL-SCULPTED-SLEEVE-TSHIRT-CREAM-LILLI-1580_31fe8b9b-32e0-48a1-a8ae-ec5b8529e5af.jpg?v=1756281552"
+            },
+            {
+              "url": "/merchant/tfs-15135618433184-2.jpg",
+              "sha256": "29aefe01e2cd283f81bca194e111c28b361af7d6ec28d6c1527615fd9fdb08c6",
+              "sourceUrl": "https://cdn.shopify.com/s/files/1/1527/0993/files/LAVAL-SCULPTED-SLEEVE-TSHIRT-CREAM-LILLI-1572_ea0ffc4a-9a3d-44fd-a1bb-6176aa19da16.jpg?v=1756281552"
+            }
+          ]
+        },
+        {
+          "id": "tfs-15685225054368",
+          "name": "Kate Mini Shorts - Brown Melange",
+          "slot": "bottom",
+          "kind": "pants",
+          "priceCents": 129600,
+          "stock": 1,
+          "color": "棕色",
+          "hex": "#765443",
+          "hue": 19.999999999999996,
+          "saturation": 0.27567567567567564,
+          "lightness": 0.36274509803921573,
+          "styles": [
+            "简约大气",
+            "冷酷中性"
+          ],
+          "scenes": [
+            "日常休闲",
+            "拍照出片"
+          ],
+          "formality": 2,
+          "fit": "regular",
+          "pattern": "solid",
+          "seasons": [
+            "春",
+            "秋",
+            "冬"
+          ],
+          "images": [
+            "/merchant/tfs-15685225054368-0.jpg",
+            "/merchant/tfs-15685225054368-1.jpg",
+            "/merchant/tfs-15685225054368-2.jpg"
+          ],
+          "sourceImages": [
+            "https://cdn.shopify.com/s/files/1/1527/0993/files/KATE-MINI-SHORTS-BROWN-MELANGE-v2-PACKSHOT.jpg?v=1790871087",
+            "https://cdn.shopify.com/s/files/1/1527/0993/files/KATE-MINI-SHORTS-BROWN-MELANGE-DARIA-1240-W.jpg?v=1791558447",
+            "https://cdn.shopify.com/s/files/1/1527/0993/files/KATE-MINI-SHORTS-BROWN-MELANGE-DARIA-1229-W.jpg?v=1790596349"
+          ],
+          "source": "merchant",
+          "sourceUrl": "https://thefrankieshop.com/products/kate-mini-shorts-brown-melange",
+          "sourceTitle": "Kate Mini Shorts - Brown Melange",
+          "description": "Color: Brown Melange\nSoft brushed fabric\nRegular fit\nMini length\nBelt loops\nSide seam pockets\nBack faux welt pockets\nZip fly\nHook and bar closure\n80% Polyester 10% Wool 10% Other Fibers\nLining: 100% Polyester\nDry Clean\nBy The Frankie Shop\nMade in France",
+          "sizes": [
+            "XS",
+            "S",
+            "M",
+            "L"
+          ],
+          "currency": "CNY",
+          "priceNote": "官网 USD 价格快照；人民币仅按 1 USD=7.20 CNY 估算，不含运费税费，非实时汇率",
+          "merchant": "The Frankie Shop",
+          "merchantProductId": "15685225054368",
+          "merchantCategory": "Shorts",
+          "originalCurrency": "USD",
+          "originalPrice": "180.00",
+          "originalPriceCents": 18000,
+          "exchangeRate": "7.20",
+          "capturedAt": "2026-10-14T13:08:08.307009+00:00",
+          "availability": "available",
+          "stockNote": "官网有可售规格；库存件数未公开，stock=1 仅为可售标志",
+          "materials": [
+            "80% Polyester 10% Wool 10% Other Fibers",
+            "Lining: 100% Polyester"
+          ],
+          "attributeSource": "品类/介绍/颜色/面料来自官网；风格、场景与色相为可校正的规则标注",
+          "variants": [
+            {
+              "id": "56998475432096",
+              "sku": "SHFS229582860101",
+              "size": "XXS",
+              "available": false,
+              "price": "180.00",
+              "currency": "USD"
+            },
+            {
+              "id": "56998475464864",
+              "sku": "SHFS229582860102",
+              "size": "XS",
+              "available": true,
+              "price": "180.00",
+              "currency": "USD"
+            },
+            {
+              "id": "56998475497632",
+              "sku": "SHFS229582860103",
+              "size": "S",
+              "available": true,
+              "price": "180.00",
+              "currency": "USD"
+            },
+            {
+              "id": "56998475530400",
+              "sku": "SHFS229582860104",
+              "size": "M",
+              "available": true,
+              "price": "180.00",
+              "currency": "USD"
+            },
+            {
+              "id": "56998475563168",
+              "sku": "SHFS229582860105",
+              "size": "L",
+              "available": true,
+              "price": "180.00",
+              "currency": "USD"
+            },
+            {
+              "id": "56998475595936",
+              "sku": "SHFS229582860106",
+              "size": "XL",
+              "available": false,
+              "price": "180.00",
+              "currency": "USD"
+            }
+          ],
+          "imageRole": "packshot",
+          "cacheFiles": [
+            {
+              "url": "/merchant/tfs-15685225054368-0.jpg",
+              "sha256": "e30de0b2859ec1cacc26cc91c2ed6e027b8b4f6e3633891440ad6c07a1298199",
+              "sourceUrl": "https://cdn.shopify.com/s/files/1/1527/0993/files/KATE-MINI-SHORTS-BROWN-MELANGE-v2-PACKSHOT.jpg?v=1790871087"
+            },
+            {
+              "url": "/merchant/tfs-15685225054368-1.jpg",
+              "sha256": "e148a96c98bfa198480170149d804f470cd67ae9f684b6851b2ef02526f371ec",
+              "sourceUrl": "https://cdn.shopify.com/s/files/1/1527/0993/files/KATE-MINI-SHORTS-BROWN-MELANGE-DARIA-1240-W.jpg?v=1791558447"
+            },
+            {
+              "url": "/merchant/tfs-15685225054368-2.jpg",
+              "sha256": "58b847a808d19ba082bdc9fe5264e75e701a82836286df2a57903fb7957f4281",
+              "sourceUrl": "https://cdn.shopify.com/s/files/1/1527/0993/files/KATE-MINI-SHORTS-BROWN-MELANGE-DARIA-1229-W.jpg?v=1790596349"
+            }
+          ]
+        },
+        {
+          "id": "tfs-15129426002080",
+          "name": "By Malene Birger Romma Shearling Boots - Tobacco Brown",
+          "slot": "shoes",
+          "kind": "boots",
+          "priceCents": 525600,
+          "stock": 1,
+          "color": "烟草棕",
+          "hex": "#876448",
+          "hue": 26.666666666666664,
+          "saturation": 0.30434782608695654,
+          "lightness": 0.40588235294117647,
+          "styles": [
+            "简约大气",
+            "冷酷中性"
+          ],
+          "scenes": [
+            "日常休闲",
+            "拍照出片"
+          ],
+          "formality": 2,
+          "fit": "regular",
+          "pattern": "solid",
+          "seasons": [
+            "春",
+            "夏",
+            "秋"
+          ],
+          "images": [
+            "/merchant/tfs-15129426002080-0.jpg",
+            "/merchant/tfs-15129426002080-1.jpg",
+            "/merchant/tfs-15129426002080-2.jpg"
+          ],
+          "sourceImages": [
+            "https://cdn.shopify.com/s/files/1/1527/0993/files/BY-MALENE-BIRGER-ROMMA-BOTS-TOBACCO-BROWN-BRAND-6_35f5de2e-84f3-4bc8-b1e6-6f26b5b13aa5.jpg?v=1767771931",
+            "https://cdn.shopify.com/s/files/1/1527/0993/files/BY-MALENE-BIRGER-ROMMA-BOTS-TOBACCO-BROWN-BRAND-1_29d61ca4-2bd3-4097-85bd-47068dda148a.jpg?v=1767771931",
+            "https://cdn.shopify.com/s/files/1/1527/0993/files/BY-MALENE-BIRGER-ROMMA-BOTS-TOBACCO-BROWN-BRAND-3_34bd173a-92da-4dd2-a5fa-b36c3c9cc0ef.jpg?v=1767771931"
+          ],
+          "source": "merchant",
+          "sourceUrl": "https://thefrankieshop.com/products/by-malene-birger-romma-shearling-boots-tobacco-brown",
+          "sourceTitle": "By Malene Birger Romma Shearling Boots - Tobacco Brown",
+          "description": "Color: Tobacco Brown\nSoft suede leather\nAnkle length\nRounded toe\nAdjustable front tie straps\nSlip-on style\nSoft shearling lined\n100% Cow Suede\nBy Malene Birger. Made in Italy",
+          "sizes": [
+            "37 EU",
+            "38 EU",
+            "39 EU"
+          ],
+          "currency": "CNY",
+          "priceNote": "官网 USD 价格快照；人民币仅按 1 USD=7.20 CNY 估算，不含运费税费，非实时汇率",
+          "merchant": "The Frankie Shop",
+          "merchantProductId": "15129426002080",
+          "merchantCategory": "Boots",
+          "originalCurrency": "USD",
+          "originalPrice": "730.00",
+          "originalPriceCents": 73000,
+          "exchangeRate": "7.20",
+          "capturedAt": "2026-10-14T13:08:08.307009+00:00",
+          "availability": "available",
+          "stockNote": "官网有可售规格；库存件数未公开，stock=1 仅为可售标志",
+          "materials": [
+            "Soft suede leather",
+            "100% Cow Suede"
+          ],
+          "attributeSource": "品类/介绍/颜色/面料来自官网；风格、场景与色相为可校正的规则标注",
+          "variants": [
+            {
+              "id": "52630206054560",
+              "sku": "BOBM006442251305",
+              "size": "37 EU",
+              "available": true,
+              "price": "730.00",
+              "currency": "USD"
+            },
+            {
+              "id": "52630206087328",
+              "sku": "BOBM006442251306",
+              "size": "38 EU",
+              "available": true,
+              "price": "730.00",
+              "currency": "USD"
+            },
+            {
+              "id": "52630206120096",
+              "sku": "BOBM006442251308",
+              "size": "39 EU",
+              "available": true,
+              "price": "730.00",
+              "currency": "USD"
+            },
+            {
+              "id": "52630206152864",
+              "sku": "BOBM006442251310",
+              "size": "40 EU",
+              "available": false,
+              "price": "730.00",
+              "currency": "USD"
+            }
+          ],
+          "imageRole": "model-or-detail",
+          "cacheFiles": [
+            {
+              "url": "/merchant/tfs-15129426002080-0.jpg",
+              "sha256": "f406bcd873ad1c56beb3aab744e11be98587f2c4288d4420a867aeb5c0aa9551",
+              "sourceUrl": "https://cdn.shopify.com/s/files/1/1527/0993/files/BY-MALENE-BIRGER-ROMMA-BOTS-TOBACCO-BROWN-BRAND-6_35f5de2e-84f3-4bc8-b1e6-6f26b5b13aa5.jpg?v=1767771931"
+            },
+            {
+              "url": "/merchant/tfs-15129426002080-1.jpg",
+              "sha256": "b32c636b79643975224b539514063a18327fb887b1451b0523e94d7ea6cb81cd",
+              "sourceUrl": "https://cdn.shopify.com/s/files/1/1527/0993/files/BY-MALENE-BIRGER-ROMMA-BOTS-TOBACCO-BROWN-BRAND-1_29d61ca4-2bd3-4097-85bd-47068dda148a.jpg?v=1767771931"
+            },
+            {
+              "url": "/merchant/tfs-15129426002080-2.jpg",
+              "sha256": "79f3756dcfb76893c28ed0bc2fb4f6b667952eeb3977cb4a36a9f867f00c13db",
+              "sourceUrl": "https://cdn.shopify.com/s/files/1/1527/0993/files/BY-MALENE-BIRGER-ROMMA-BOTS-TOBACCO-BROWN-BRAND-3_34bd173a-92da-4dd2-a5fa-b36c3c9cc0ef.jpg?v=1767771931"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

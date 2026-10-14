@@ -5,16 +5,21 @@ import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {runWorkflow,validateOutfit,ownedProducts} from '../src/agent/workflow.ts';
 import {createProvider} from './model.mjs';
+import {createRenderManager} from './render.mjs';
+import {priceForSize} from '../src/agent/prices.ts';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 try{process.loadEnvFile(path.join(root,'.env'))}catch(e){if(e.code!=='ENOENT')throw e}
 const read=(name)=>JSON.parse(readFileSync(path.join(root,'data',name),'utf8').replace(/^\uFEFF/,''));
-const catalog=[...read('studio-catalog.json'),...read('external-catalog.json')];const seeds=read('users.json');
+const catalog=read('merchant-catalog.json');const seeds=read('merchant-users.json');
 const provider=createProvider();mkdirSync(path.join(root,'.runtime'),{recursive:true});
 const db=new DatabaseSync(process.env.OUTFIT_DB_PATH||path.join(root,'.runtime','outfit.sqlite'));
 db.exec('PRAGMA journal_mode=WAL; CREATE TABLE IF NOT EXISTS products(id TEXT PRIMARY KEY,json TEXT NOT NULL); CREATE TABLE IF NOT EXISTS events(id TEXT PRIMARY KEY,user_id TEXT NOT NULL,json TEXT NOT NULL); CREATE TABLE IF NOT EXISTS sessions(id TEXT PRIMARY KEY,user_id TEXT NOT NULL,version INTEGER NOT NULL,json TEXT NOT NULL); CREATE TABLE IF NOT EXISTS carts(id TEXT PRIMARY KEY,user_id TEXT NOT NULL,json TEXT NOT NULL);');
+db.exec("DELETE FROM products WHERE id LIKE 'studio-%' OR id LIKE 'dj-%'");
 for(const p of catalog)db.prepare('INSERT OR REPLACE INTO products VALUES (?,?)').run(p.id,JSON.stringify(p));
 for(const u of seeds)for(const e of u.events)db.prepare('INSERT OR IGNORE INTO events VALUES (?,?,?)').run(e.id,u.id,JSON.stringify(e));
-const users=()=>seeds.map(u=>({...u,events:db.prepare('SELECT json FROM events WHERE user_id=? ORDER BY rowid').all(u.id).map(row=>JSON.parse(row.json))}));
+const activeIds=new Set(catalog.map(p=>p.id));
+const renders=createRenderManager({root,db,catalog});
+const users=()=>seeds.map(u=>({...u,events:db.prepare('SELECT json FROM events WHERE user_id=? ORDER BY rowid').all(u.id).map(row=>JSON.parse(row.json)).filter(e=>activeIds.has(e.productId))}));
 const locks=new Map();
 function send(res,status,value){res.writeHead(status,{'Content-Type':'application/json; charset=utf-8','Cache-Control':'no-store'});res.end(JSON.stringify(value))}
 async function body(req){let text='';for await(const chunk of req){text+=chunk;if(text.length>65536)throw new Error('请求内容过大')}try{return JSON.parse(text)}catch{throw new Error('请求不是有效 JSON')}}
@@ -22,10 +27,16 @@ function requireUser(id){const user=users().find(u=>u.id===id);if(!user)throw ne
 const server=http.createServer(async(req,res)=>{
  try{
   const url=new URL(req.url,'http://127.0.0.1');
-  if(req.method==='GET'&&url.pathname==='/api/bootstrap')return send(res,200,{catalog,users:users(),mode:provider?'llm':'offline',storage:'sqlite',modelConfigured:!!provider});
+  if(req.method==='GET'&&url.pathname==='/api/bootstrap')return send(res,200,{catalog,users:users(),mode:provider?'llm':'offline',storage:'sqlite',modelConfigured:!!provider,renderConfigured:renders.configured});
+  if(req.method==='GET'&&url.pathname.startsWith('/api/render-jobs/')){const job=renders.get(url.pathname.split('/').at(-1),url.searchParams.get('userId'));return send(res,job?200:404,job??{error:'任务不存在'});}
+  if(req.method==='GET'&&url.pathname.startsWith('/api/render-assets/')){const asset=renders.asset(url.pathname.split('/').at(-1));if(!asset||!existsSync(asset))return send(res,404,{error:'图片不存在'});res.writeHead(200,{'Content-Type':{'.png':'image/png','.jpg':'image/jpeg','.webp':'image/webp'}[path.extname(asset)]});createReadStream(asset).pipe(res);return;}
   if(req.method==='POST'){
    const origin=req.headers.origin;if(origin&&!/^http:\/\/(127\.0\.0\.1|localhost)(:\d+)?$/.test(origin))return send(res,403,{error:'仅允许本地演示来源'});
    const input=await body(req);
+   if(url.pathname==='/api/render-jobs'){
+    requireUser(input.userId);const row=db.prepare('SELECT json FROM sessions WHERE id=? AND user_id=?').get(input.sessionId,input.userId);if(!row)throw new Error('会话不存在');
+    return send(res,202,renders.create(input,JSON.parse(row.json)));
+   }
    if(url.pathname==='/api/events'){
     requireUser(input.userId);
     if(!catalog.some(p=>p.id===input.productId)||!['view','favorite','purchase','dismiss'].includes(input.type))throw new Error('无效行为事件');
@@ -62,7 +73,7 @@ const server=http.createServer(async(req,res)=>{
     if(validateOutfit(outfit.productIds,catalog,session.state,ownedProducts(user)).length)throw new Error('搭配已失效，请重新推荐');
     if(!Array.isArray(input.items)||!input.items.length)throw new Error('请选择待购商品');
     if(new Set(input.items.map(i=>i.productId)).size!==input.items.length)throw new Error('购物清单包含重复商品');
-    const items=input.items.map(i=>{const p=catalog.find(p=>p.id===i.productId);if(!p||!outfit.productIds.includes(p.id)||!p.sizes.includes(i.size)||!Number.isInteger(i.quantity)||i.quantity<1||i.quantity>p.stock)throw new Error('请检查商品、尺码和库存');return {...i,priceCents:p.priceCents}});
+    const items=input.items.map(i=>{const p=catalog.find(p=>p.id===i.productId);if(!p||!outfit.productIds.includes(p.id)||!p.sizes.includes(i.size)||!Number.isInteger(i.quantity)||i.quantity<1||i.quantity>p.stock)throw new Error('请检查商品、尺码和可售快照');return {...i,priceCents:priceForSize(p,i.size)}});
     const cart={id:crypto.randomUUID(),items,totalCents:items.reduce((s,i)=>s+i.priceCents*i.quantity,0),simulated:true,createdAt:new Date().toISOString()};
     db.prepare('INSERT INTO carts VALUES (?,?,?)').run(cart.id,user.id,JSON.stringify(cart));return send(res,200,cart);
    }

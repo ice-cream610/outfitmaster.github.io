@@ -69,5 +69,5 @@ test('cancelled model refinement does not advance state or return a result',asyn
  const first=await runWorkflow(request,catalog,users);const controller=new AbortController();
  const provider={mode:'llm',async parse(){controller.abort();return {budgetCents:80000}}};
  await assert.rejects(()=>runWorkflow({...request,state:first.state,message:'预算改为八百'},catalog,users,provider,controller.signal),{name:'AbortError'});
- assert.equal(first.state.version,1);assert.equal(first.state.constraints.budgetCents,90000);
+ assert.equal(first.state.version,1);assert.equal(first.state.constraints.budgetCents,defaultConstraints.budgetCents);
 });
