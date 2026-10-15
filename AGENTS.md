@@ -8,3 +8,6 @@
 - Treat generated images as needing visual review. Passing functional tests does not establish character identity or garment fidelity.
 - Keep prompts, intermediate data and execution traces inspectable for the user's learning. Explain material tradeoffs before replacing a core approach.
 - Use local Git commits; do not push or publish without the user's instruction.
+- The user-approved studio is the original `src/App.tsx` / `src/styles.css` design. The active adaptation in `src/curated/` must retain its three columns, two-column product cards, look shelf, history arrows, purchase bar, chat and appearance modal. Do not redesign these without a user request.
+- Default to long straight hair with rectangular glasses. Appearance changes must preserve the selected clothes. Never put E1/E2 or reference-sheet labels inside displayed character assets.
+- The active demo uses finite pre-generated looks. Offer only replacement combinations with an exact matching asset. Commerce entry is storefront → product detail → AI studio. Keep experimental arbitrary recommendation work separately accessible at `#agent-lab`.

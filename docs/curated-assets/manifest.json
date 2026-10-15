@@ -1,0 +1,517 @@
+{
+  "created": "2026-10-15",
+  "provider": "Built-in image_gen",
+  "mode": "reference-guided generation followed by targeted image editing",
+  "identityReference": "public/reference/e/identity-sheet.png",
+  "status": "Developer visually inspected; user visual acceptance pending. Outfit illustration, not fit prediction.",
+  "counts": {
+    "products": 18,
+    "clothingCombinations": 12,
+    "renderStates": 24
+  },
+  "families": [
+    {
+      "id": "office",
+      "label": "知性通勤",
+      "grid": {
+        "columns": 3,
+        "rows": 2
+      },
+      "base": {
+        "prompt": "docs/curated-assets/office-base-prompt.txt",
+        "inputs": [
+          {
+            "path": "public/reference/e/identity-sheet.png"
+          },
+          {
+            "productId": "tfs-15621033951392",
+            "path": "public/merchant/tfs-15621033951392-0.jpg",
+            "merchantUrl": "https://thefrankieshop.com/products/newark-double-breasted-blazer-grey-white-pinstripe"
+          },
+          {
+            "productId": "tfs-15830335553696",
+            "path": "public/merchant/tfs-15830335553696-0.jpg",
+            "merchantUrl": "https://thefrankieshop.com/products/mela-fitted-shirt-light-blue"
+          },
+          {
+            "productId": "tfs-15621034115232",
+            "path": "public/merchant/tfs-15621034115232-0.jpg",
+            "merchantUrl": "https://thefrankieshop.com/products/brickell-trousers-grey-white-pinstripe"
+          },
+          {
+            "productId": "tfs-15119194620064",
+            "path": "public/merchant/tfs-15119194620064-0.jpg",
+            "merchantUrl": "https://thefrankieshop.com/products/a-emery-the-maude-flats-patent-black"
+          }
+        ],
+        "output": {
+          "path": "docs/curated-assets/office-base.png",
+          "sha256": "6771f2383a3db5c65df14d40cdff602b522bc1ab10eafee8e955d4191151c8e1",
+          "width": 1254,
+          "height": 1254
+        }
+      },
+      "edit": {
+        "prompt": "docs/curated-assets/office-edit-prompt.txt",
+        "inputs": [
+          {
+            "path": "docs/curated-assets/office-base.png"
+          },
+          {
+            "productId": "tfs-7567394209952",
+            "path": "public/merchant/tfs-7567394209952-0.jpg",
+            "merchantUrl": "https://thefrankieshop.com/products/isabella-denim-pants-medium-wash"
+          },
+          {
+            "productId": "tfs-15135618433184",
+            "path": "public/merchant/tfs-15135618433184-0.jpg",
+            "merchantUrl": "https://thefrankieshop.com/products/laval-sculpted-sleeve-t-shirt-cream"
+          }
+        ],
+        "output": {
+          "path": "public/curated/office-v1.png",
+          "sha256": "3429b4c8d97196c289812881ca92037d15a76b6821038312455ad2fc0dc0826d",
+          "width": 1254,
+          "height": 1254
+        }
+      },
+      "cells": [
+        {
+          "cell": 0,
+          "id": "office-0",
+          "avatar": "long",
+          "productIds": [
+            "tfs-15621033951392",
+            "tfs-15830335553696",
+            "tfs-15621034115232",
+            "tfs-15119194620064"
+          ]
+        },
+        {
+          "cell": 1,
+          "id": "office-1",
+          "avatar": "long",
+          "productIds": [
+            "tfs-15621033951392",
+            "tfs-15830335553696",
+            "tfs-7567394209952",
+            "tfs-15119194620064"
+          ]
+        },
+        {
+          "cell": 2,
+          "id": "office-2",
+          "avatar": "long",
+          "productIds": [
+            "tfs-15621033951392",
+            "tfs-15135618433184",
+            "tfs-15621034115232",
+            "tfs-15119194620064"
+          ]
+        },
+        {
+          "cell": 3,
+          "id": "office-3",
+          "avatar": "short",
+          "productIds": [
+            "tfs-15621033951392",
+            "tfs-15830335553696",
+            "tfs-15621034115232",
+            "tfs-15119194620064"
+          ]
+        },
+        {
+          "cell": 4,
+          "id": "office-4",
+          "avatar": "curly",
+          "productIds": [
+            "tfs-15621033951392",
+            "tfs-15830335553696",
+            "tfs-15621034115232",
+            "tfs-15119194620064"
+          ]
+        },
+        {
+          "cell": 5,
+          "id": "office-5",
+          "avatar": "pony",
+          "productIds": [
+            "tfs-15621033951392",
+            "tfs-15830335553696",
+            "tfs-15621034115232",
+            "tfs-15119194620064"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "casual",
+      "label": "松弛日常",
+      "grid": {
+        "columns": 3,
+        "rows": 2
+      },
+      "base": {
+        "prompt": "docs/curated-assets/casual-base-prompt.txt",
+        "inputs": [
+          {
+            "path": "public/reference/e/identity-sheet.png"
+          },
+          {
+            "productId": "tfs-15135618433184",
+            "path": "public/merchant/tfs-15135618433184-0.jpg",
+            "merchantUrl": "https://thefrankieshop.com/products/laval-sculpted-sleeve-t-shirt-cream"
+          },
+          {
+            "productId": "tfs-14662803357856",
+            "path": "public/merchant/tfs-14662803357856-0.jpg",
+            "merchantUrl": "https://thefrankieshop.com/products/pomona-shorts-burgundy"
+          },
+          {
+            "productId": "tfs-15119194620064",
+            "path": "public/merchant/tfs-15119194620064-0.jpg",
+            "merchantUrl": "https://thefrankieshop.com/products/a-emery-the-maude-flats-patent-black"
+          }
+        ],
+        "output": {
+          "path": "docs/curated-assets/casual-base.png",
+          "sha256": "1f55f96633ecd463b9d6f4a2a43198c76c84ea5de47127903db034eb47b20af1",
+          "width": 1254,
+          "height": 1254
+        }
+      },
+      "edit": {
+        "prompt": "docs/curated-assets/casual-edit-prompt.txt",
+        "inputs": [
+          {
+            "path": "docs/curated-assets/casual-base.png"
+          },
+          {
+            "productId": "tfs-15830335914144",
+            "path": "public/merchant/tfs-15830335914144-0.jpg",
+            "merchantUrl": "https://thefrankieshop.com/products/kate-mini-shorts-grey-melange"
+          },
+          {
+            "productId": "tfs-15899158642848",
+            "path": "public/merchant/tfs-15899158642848-0.jpg",
+            "merchantUrl": "https://thefrankieshop.com/products/vila-asymmetric-polo-shirt-cream"
+          }
+        ],
+        "output": {
+          "path": "public/curated/casual-v1.png",
+          "sha256": "bb623957590edadfb67b120144ee555be9233547823048c1baa0845f9af3690c",
+          "width": 1254,
+          "height": 1254
+        }
+      },
+      "cells": [
+        {
+          "cell": 0,
+          "id": "casual-0",
+          "avatar": "long",
+          "productIds": [
+            "tfs-15135618433184",
+            "tfs-14662803357856",
+            "tfs-15119194620064"
+          ]
+        },
+        {
+          "cell": 1,
+          "id": "casual-1",
+          "avatar": "long",
+          "productIds": [
+            "tfs-15135618433184",
+            "tfs-15830335914144",
+            "tfs-15119194620064"
+          ]
+        },
+        {
+          "cell": 2,
+          "id": "casual-2",
+          "avatar": "long",
+          "productIds": [
+            "tfs-15899158642848",
+            "tfs-14662803357856",
+            "tfs-15119194620064"
+          ]
+        },
+        {
+          "cell": 3,
+          "id": "casual-3",
+          "avatar": "short",
+          "productIds": [
+            "tfs-15135618433184",
+            "tfs-14662803357856",
+            "tfs-15119194620064"
+          ]
+        },
+        {
+          "cell": 4,
+          "id": "casual-4",
+          "avatar": "curly",
+          "productIds": [
+            "tfs-15135618433184",
+            "tfs-14662803357856",
+            "tfs-15119194620064"
+          ]
+        },
+        {
+          "cell": 5,
+          "id": "casual-5",
+          "avatar": "pony",
+          "productIds": [
+            "tfs-15135618433184",
+            "tfs-14662803357856",
+            "tfs-15119194620064"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "knit",
+      "label": "温柔秋日",
+      "grid": {
+        "columns": 3,
+        "rows": 2
+      },
+      "base": {
+        "prompt": "docs/curated-assets/knit-base-prompt.txt",
+        "inputs": [
+          {
+            "path": "public/reference/e/identity-sheet.png"
+          },
+          {
+            "productId": "tfs-15830335750304",
+            "path": "public/merchant/tfs-15830335750304-0.jpg",
+            "merchantUrl": "https://thefrankieshop.com/products/gala-padded-knit-turtleneck-brown"
+          },
+          {
+            "productId": "tfs-15830336372896",
+            "path": "public/merchant/tfs-15830336372896-0.jpg",
+            "merchantUrl": "https://thefrankieshop.com/products/samantha-crackled-faux-leather-zip-skirt-dark-navy"
+          },
+          {
+            "productId": "tfs-15829183332512",
+            "path": "public/merchant/tfs-15829183332512-0.jpg",
+            "merchantUrl": "https://thefrankieshop.com/products/le-monde-beryl-camille-tall-boots-black"
+          }
+        ],
+        "output": {
+          "path": "docs/curated-assets/knit-base.png",
+          "sha256": "4cc7f9742ff4a098a01d243a2b889407cc7bcfbdef316e4da69408b7743bb217",
+          "width": 1254,
+          "height": 1254
+        }
+      },
+      "edit": {
+        "prompt": "docs/curated-assets/knit-edit-prompt.txt",
+        "inputs": [
+          {
+            "path": "docs/curated-assets/knit-base.png"
+          },
+          {
+            "productId": "tfs-15685221843104",
+            "path": "public/merchant/tfs-15685221843104-0.jpg",
+            "merchantUrl": "https://thefrankieshop.com/products/dune-panelled-pants-dark-brown"
+          },
+          {
+            "productId": "tfs-15830334406816",
+            "path": "public/merchant/tfs-15830334406816-0.jpg",
+            "merchantUrl": "https://thefrankieshop.com/products/gala-padded-knit-turtleneck-navy"
+          }
+        ],
+        "output": {
+          "path": "public/curated/knit-v1.png",
+          "sha256": "aa77bd4d4a6600831115b4c15ef432cce5d2457b3dffcf9c79c80abb8d687596",
+          "width": 1254,
+          "height": 1254
+        }
+      },
+      "cells": [
+        {
+          "cell": 0,
+          "id": "knit-0",
+          "avatar": "long",
+          "productIds": [
+            "tfs-15830335750304",
+            "tfs-15830336372896",
+            "tfs-15829183332512"
+          ]
+        },
+        {
+          "cell": 1,
+          "id": "knit-1",
+          "avatar": "long",
+          "productIds": [
+            "tfs-15830335750304",
+            "tfs-15685221843104",
+            "tfs-15829183332512"
+          ]
+        },
+        {
+          "cell": 2,
+          "id": "knit-2",
+          "avatar": "long",
+          "productIds": [
+            "tfs-15830334406816",
+            "tfs-15830336372896",
+            "tfs-15829183332512"
+          ]
+        },
+        {
+          "cell": 3,
+          "id": "knit-3",
+          "avatar": "short",
+          "productIds": [
+            "tfs-15830335750304",
+            "tfs-15830336372896",
+            "tfs-15829183332512"
+          ]
+        },
+        {
+          "cell": 4,
+          "id": "knit-4",
+          "avatar": "curly",
+          "productIds": [
+            "tfs-15830335750304",
+            "tfs-15830336372896",
+            "tfs-15829183332512"
+          ]
+        },
+        {
+          "cell": 5,
+          "id": "knit-5",
+          "avatar": "pony",
+          "productIds": [
+            "tfs-15830335750304",
+            "tfs-15830336372896",
+            "tfs-15829183332512"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "outdoor",
+      "label": "轻装周末",
+      "grid": {
+        "columns": 3,
+        "rows": 2
+      },
+      "base": {
+        "prompt": "docs/curated-assets/outdoor-base-prompt.txt",
+        "inputs": [
+          {
+            "path": "public/reference/e/identity-sheet.png"
+          },
+          {
+            "productId": "tfs-15803170357408",
+            "path": "public/merchant/tfs-15803170357408-0.jpg",
+            "merchantUrl": "https://thefrankieshop.com/products/sora-funnel-neck-anorak-pale-olive"
+          },
+          {
+            "productId": "tfs-15803170422944",
+            "path": "public/merchant/tfs-15803170422944-0.jpg",
+            "merchantUrl": "https://thefrankieshop.com/products/sora-track-pants-pale-olive"
+          },
+          {
+            "productId": "tfs-15129428164768",
+            "path": "public/merchant/tfs-15129428164768-0.jpg",
+            "merchantUrl": "https://thefrankieshop.com/products/low-classic-shearling-moccasin-dark-brown"
+          }
+        ],
+        "output": {
+          "path": "docs/curated-assets/outdoor-base.png",
+          "sha256": "4def0ffb379173cc0d0c8dbd0782be6b9177d235883c6590e1f9f4233c27eaba",
+          "width": 1254,
+          "height": 1254
+        }
+      },
+      "edit": {
+        "prompt": "docs/curated-assets/outdoor-edit-prompt.txt",
+        "inputs": [
+          {
+            "path": "docs/curated-assets/outdoor-base.png"
+          },
+          {
+            "productId": "tfs-7567394209952",
+            "path": "public/merchant/tfs-7567394209952-0.jpg",
+            "merchantUrl": "https://thefrankieshop.com/products/isabella-denim-pants-medium-wash"
+          },
+          {
+            "productId": "tfs-15899159003296",
+            "path": "public/merchant/tfs-15899159003296-0.jpg",
+            "merchantUrl": "https://thefrankieshop.com/products/orival-short-trench-dark-olive"
+          }
+        ],
+        "output": {
+          "path": "public/curated/outdoor-v1.png",
+          "sha256": "2d489105ed5622001404b644c4fca500947d3b0bfadc730e5d446d4d0ec0db2b",
+          "width": 1254,
+          "height": 1254
+        }
+      },
+      "cells": [
+        {
+          "cell": 0,
+          "id": "outdoor-0",
+          "avatar": "long",
+          "productIds": [
+            "tfs-15803170357408",
+            "tfs-15803170422944",
+            "tfs-15129428164768"
+          ]
+        },
+        {
+          "cell": 1,
+          "id": "outdoor-1",
+          "avatar": "long",
+          "productIds": [
+            "tfs-15803170357408",
+            "tfs-7567394209952",
+            "tfs-15129428164768"
+          ]
+        },
+        {
+          "cell": 2,
+          "id": "outdoor-2",
+          "avatar": "long",
+          "productIds": [
+            "tfs-15899159003296",
+            "tfs-15803170422944",
+            "tfs-15129428164768"
+          ]
+        },
+        {
+          "cell": 3,
+          "id": "outdoor-3",
+          "avatar": "short",
+          "productIds": [
+            "tfs-15803170357408",
+            "tfs-15803170422944",
+            "tfs-15129428164768"
+          ]
+        },
+        {
+          "cell": 4,
+          "id": "outdoor-4",
+          "avatar": "curly",
+          "productIds": [
+            "tfs-15803170357408",
+            "tfs-15803170422944",
+            "tfs-15129428164768"
+          ]
+        },
+        {
+          "cell": 5,
+          "id": "outdoor-5",
+          "avatar": "pony",
+          "productIds": [
+            "tfs-15803170357408",
+            "tfs-15803170422944",
+            "tfs-15129428164768"
+          ]
+        }
+      ]
+    }
+  ]
+}
