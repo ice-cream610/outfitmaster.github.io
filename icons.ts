@@ -1,0 +1,20 @@
+// Import only the icons this application uses to keep build traversal small.
+export {default as ArrowUpRight} from 'lucide-react/dist/esm/icons/arrow-up-right.js';
+export {default as ArrowUp} from 'lucide-react/dist/esm/icons/arrow-up.js';
+export {default as ArrowLeft} from 'lucide-react/dist/esm/icons/arrow-left.js';
+export {default as ChevronLeft} from 'lucide-react/dist/esm/icons/chevron-left.js';
+export {default as ChevronRight} from 'lucide-react/dist/esm/icons/chevron-right.js';
+export {default as SlidersHorizontal} from 'lucide-react/dist/esm/icons/sliders-horizontal.js';
+export {default as LockKeyhole} from 'lucide-react/dist/esm/icons/lock-keyhole.js';
+export {default as LockKeyholeOpen} from 'lucide-react/dist/esm/icons/lock-keyhole-open.js';
+export {default as Heart} from 'lucide-react/dist/esm/icons/heart.js';
+export {default as ShoppingBag} from 'lucide-react/dist/esm/icons/shopping-bag.js';
+export {default as Sparkles} from 'lucide-react/dist/esm/icons/sparkles.js';
+export {default as History} from 'lucide-react/dist/esm/icons/history.js';
+export {default as RotateCcw} from 'lucide-react/dist/esm/icons/rotate-ccw.js';
+export {default as Check} from 'lucide-react/dist/esm/icons/check.js';
+export {default as Shirt} from 'lucide-react/dist/esm/icons/shirt.js';
+export {default as MessageCircle} from 'lucide-react/dist/esm/icons/message-circle.js';
+export {default as Bookmark} from 'lucide-react/dist/esm/icons/bookmark.js';
+export {default as Settings2} from 'lucide-react/dist/esm/icons/settings-2.js';
+export {default as X} from 'lucide-react/dist/esm/icons/x.js';

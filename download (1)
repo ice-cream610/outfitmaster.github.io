@@ -1,0 +1,19 @@
+node_modules/
+dist/
+.env*
+!.env.example
+test-results/
+*.log
+
+# Local tooling, test output and operating system files
+.idea/
+.vscode/
+coverage/
+.DS_Store
+Thumbs.db
+*.tsbuildinfo
+.npm-cache/
+
+# Hosting provider local state
+.vercel/
+.netlify/
