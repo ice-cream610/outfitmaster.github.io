@@ -1,0 +1,16 @@
+{
+  "importedAt": "2026-10-14T11:00:20.519703+00:00",
+  "source": "https://dummyjson.com/docs/products",
+  "productCount": 30,
+  "polyvoreSampleCount": 0,
+  "notes": [
+    "DummyJSON is placeholder data, not a live merchant catalog.",
+    "External style/scene labels are coarse importer heuristics, not verified fashion annotations.",
+    "Polyvore samples are research references; no training was performed.",
+    "No external fashion photos are redistributed beyond public demo product packshots."
+  ],
+  "errors": [
+    "Polyvore train_no_dup.json: HTTPError",
+    "Polyvore train.json: HTTPError"
+  ]
+}

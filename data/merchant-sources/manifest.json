@@ -1,0 +1,24 @@
+{
+  "capturedAt": "2026-10-14T13:08:08.307009+00:00",
+  "merchant": "The Frankie Shop",
+  "source": "https://thefrankieshop.com/products.json?limit=250",
+  "sourceCurrency": "USD",
+  "currencyEvidence": "https://thefrankieshop.com/products/laval-sculpted-sleeve-t-shirt-cream",
+  "productCount": 92,
+  "categories": {
+    "top": 24,
+    "bottom": 24,
+    "outer": 22,
+    "dress": 5,
+    "shoes": 5,
+    "bag": 12
+  },
+  "cachedPhotoCount": 276,
+  "errors": [],
+  "notes": [
+    "Real merchant storefront snapshot, not DummyJSON or synthetic products.",
+    "Images remain merchant photographs; no clothing redraw, background removal or cutout substitution.",
+    "Original USD prices retained; CNY is clearly labelled estimate.",
+    "Availability snapshots are not inventory quantities or live purchase guarantees."
+  ]
+}

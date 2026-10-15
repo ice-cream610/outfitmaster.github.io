@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "errors": [],
+  "checks": [
+    "shop → real multi-photo product detail → studio only through detail CTA",
+    "single SKU replacement swaps only that garment and its matching image; purchase selection is independent",
+    "original appearance panel restored; change hair/glasses without changing clothing",
+    "saved full outfit and simulated SKU checkout",
+    "four style families all show ready effects and preserve long-hair selection",
+    "impossible budget preserves previous valid look",
+    "390px mobile details/studio; refresh-safe product URLs"
+  ]
+}

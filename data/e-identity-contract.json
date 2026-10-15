@@ -1,0 +1,21 @@
+{
+  "version": "e-original-v1",
+  "source": "user-supplied E1-E4 identity sheet",
+  "path": "public/reference/e/identity-sheet.png",
+  "sha256": "bab9d249f5435082bbd5dba6a3341a23f670e431d06657ae855a51e5c7b87051",
+  "avatars": [
+    "short",
+    "long",
+    "curly",
+    "pony"
+  ],
+  "traits": [
+    "方圆脸与饱满脸颊",
+    "半眯眼、清楚的眼白和深色瞳孔",
+    "小三角鼻与小嘴",
+    "温暖浅桃肤色",
+    "深巧克力棕发色",
+    "3.5—4头身、紧凑有体积的身体"
+  ],
+  "redesignAuthorized": false
+}

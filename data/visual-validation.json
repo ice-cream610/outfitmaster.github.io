@@ -1,0 +1,12 @@
+{
+ "status":"generated-unreviewed",
+ "characterReference":"/reference/e/identity-sheet.png",
+ "image":"/reference/e/coat-validation-v1.png",
+ "inputImages":["/reference/products/user-coat-front.jpg","/reference/products/user-coat-side.jpg"],
+ "title":"用户提供的大衣 × 原 E1：材质与身份验证样例",
+ "notAnOutfitResult":true,
+ "note":"用户上传的服饰参考尚未关联商家商品ID、报价与SKU。此图仅作视觉技术验证，不能冒充商品库任意组合的效果，也未通过用户验收。",
+ "provider":"built-in image_gen",
+ "reviewChecks":["脸型、眼神、发色和头身比例","格纹颜色、大小与对齐","毛领形状与毛绒质感","门襟纽扣数量与位置","衣长、袖口、口袋和面料厚薄"],
+ "knownRisks":["按钮数量和门襟位置可能偏移","参考人像中被遮挡的服饰结构无法完整确定"]
+}

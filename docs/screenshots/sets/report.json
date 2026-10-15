@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "checks": [
+    "distinct whole-outfit tab with 12 long-hair covers",
+    "combined preferences persist and strict whole-set budget gives recoverable empty state",
+    "same-outfit gallery, unchecked piece stays in preview, selected SKU checkout, persisted cart and confirmed order",
+    "detail refresh, product return path and exact variant image coverage",
+    "390px mobile navigation and layouts; individual-product studio flow preserved"
+  ],
+  "errors": []
+}
