@@ -24,6 +24,9 @@ export function replaceProduct(o:Outfit,oldId:string,newId:string):Outfit{
 }
 export function buildOutfit(req:GenerationRequest):Outfit{
  let next=structuredClone(req.base);
+ // An explicit manual reset of the outfit/preferences takes precedence over
+ // the previous conversation's saved requirements. Appearance-only edits do not.
+ if(req.lookId||req.conditions)delete next.chatPreferences;
  if(req.lookId){
   const look=looks.find(l=>l.id===req.lookId);if(!look)throw new Error('搭配不存在');
   if(next.lockedIds.some(id=>!look.productIds.includes(id))&&!req.confirmUnlock)throw new Error('整套切换需要先确认解锁');

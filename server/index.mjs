@@ -1,10 +1,12 @@
 import http from 'node:http';
 import {DatabaseSync} from 'node:sqlite';
-import {readFileSync,mkdirSync,existsSync,statSync,createReadStream} from 'node:fs';
+import {readFileSync,writeFileSync,mkdirSync,existsSync,statSync,createReadStream} from 'node:fs';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {runWorkflow,validateOutfit,ownedProducts} from '../src/agent/workflow.ts';
 import {createProvider} from './model.mjs';
+import {createQwenProvider} from './qwen.mjs';
+import {runCuratedChat,createProductImageLoader} from './curated-chat.mjs';
 import {createRenderManager} from './render.mjs';
 import {priceForSize} from '../src/agent/prices.ts';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
@@ -12,6 +14,9 @@ try{process.loadEnvFile(path.join(root,'.env'))}catch(e){if(e.code!=='ENOENT')th
 const read=(name)=>JSON.parse(readFileSync(path.join(root,'data',name),'utf8').replace(/^\uFEFF/,''));
 const catalog=read('merchant-catalog.json');const seeds=read('merchant-users.json');
 const provider=createProvider();mkdirSync(path.join(root,'.runtime'),{recursive:true});
+const qwen=createQwenProvider();
+const curatedChat={provider:qwen,loadImage:createProductImageLoader(root),onTrace:trace=>writeFileSync(path.join(root,'.runtime','curated-chat-latest.json'),JSON.stringify(trace,null,2))};
+const activeChats=new Set();
 const db=new DatabaseSync(process.env.OUTFIT_DB_PATH||path.join(root,'.runtime','outfit.sqlite'));
 db.exec('PRAGMA journal_mode=WAL; CREATE TABLE IF NOT EXISTS products(id TEXT PRIMARY KEY,json TEXT NOT NULL); CREATE TABLE IF NOT EXISTS events(id TEXT PRIMARY KEY,user_id TEXT NOT NULL,json TEXT NOT NULL); CREATE TABLE IF NOT EXISTS sessions(id TEXT PRIMARY KEY,user_id TEXT NOT NULL,version INTEGER NOT NULL,json TEXT NOT NULL); CREATE TABLE IF NOT EXISTS carts(id TEXT PRIMARY KEY,user_id TEXT NOT NULL,json TEXT NOT NULL);');
 db.exec("DELETE FROM products WHERE id LIKE 'studio-%' OR id LIKE 'dj-%'");
@@ -27,12 +32,25 @@ function requireUser(id){const user=users().find(u=>u.id===id);if(!user)throw ne
 const server=http.createServer(async(req,res)=>{
  try{
   const url=new URL(req.url,'http://127.0.0.1');
+  if(req.method==='GET'&&url.pathname==='/api/curated/chat/status')return send(res,200,qwen.status);
   if(req.method==='GET'&&url.pathname==='/api/bootstrap')return send(res,200,{catalog,users:users(),mode:provider?'llm':'offline',storage:'sqlite',modelConfigured:!!provider,renderConfigured:renders.configured});
   if(req.method==='GET'&&url.pathname.startsWith('/api/render-jobs/')){const job=renders.get(url.pathname.split('/').at(-1),url.searchParams.get('userId'));return send(res,job?200:404,job??{error:'任务不存在'});}
   if(req.method==='GET'&&url.pathname.startsWith('/api/render-assets/')){const asset=renders.asset(url.pathname.split('/').at(-1));if(!asset||!existsSync(asset))return send(res,404,{error:'图片不存在'});res.writeHead(200,{'Content-Type':{'.png':'image/png','.jpg':'image/jpeg','.webp':'image/webp'}[path.extname(asset)]});createReadStream(asset).pipe(res);return;}
   if(req.method==='POST'){
    const origin=req.headers.origin;if(origin&&!/^http:\/\/(127\.0\.0\.1|localhost)(:\d+)?$/.test(origin))return send(res,403,{error:'仅允许本地演示来源'});
    const input=await body(req);
+   if(url.pathname==='/api/curated/chat'){
+    const key=input.base?.id;
+    if(activeChats.has(key)||activeChats.size>=2)return send(res,429,{error:'搭配请求正在处理，请稍后再试'});
+    activeChats.add(key);const controller=new AbortController();
+    res.on('close',()=>{if(!res.writableEnded)controller.abort()});
+    try{
+     if(!qwen.status.configured)return send(res,503,{error:qwen.status.message});
+     const result=await runCuratedChat(input,curatedChat,controller.signal);
+     if(!controller.signal.aborted&&!res.destroyed)return send(res,200,result);
+    }finally{activeChats.delete(key)}
+    return;
+   }
    if(url.pathname==='/api/render-jobs'){
     requireUser(input.userId);const row=db.prepare('SELECT json FROM sessions WHERE id=? AND user_id=?').get(input.sessionId,input.userId);if(!row)throw new Error('会话不存在');
     return send(res,202,renders.create(input,JSON.parse(row.json)));
@@ -89,5 +107,5 @@ const server=http.createServer(async(req,res)=>{
   res.writeHead(200,{'Content-Type':mime});createReadStream(file).pipe(res);
  }catch(e){if(!res.destroyed)send(res,400,{error:e.message||'请求失败'})}
 });
-server.listen(Number(process.env.PORT)||8787,'127.0.0.1',()=>console.log(`OutfitMaster http://127.0.0.1:${Number(process.env.PORT)||8787} · ${provider?'language model enabled':'offline rules'} · SQLite`));
+server.listen(Number(process.env.PORT)||8787,'127.0.0.1',()=>console.log(`OutfitMaster http://127.0.0.1:${Number(process.env.PORT)||8787} · studio chat: ${qwen.status.configured?qwen.status.model:'not configured'} · agent lab: ${provider?'language model enabled':'offline rules'} · SQLite`));
 for(const signal of ['SIGTERM','SIGINT'])process.on(signal,()=>server.close(()=>{db.close();process.exit(0)}));
