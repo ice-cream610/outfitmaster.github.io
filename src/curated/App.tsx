@@ -10,8 +10,8 @@ import {Modal,ProductImage,Preview,ProductGallery,renderStyle,preloadOutfit} fro
 import {readShopping,mergeBag,shoppingKey} from './sets';
 
 type Panel='filters'|'avatar'|'saved'|'history'|'purchase'|'detail'|'unlock'|'look-switch'|null;
-export function CuratedStudio({entryId,onBack}:{entryId:string;onBack:()=>void}){
- const [initialOutfit]=useState(()=>makeInitial(entryId));
+export function CuratedStudio({entryId,onBack,startingOutfit}:{entryId:string;onBack:()=>void;startingOutfit?:Outfit}){
+ const [initialOutfit]=useState(()=>startingOutfit?structuredClone(startingOutfit):makeInitial(entryId));
 
  const [versions,setVersions]=useState<Outfit[]>([structuredClone(initialOutfit)]),[index,setIndex]=useState(0);
  const current=versions[index];
@@ -71,14 +71,14 @@ export function CuratedStudio({entryId,onBack}:{entryId:string;onBack:()=>void})
  async function confirmPurchase(){try{const items=await demoService.checkout(current,specs);if(purchaseMode==='cart'){const shopping=readShopping();shopping.bag=mergeBag(shopping.bag,items);localStorage.setItem(shoppingKey,JSON.stringify(shopping))}const total=Math.round(items.reduce((s,i)=>s+i.unitPrice*i.quantity*100,0))/100;setReceipt(`${items.reduce((s,i)=>s+i.quantity,0)} 件商品 · ¥${total}。${purchaseMode==='cart'?'已完成模拟加购':'已完成订单交接演示'}，未创建真实订单，也不会扣款。`);track(purchaseMode==='cart'?'demo_add_to_cart':'demo_checkout_handoff',current.id)}catch(e){setPurchaseError((e as Error).message)}}
  const slotItem=current.productIds.map(product).find(p=>p.category===category);
  const shown=slotItem?[slotItem,...recommendations({...current,lockedIds:current.lockedIds.filter(id=>id!==slotItem.id)},slotItem.id)]:[];
- const completeLooks=renders.filter(r=>r.avatar===current.avatar&&r.productIds.includes(entryId)&&r.productIds.reduce((sum,id)=>sum+product(id).price,0)<=current.conditions.budget);
+ const completeLooks=renders.filter(r=>r.avatar===current.avatar&&(!!startingOutfit||r.productIds.includes(entryId))&&r.productIds.reduce((sum,id)=>sum+product(id).price,0)<=current.conditions.budget);
  async function applyExact(next:Outfit){cancel();setBusy(true);setError('');try{await preloadOutfit(next);setVersions(v=>[...v.slice(0,index+1),next]);setIndex(index+1);setSpecs({})}catch{setError('效果加载失败，请重试')}finally{setBusy(false)}}
- function selectSet(ids:string[]){const r=findRender({productIds:ids,avatar:current.avatar});if(!r)return;setTryBase(null);void applyExact({...current,id:crypto.randomUUID(),productIds:[...ids],selectedIds:[...ids],lockedIds:[entryId],imageTaskId:r.id,name:r.name,createdAt:Date.now()})}
+ function selectSet(ids:string[]){const r=findRender({productIds:ids,avatar:current.avatar});if(!r)return;setTryBase(null);void applyExact({...current,id:crypto.randomUUID(),productIds:[...ids],selectedIds:[...ids],lockedIds:startingOutfit?[]:[entryId],imageTaskId:r.id,name:r.name,createdAt:Date.now()})}
  function tryProduct(p:Product){if(!slotItem)return;if(current.productIds.includes(p.id)){if(tryBase&&!tryBase.productIds.includes(p.id)){const restored={...tryBase,avatar:current.avatar,id:crypto.randomUUID()};setTryBase(null);void applyExact(restored)}return}if(!tryBase)setTryBase(structuredClone(current));generate({base:{...current,lockedIds:current.lockedIds.filter(id=>id!==slotItem.id)},replaceId:slotItem.id,nextId:p.id})}
  function addItem(){if(!cartItem||!cartSize)return;try{const shopping=readShopping();shopping.bag=mergeBag(shopping.bag,[{productId:cartItem.id,size:cartSize,color:cartItem.color,quantity:1,unitPrice:unitPrice(cartItem.id,cartSize)}]);localStorage.setItem(shoppingKey,JSON.stringify(shopping));setCartItem(null);notify('已加入购物车')}catch{notify('购物车保存失败，请重试')}}
  const selected=current.selectedIds.map(product);
  return <div className="app curated-studio">
-  <header className="topbar"><a className="brand" href="#shop" onClick={e=>{e.preventDefault();onBack()}}><span><Shirt size={23}/></span><div>Outfit Master<small>AI 穿搭灵感工作台</small></div></a><nav><a className="return-link" href={'#product/'+entryId} onClick={e=>{e.preventDefault();onBack()}}><ArrowLeft size={14}/> 返回商品详情</a></nav></header>
+  <header className="topbar"><a className="brand" href="#shop" onClick={e=>{e.preventDefault();onBack()}}><span><Shirt size={23}/></span><div>Outfit Master<small>AI 穿搭灵感工作台</small></div></a><nav><a className="return-link" href={'#product/'+entryId} onClick={e=>{e.preventDefault();onBack()}}><ArrowLeft size={14}/> {startingOutfit?'返回精选衣橱':'返回商品详情'}</a></nav></header>
   <main className="workspace">
    <section className="products-panel" aria-label="搭配商品">
     <div className="wardrobe-tools"><button disabled={busy} onClick={()=>{setDraft(structuredClone(current.conditions));setPanel('filters')}}><SlidersHorizontal size={16}/>搭配偏好</button><button disabled={busy} onClick={()=>{setAvatarDraft(current.avatar);setPanel('avatar')}}><Settings2 size={16}/>形象调整</button></div>

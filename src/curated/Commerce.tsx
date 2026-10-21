@@ -6,24 +6,26 @@ import {ProductGallery,ProductImage} from './components';
 import type {RealProduct} from './data';
 import {unitPrice} from './domain';
 import {Wardrobe} from './Wardrobe';
-import {readShopping,mergeBag,shoppingKey} from './sets';
+import {readShopping,mergeBag,shoppingKey,sets,asOutfit} from './sets';
 import {discoveryProducts,sourceOptions} from './discovery';
 import type {DiscoverySource} from './discovery';
 
-function readRoute(){const [kind,id,origin]=location.hash.slice(1).split('/');return {kind:kind==='shop'&&id==='catalog'?'wardrobe':['product','outfit','wardrobe','set'].includes(kind)?kind:'shop',id:id??'',origin:origin??''}}
+function readRoute(){const [kind,id,origin]=location.hash.slice(1).split('/');return {kind:kind==='shop'&&id==='catalog'?'wardrobe':['product','outfit','wardrobe','set','outfit-set'].includes(kind)?kind:'shop',id:id??'',origin:origin??''}}
 export function Commerce(){
  const [route,setRoute]=useState(readRoute),[query,setQuery]=useState(''),[source,setSource]=useState<DiscoverySource>('recommend'),[toast,setToast]=useState('');
  useEffect(()=>{const update=()=>{setRoute(readRoute());window.scrollTo(0,0)};addEventListener('hashchange',update);return()=>removeEventListener('hashchange',update)},[]);
  useEffect(()=>{if(!toast)return;const t=setTimeout(()=>setToast(''),3000);return()=>clearTimeout(t)},[toast]);
  const navigate=(kind:string,id='',origin='')=>{const hash='#'+kind+(id?'/'+id:'')+(origin?'/'+origin:'');if(location.hash===hash)window.scrollTo(0,0);else location.hash=hash};
  const inWardrobe=route.kind==='wardrobe'||route.kind==='set'||!!route.origin;
+ const selectedSet=sets.find(r=>r.id===route.id);
+ if(route.kind==='outfit-set'&&selectedSet)return <CuratedStudio key={'set-'+selectedSet.id} entryId={selectedSet.productIds[0]} startingOutfit={asOutfit(selectedSet)} onBack={()=>navigate('wardrobe')}/>;
  const selected=products.find(p=>p.id===route.id);
  if(route.kind==='outfit'&&selected)return <CuratedStudio key={selected.id} entryId={selected.id} onBack={()=>navigate('product',selected.id,route.origin)}/>;
  const shown=discoveryProducts(source,query,readShopping());
  const featured=products[0];
  return <div className="om curated-commerce">
   <header className="om-header"><button className="om-brand" onClick={()=>navigate('shop')}><span className="om-logo"><Shirt size={25}/></span><span>Outfit<span className="om-brand-light">Master</span><small>穿搭灵感研究所</small></span></button><nav aria-label="商城导航"><button className={!inWardrobe?'active':''} aria-current={!inWardrobe?'page':undefined} onClick={()=>navigate('shop')}>发现好物</button><button className={inWardrobe?'active':''} aria-current={inWardrobe?'page':undefined} onClick={()=>navigate('wardrobe')}>精选衣橱</button></nav><div className="om-header-right"><span className="om-mode">精选搭配体验</span><span className="om-user">你</span></div></header>
-  {route.kind==='wardrobe'||route.kind==='set'?<Wardrobe setId={route.kind==='set'?route.id:undefined} onOpen={id=>navigate(id?'set':'wardrobe',id)} onProduct={id=>navigate('product',id,route.kind==='set'?route.id:'')}/>:route.kind==='shop'?<main className="om-shop">
+  {route.kind==='wardrobe'||route.kind==='set'?<Wardrobe onStyle={id=>navigate('outfit-set',id)} setId={route.kind==='set'?route.id:undefined} onOpen={id=>navigate(id?'set':'wardrobe',id)} onProduct={id=>navigate('product',id,route.kind==='set'?route.id:'')}/>:route.kind==='shop'?<main className="om-shop">
    <section className="quick-experience" aria-labelledby="quick-title">
     <article className="quick-product"><button className="quick-product-photo" aria-label={'查看'+featured.name} onClick={()=>navigate('product',featured.id)}><img src={'.'+featured.merchant.images[0]} alt={featured.name}/></button><div className="quick-product-info"><button className="quick-product-name" onClick={()=>navigate('product',featured.id)}>{featured.name}</button><p>灰色细条纹 · 通勤叠穿</p><div><strong>¥{featured.price}</strong><span>体验价</span></div></div></article>
     <div className="quick-play"><h1 id="quick-title">快速体验</h1><div className="quick-invitation"><p className="quick-speech">我喜欢这件商品！<br/>来看看怎么搭配？</p><button className="om-primary" onClick={()=>navigate('outfit',featured.id)}>开始搭配 <ChevronRight size={17}/></button></div><div className="quick-mascot"><img src="./curated/e-curious.png" alt="长直发 E 歪头思考，邀请你一起搭配"/></div></div>
