@@ -3,6 +3,11 @@
 .curated-commerce .om-top-strip{display:flex;align-items:center;justify-content:space-between;gap:15px;padding:8px 30px;background:#f0eae0;color:#a28a73;font-size:10px;line-height:1.5}
 .curated-commerce .om-user{display:grid;place-items:center}
 .curated-commerce #curated-catalog{scroll-margin-top:24px}
+.curated-commerce #curated-catalog{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-top:26px}
+.curated-commerce #curated-catalog .om-search{margin-top:0;flex:0 1 300px;min-width:200px}
+.curated-commerce .om-shop-card>.om-match-button{font-family:Georgia,"Times New Roman",serif;font-size:15px!important;justify-content:center;min-height:40px}
+@media(max-width:900px){.curated-commerce #curated-catalog .om-categories{flex-basis:auto;flex-wrap:wrap}.curated-commerce #curated-catalog{flex-wrap:wrap}}
+@media(max-width:600px){.curated-commerce #curated-catalog .om-search{flex-basis:100%;width:100%}}
 .curated-studio .real-product-photo,.curated-commerce .real-product-photo{background:none;object-fit:contain;display:block;mix-blend-mode:normal;width:100%;height:100%}
 .curated-studio .product-image.real-product-photo{height:auto;aspect-ratio:1}
 .curated-studio .sku-row>.product-image{width:60px;height:60px}
