@@ -1,8 +1,8 @@
 import {product,products,looks,renders,findRender} from './data.ts';
 import type {Outfit,GenerationRequest,Specification,PurchaseItem,Avatar} from '../types.ts';
 import {priceForSize} from '../agent/prices.ts';
-export const subtotal=(o:Outfit)=>Math.round(o.selectedIds.reduce((s,id)=>s+product(id).merchant.priceCents,0))/100;
-export const replenishment=(o:Outfit)=>o.productIds.reduce((s,id)=>s+(product(id).source==='已购'?0:product(id).merchant.priceCents),0)/100;
+export const subtotal=(o:Outfit)=>Math.round(o.selectedIds.reduce((s,id)=>s+Math.round(product(id).price*100),0))/100;
+export const replenishment=(o:Outfit)=>o.productIds.reduce((s,id)=>s+(product(id).source==='已购'?0:Math.round(product(id).price*100)),0)/100;
 export const previewCell=(o:Outfit)=>{const r=findRender(o);return r?renders.indexOf(r):null};
 export const supportedAvatars=(o:Outfit)=>(['long','short','curly','pony'] as Avatar[]).filter(avatar=>!!findRender({...o,avatar}));
 export const slot=(category:string)=>['裤装','裙装'].includes(category)?'下装':category;
@@ -50,7 +50,7 @@ export function buildOutfit(req:GenerationRequest):Outfit{
  const reason=req.avatar?'已保存形象，服饰、锁定与购买勾选保持不变。':req.lookId?render.note:changed?'已更新单品与对应效果，其他锁定项保持不变；新单品请重新勾选购买。':preferenceMismatch?'已应用筛选。在当前锁定与预算下，没有同时匹配全部标签的预设，暂时保留可用方案；可解锁后体验其他风格。':'已应用条件，当前搭配满足预算与来源限制。';
  return {...next,id:crypto.randomUUID(),name:render.name,createdAt:Date.now(),imageTaskId:render.id,reason};
 }
-export const unitPrice=(id:string,size:string)=>priceForSize(product(id).merchant,size)/100;
+export const unitPrice=(id:string,size:string)=>{priceForSize(product(id).merchant,size);return product(id).price};
 export function validatePurchase(o:Outfit,specs:Record<string,Specification>):PurchaseItem[]{
  if(!o.selectedIds.length)throw new Error('请先勾选需要购买的商品');
  return o.selectedIds.map(id=>{if(!o.productIds.includes(id))throw new Error('购买商品不属于当前搭配');const p=product(id),s=specs[id];if(!s||!p.sizes.includes(s.size))throw new Error('请选择「'+p.name+'」的尺码');if(s.quantity!==1)throw new Error('本地演示每款限选 1 件，商家库存件数未公开');return {productId:id,size:s.size,color:p.color,quantity:1,unitPrice:unitPrice(id,s.size)}});

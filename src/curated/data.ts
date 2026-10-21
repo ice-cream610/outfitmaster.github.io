@@ -17,12 +17,14 @@ export const wardrobe={
 } as const;
 type Garment=keyof typeof wardrobe;
 export const idFor=(key:Garment)=>'tfs-'+wardrobe[key][0];
+// Demo retail prices in CNY; original merchant quotes remain untouched.
+export const demoPrices:Record<Garment,number>={blazer:299,shirt:129,trousers:169,flats:159,jeans:159,tee:59,shorts:89,grayShorts:99,polo:99,knit:179,skirt:139,boots:299,brownPants:169,navyKnit:179,anorak:229,track:159,moccasins:149,trench:329};
 export interface RealProduct extends Product {merchant:CatalogItem}
-export const products:RealProduct[]=Object.values(wardrobe).map(([id,name],cell)=>{
+export const products:RealProduct[]=Object.entries(wardrobe).map(([key,[id,name]],cell)=>{
  const m=(merchant as unknown as CatalogItem[]).find(p=>p.id==='tfs-'+id)!;
  if(!m)throw new Error('Missing real merchant product: '+id);
  const category:Category=m.slot==='outer'?'外套':m.slot==='top'?'内搭':m.slot==='shoes'?'鞋履':/Skirt/.test(m.name)?'裙装':'裤装';
- return {id:m.id,name,category,price:m.priceCents/100,source:'商品池',cell,color:m.color,sizes:m.sizes,stock:m.stock>0?1:0,description:m.description??'',merchant:m};
+ return {id:m.id,name,category,price:demoPrices[key as Garment],source:'商品池',cell,color:m.color,sizes:m.sizes,stock:m.stock>0?1:0,description:m.description??'',merchant:m};
 });
 export const product=(id:string):RealProduct=>{const p=products.find(p=>p.id===id);if(!p)throw new Error('商品不属于当前精选衣橱');return p};
 export const avatarLabels:Record<Avatar,string>={long:'长直发 · 方框眼镜',short:'短碎发 · 轻松自然',curly:'齐肩卷发 · 圆框眼镜',pony:'高马尾 · 活力俏皮'};
@@ -45,6 +47,6 @@ export function makeInitial(entryId=idFor('blazer')):Outfit{
  const render=renders.find(r=>r.avatar==='long'&&r.productIds.includes(entryId));
  if(!render)throw new Error('此商品尚未纳入当前精选搭配');
  const family=looks.find(l=>l.id===render.family)!;
- return {id:'initial-'+entryId,name:render.name,productIds:[...render.productIds],lockedIds:[entryId],selectedIds:[...render.productIds],avatar:'long',conditions:{scene:family.scene,style:family.style,budget:16000,sources:['商品池','购物车','已购']},imageTaskId:render.id,createdAt:Date.now(),reason:render.note};
+ return {id:'initial-'+entryId,name:render.name,productIds:[...render.productIds],lockedIds:[entryId],selectedIds:[...render.productIds],avatar:'long',conditions:{scene:family.scene,style:family.style,budget:1500,sources:['商品池','购物车','已购']},imageTaskId:render.id,createdAt:Date.now(),reason:render.note};
 }
 export const avatarExample=(avatar:Avatar):Outfit=>({...makeInitial(),avatar});

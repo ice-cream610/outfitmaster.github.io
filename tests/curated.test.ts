@@ -22,10 +22,10 @@ test('locked items, unsupported combinations and low budgets cannot silently cha
  const variant=replaceProduct({...base,lockedIds:[]},idFor('trousers'),idFor('jeans'));assert.throws(()=>buildOutfit({base:variant,avatar:'curly'}),/未收录/);
  assert.equal(base.avatar,'long');assert(base.productIds.includes(idFor('trousers')));
 });
-test('purchasing never changes the displayed outfit, and real available SKU prices are used',()=>{
+test('purchasing never changes the displayed outfit, and available SKUs use consistent demo prices',()=>{
  const base=makeInitial(),p=products[0],o={...base,selectedIds:[p.id]};assert.equal(findRender(o)?.id,findRender(base)?.id);assert.equal(subtotal(o),p.price);
  assert.throws(()=>validatePurchase(o,{}),/尺码/);assert.throws(()=>validatePurchase(o,{[p.id]:{size:p.sizes[0],quantity:2}}),/限选/);
- const items=validatePurchase(o,{[p.id]:{size:p.sizes[0],quantity:1}});const variant=p.merchant.variants!.find(v=>v.size===p.sizes[0]&&v.available)!;assert.equal(items[0].unitPrice,Math.round(Number(variant.price)*720)/100);
+ const items=validatePurchase(o,{[p.id]:{size:p.sizes[0],quantity:1}});const variant=p.merchant.variants!.find(v=>v.size===p.sizes[0]&&v.available)!;assert.equal(items[0].unitPrice,p.price);assert(p.price<Math.round(Number(variant.price)*720)/100);
 });
 test('all curated render references exist and IDs uniquely bind whole outfits and appearances',()=>{
  const keys=new Set<string>();for(const r of renders){const key=r.avatar+'|'+[...r.productIds].sort().join('|');assert(!keys.has(key));keys.add(key);assert(existsSync('public/'+r.image.slice(2)));for(const id of r.productIds)assert(products.some(p=>p.id===id))}

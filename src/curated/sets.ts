@@ -1,3 +1,4 @@
+import {priceForSize} from '../agent/prices.ts';
 import {looks,renders,product,outfitKey} from './data.ts';
 import type {RenderedLook} from './data.ts';
 import type {Outfit,PurchaseItem,Specification} from '../types.ts';
@@ -26,7 +27,7 @@ export function recommendSets(prefs:SetPreferences){
  return sets.filter(r=>{const f=familyFor(r);return (prefs.scene==='全部'||f.scene===prefs.scene)&&(prefs.style==='全部'||f.style===prefs.style)&&setPrice(r)<=limit});
 }
 export function asOutfit(r:RenderedLook,selectedIds=r.productIds):Outfit{
- const f=familyFor(r);return {id:r.id,name:r.name,productIds:[...r.productIds],selectedIds:[...selectedIds],lockedIds:[],avatar:r.avatar,conditions:{scene:f.scene,style:f.style,budget:16000,sources:['商品池']},imageTaskId:r.id,createdAt:0,reason:r.note};
+ const f=familyFor(r);return {id:r.id,name:r.name,productIds:[...r.productIds],selectedIds:[...selectedIds],lockedIds:[],avatar:r.avatar,conditions:{scene:f.scene,style:f.style,budget:1500,sources:['商品池']},imageTaskId:r.id,createdAt:0,reason:r.note};
 }
 export function selectedPurchase(r:RenderedLook,selected:string[],specs:Record<string,Specification>){
  if(new Set(selected).size!==selected.length)throw new Error('购买商品不能重复');
@@ -43,7 +44,7 @@ export interface DemoShopping {bag:PurchaseItem[];orders:DemoOrder[]}
 export const shoppingKey='om.curated.set-shopping.v1';
 export const preferencesKey='om.curated.set-preferences.v1';
 export function readShopping():DemoShopping{
- try{const value=JSON.parse(localStorage.getItem(shoppingKey)||'{}');const valid=(item:PurchaseItem)=>{try{return item.quantity===1&&item.unitPrice===unitPrice(item.productId,item.size)}catch{return false}};
-  return {bag:Array.isArray(value.bag)?value.bag.filter(valid):[],orders:Array.isArray(value.orders)?value.orders.filter((o:DemoOrder)=>o.simulated===true&&typeof o.id==='string'&&Array.isArray(o.items)&&o.items.every(valid)&&o.total===purchaseTotal(o.items)).slice(0,20):[]};
+ try{const value=JSON.parse(localStorage.getItem(shoppingKey)||'{}');const valid=(item:PurchaseItem)=>{try{return item.quantity===1&&(item.unitPrice===unitPrice(item.productId,item.size)||item.unitPrice===priceForSize(product(item.productId).merchant,item.size)/100)}catch{return false}};
+  return {bag:Array.isArray(value.bag)?value.bag.filter(valid).map((i:PurchaseItem)=>({...i,unitPrice:unitPrice(i.productId,i.size)})):[],orders:Array.isArray(value.orders)?value.orders.filter((o:DemoOrder)=>o.simulated===true&&typeof o.id==='string'&&Array.isArray(o.items)&&o.items.every(valid)&&o.total===purchaseTotal(o.items)).slice(0,20).map((o:DemoOrder)=>{const items=o.items.map(i=>({...i,unitPrice:unitPrice(i.productId,i.size)}));return {...o,items,total:purchaseTotal(items)}}):[]};
  }catch{return {bag:[],orders:[]}}
 }
