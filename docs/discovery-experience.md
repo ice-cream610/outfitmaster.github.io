@@ -16,3 +16,7 @@ Edit/identity-preserve. Create ONE transparent PNG mascot asset for an existing 
 ## Demo pricing (2026-10-21)
 
 The active curated demo uses an explicit CNY price table in `src/curated/data.ts` (59–329 yuan), as requested by the user. Merchant source prices, currencies and variants remain unchanged for provenance. Display these as demo experience prices, not converted merchant quotes. Catalog, outfit budgets, AI candidate descriptions and simulated checkout must use the same demo prices; available SKU validation still uses merchant metadata. Existing validated simulated shopping records are repriced on read. Default new-session budget is 1500 yuan; user-specified budgets remain unchanged.
+
+## Studio wardrobe navigation (2026-10-21)
+
+The studio now uses two top controls (搭配偏好 / 形象调整), a category rail and exact outfit thumbnails. Complete recommendations contain the entry SKU. Category cards show the current item and exact-render replacements recomputed from the current outfit. Replacing a piece retains a baseline for restoration; selecting a new complete look resets it. Current unchanged pieces have a disabled try-on button. Cart buttons open available size selection and persist to the shared simulated bag. The stage is enlarged; chat begins empty and manual changes do not fabricate assistant messages. Suggestions use natural shopping requests. Exact-render availability still bounds recommendations.
