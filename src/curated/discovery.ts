@@ -15,6 +15,6 @@ export function discoveryProducts(source:DiscoverySource,query:string,shopping:D
  const owned=new Set([...ownedSeeds.map(idFor),...shopping.orders.flatMap(o=>o.items.map(i=>i.productId))]);
  const cart=new Set([...cartSeeds.map(idFor),...shopping.bag.map(i=>i.productId)]);
  const search=query.trim().toLowerCase();
- return products.filter(p=>(source==='recommend'||(source==='owned'?owned.has(p.id):cart.has(p.id)))&&
+ return products.filter(p=>(source==='owned'?owned.has(p.id):source==='cart'?cart.has(p.id)&&!owned.has(p.id):!owned.has(p.id)&&!cart.has(p.id))&&
   (!search||[p.name,p.merchant.name,p.color,p.merchant.description].join(' ').toLowerCase().includes(search)));
 }
