@@ -24,3 +24,7 @@ The studio now uses two top controls (搭配偏好 / 形象调整), a category r
 ## Homepage refinement (2026-10-21)
 
 The desktop quick experience now uses a 2fr:3fr split: a product card with name, short description and demo price on the left, the existing animated character and invitation on the right. Below 600px the two areas stack for readability. All source filters have visible borders. Source lists are a strict partition of the catalog: owned (fixtures + local orders) takes precedence, then cart (fixtures + local bag), with remaining products recommended. Adding or purchasing a product consequently moves its source membership instead of duplicating it. Verified the desktop ratio, partition, navigation and mobile overflow in the browser; partition tests include overlapping local shopping records.
+
+## Editorial visual refinement (2026-10-21)
+
+Quick experience retains the 40:60 desktop split and original text/character, using ivory-gray product presentation, a burgundy invitation panel, sand-colored character backdrop, serif headings and a fine-rule CTA. Product imagery is larger with price aligned beside the description. Free discovery begins at a full-width separator; its heading and explanatory copy share a row on desktop and stack on mobile, directly preceding filters. Browser QA verified both viewports, source exclusivity and the styling entry link.
