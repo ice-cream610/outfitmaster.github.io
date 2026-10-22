@@ -13,12 +13,8 @@ export function normalizePreferences(value:Partial<SetPreferences>|null):SetPref
 }
 export const minimumPrice=(id:string)=>Math.min(...product(id).sizes.map(size=>unitPrice(id,size)));
 export const setPrice=(r:RenderedLook)=>Math.round(r.productIds.reduce((sum,id)=>sum+Math.round(minimumPrice(id)*100),0))/100;
-export const sets=renders.filter(r=>r.avatar==='long').map(r=>{
- if(r.cell===0)return r;
- const family=looks.find(l=>l.id===r.family)!;
- const removed=family.productIds.find(id=>!r.productIds.includes(id))!,added=r.productIds.find(id=>!family.productIds.includes(id))!;
- return {...r,name:family.label+' · '+product(added).name.split(' ')[0]+'新搭法',note:'以'+family.label+'为基础，将'+product(removed).name+'换成'+product(added).name+'。保留其余单品的协调关系，让整套的材质与轮廓多一点变化。'};
-}).sort((a,b)=>a.cell-b.cell);
+const displayOrder=['berry','gala','city','sweet','forest','mint','tailor','artist','orchid','petrol','arctic','apple'];
+export const sets=renders.filter(r=>r.columns===2||r.cell<3).sort((a,b)=>a.cell-b.cell||displayOrder.indexOf(a.family)-displayOrder.indexOf(b.family));
 export const familyFor=(r:RenderedLook)=>looks.find(l=>l.id===r.family)!;
 export const setImages=(r:RenderedLook)=>renders.filter(other=>outfitKey(other.productIds,'long')===outfitKey(r.productIds,'long'));
 export function recommendSets(prefs:SetPreferences){
@@ -27,7 +23,7 @@ export function recommendSets(prefs:SetPreferences){
  return sets.filter(r=>{const f=familyFor(r);return (prefs.scene==='全部'||f.scene===prefs.scene)&&(prefs.style==='全部'||f.style===prefs.style)&&setPrice(r)<=limit});
 }
 export function asOutfit(r:RenderedLook,selectedIds=r.productIds):Outfit{
- const f=familyFor(r);return {id:r.id,name:r.name,productIds:[...r.productIds],selectedIds:[...selectedIds],lockedIds:[],avatar:r.avatar,conditions:{scene:f.scene,style:f.style,budget:1500,sources:['商品池']},imageTaskId:r.id,createdAt:0,reason:r.note};
+ const f=familyFor(r);return {id:r.id,name:r.name,productIds:[...r.productIds],selectedIds:[...selectedIds],lockedIds:[],avatar:r.avatar,conditions:{scene:f.scene,style:f.style,budget:null,sources:['商品池']},imageTaskId:r.id,createdAt:0,reason:r.note};
 }
 export function selectedPurchase(r:RenderedLook,selected:string[],specs:Record<string,Specification>){
  if(new Set(selected).size!==selected.length)throw new Error('购买商品不能重复');

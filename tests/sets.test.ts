@@ -4,18 +4,20 @@ import {sets,setImages,defaultPreferences,recommendSets,setPrice,asOutfit,select
 import {product,outfitKey,findRender} from '../src/curated/data.ts';
 import {unitPrice} from '../src/curated/domain.ts';
 
-test('set discovery has twelve distinct complete outfits, exact image galleries and no entry-item locks',()=>{
- assert.equal(sets.length,12);assert.equal(new Set(sets.map(r=>outfitKey(r.productIds,r.avatar))).size,12);
- for(const r of sets){assert.deepEqual(asOutfit(r).lockedIds,[]);assert(findRender(asOutfit(r)));const gallery=setImages(r);assert.equal(gallery.length,r.cell===0?4:1);for(const image of gallery)assert.equal(outfitKey(image.productIds,'long'),outfitKey(r.productIds,'long'))}
- assert.equal(new Set(sets.slice(0,4).map(r=>r.family)).size,4);
+test('set discovery has forty-four distinct complete outfits, exact image galleries and no entry-item locks',()=>{
+ assert.equal(sets.length,44);assert.equal(new Set(sets.map(r=>outfitKey(r.productIds,r.avatar))).size,44);
+ for(const r of sets){assert.deepEqual(asOutfit(r).lockedIds,[]);assert(findRender(asOutfit(r)));const gallery=setImages(r);assert.equal(gallery.length,r.cell===0&&r.columns===3?2:1);for(const image of gallery)assert.equal(outfitKey(image.productIds,'long'),outfitKey(r.productIds,'long'))}
+ assert.equal(new Set(sets.slice(0,12).map(r=>r.family)).size,12);
 });
 test('preference matching respects style, occasion and total outfit budget together; no silent budget relaxation',()=>{
- assert.equal(recommendSets(defaultPreferences).length,12);
- const office=sets.find(r=>r.id==='office-0')!;
+ assert.equal(recommendSets(defaultPreferences).length,44);
+ const office=sets.find(r=>r.id==='tailor-0')!;
  const matching=recommendSets({scene:'职业商务',style:'优雅知性',budget:String(setPrice(office))});
  assert(matching.length);assert(matching.every(r=>familyFor(r).scene==='职业商务'&&familyFor(r).style==='优雅知性'&&setPrice(r)<=setPrice(office)));
  assert.deepEqual(recommendSets({...defaultPreferences,budget:'1'}),[]);
- assert.deepEqual(recommendSets({...defaultPreferences,style:'甜美可爱'}),[]);
+ assert(recommendSets({...defaultPreferences,style:'甜美可爱'}).length>=4);
+ for(const style of ['简约大气','甜美可爱','优雅知性','冷酷中性','创意设计'])assert(recommendSets({...defaultPreferences,style}).length>0);
+ assert(recommendSets({...defaultPreferences,scene:'正式礼服'}).length>=4);
  assert.deepEqual(normalizePreferences({style:'corrupt',budget:'NaN'}),defaultPreferences);
 });
 test('set purchases require sizes only for checked pieces and never alter the complete outfit image',()=>{

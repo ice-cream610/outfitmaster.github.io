@@ -3,10 +3,10 @@ import type {CSSProperties} from 'react';
 import type {Product,Outfit} from '../types.ts';
 import {product,avatarLabels,findRender} from './data.ts';
 export {Modal} from '../components';
-export function ProductImage({item}:{item:Product}){return <img className="product-image real-product-photo" src={'.'+product(item.id).merchant.images[0]} alt={item.name+' · 商家原图'} loading="lazy"/>}
+export function ProductImage({item}:{item:Product}){return <img className="product-image real-product-photo" src={'.'+product(item.id).merchant.images[0]} alt={item.name+' · 模拟商品图'} loading="lazy"/>}
 export function renderStyle(outfit:Pick<Outfit,'avatar'|'productIds'>):CSSProperties{
  const r=findRender(outfit);if(!r)throw new Error('No exact pre-rendered look');
- return {backgroundImage:`url('${r.image}')`,backgroundSize:`${r.columns*100}% ${r.rows*100}%`,backgroundPosition:`${r.cell%r.columns*100/(r.columns-1)}% ${Math.floor(r.cell/r.columns)*100/(r.rows-1)}%`};
+ return {backgroundImage:`url('${r.image}')`,backgroundSize:`${r.columns*100}% ${r.rows*100}%`,backgroundPosition:`${r.columns===1?0:r.cell%r.columns*100/(r.columns-1)}% ${r.rows===1?0:Math.floor(r.cell/r.columns)*100/(r.rows-1)}%`};
 }
 export function Preview({outfit}:{outfit:Outfit}){
  const r=findRender(outfit);if(!r)throw new Error('Unregistered outfit reached preview');

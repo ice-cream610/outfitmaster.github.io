@@ -1,29 +1,29 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {discoveryProducts} from '../src/curated/discovery.ts';
-import {idFor,product} from '../src/curated/data.ts';
+import {idFor,product,products} from '../src/curated/data.ts';
 import {unitPrice} from '../src/curated/domain.ts';
 const empty={bag:[],orders:[]};
-test('discovery sources select distinct real products and intersect with search',()=>{
- assert.equal(discoveryProducts('recommend','',empty).length,6);
+test('discovery sources select distinct demo products and intersect with search',()=>{
+ assert.equal(discoveryProducts('recommend','',empty).length,18);
  const cart=discoveryProducts('cart','',empty),owned=discoveryProducts('owned','',empty);
- assert.equal(cart.length,6);assert.equal(owned.length,6);assert.notDeepEqual(cart,owned);
- assert.equal(discoveryProducts('owned',' 牛仔裤 ',empty)[0].id,idFor('jeans'));
- assert.equal(discoveryProducts('cart','牛仔裤',empty).length,0);
+ assert.equal(cart.length,18);assert.equal(owned.length,17);assert.notDeepEqual(cart,owned);
+ assert.equal(discoveryProducts('owned',' 李子紫 ',empty)[0].id,idFor('plum-skirt'));
+ assert.equal(discoveryProducts('cart','李子紫',empty).length,0);
 });
 test('local shopping extends fixtures without duplicates and ignores unknown catalog ids',()=>{
- const p=product(idFor('polo')),item={productId:p.id,size:p.sizes[0],color:p.color,quantity:1,unitPrice:unitPrice(p.id,p.sizes[0])};
+ const p=product(idFor('berry-knit')),item={productId:p.id,size:p.sizes[0],color:p.color,quantity:1,unitPrice:unitPrice(p.id,p.sizes[0])};
  const bag=[item,item,{...item,productId:'unknown'}];
- assert.equal(discoveryProducts('cart','',{bag,orders:[]}).length,7);
+ assert.equal(discoveryProducts('cart','',{bag,orders:[]}).length,19);
  const order={id:'demo',setId:'test',createdAt:'2026-10-21',items:[item],total:item.unitPrice,simulated:true as const};
- assert.equal(discoveryProducts('owned','',{bag:[],orders:[order]}).length,7);
- assert.equal(discoveryProducts('owned','Polo',{bag:[],orders:[order]})[0].id,p.id);
+ assert.equal(discoveryProducts('owned','',{bag:[],orders:[order]}).length,18);
+ assert.equal(discoveryProducts('owned','莓果',{bag:[],orders:[order]})[0].id,p.id);
 });
 
 test('sources partition all products with owned taking priority over cart and recommendations',()=>{
- const p=product(idFor('polo')),item={productId:p.id,size:p.sizes[0],color:p.color,quantity:1,unitPrice:p.price};
+ const p=product(idFor('berry-knit')),item={productId:p.id,size:p.sizes[0],color:p.color,quantity:1,unitPrice:p.price};
  const shopping={bag:[item],orders:[{id:'demo',setId:'test',createdAt:'2026-10-21',items:[item],total:p.price,simulated:true as const}]};
  const lists=(['recommend','cart','owned'] as const).map(source=>discoveryProducts(source,'',shopping).map(p=>p.id));
- const all=lists.flat();assert.equal(all.length,18);assert.equal(new Set(all).size,18);
+ const all=lists.flat();assert.equal(all.length,products.length);assert.equal(new Set(all).size,products.length);
  assert(!lists[0].includes(p.id));assert(!lists[1].includes(p.id));assert(lists[2].includes(p.id));
 });

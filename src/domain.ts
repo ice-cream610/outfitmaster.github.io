@@ -11,7 +11,7 @@ export function previewCell(o:Outfit):number|null{
 export const supportedAvatars=(o:Outfit)=>(['short','long','curly','pony'] as const).filter(avatar=>previewCell({...o,avatar})!==null);
 export const slot=(category:string)=>['裤装','裙装'].includes(category)?'下装':category;
 export function recommendations(o:Outfit,replaceId:string|null){
- return products.filter(p=>!!replaceId&&previewCell({...o,productIds:o.productIds.map(id=>id===replaceId?p.id:id)})!==null&&p.stock>0&&!o.productIds.includes(p.id)&&o.conditions.sources.includes(p.source)&&(!replaceId||slot(p.category)===slot(product(replaceId).category))&&(!replaceId||replenishment(o)-(product(replaceId).source==='已购'?0:product(replaceId).price)+(p.source==='已购'?0:p.price)<=o.conditions.budget));
+ return products.filter(p=>!!replaceId&&previewCell({...o,productIds:o.productIds.map(id=>id===replaceId?p.id:id)})!==null&&p.stock>0&&!o.productIds.includes(p.id)&&o.conditions.sources.includes(p.source)&&(!replaceId||slot(p.category)===slot(product(replaceId).category))&&(!replaceId||replenishment(o)-(product(replaceId).source==='已购'?0:product(replaceId).price)+(p.source==='已购'?0:p.price)<=(o.conditions.budget??Infinity)));
 }
 export function replaceProduct(base:Outfit,oldId:string,newId:string):Outfit{
  if(!base.productIds.includes(oldId))throw new Error('当前搭配中没有这件商品');
@@ -21,7 +21,7 @@ export function replaceProduct(base:Outfit,oldId:string,newId:string):Outfit{
  if(next.stock<1)throw new Error('这件商品暂时缺货，请选择其他单品');
  if(!base.conditions.sources.includes(next.source))throw new Error('当前来源中没有这件商品，请调整筛选');
  const result={...base,productIds:base.productIds.map(id=>id===oldId?newId:id),selectedIds:base.selectedIds.filter(id=>id!==oldId)};
- if(replenishment(result)>base.conditions.budget)throw new Error('搭配超出待购预算，请提高预算或调整商品');
+ if(replenishment(result)>(base.conditions.budget??Infinity))throw new Error('搭配超出待购预算，请提高预算或调整商品');
  if(previewCell(result)===null)throw new Error('这组搭配不在精选方案中，请选择推荐的单品');
  return result;
 }
@@ -34,7 +34,7 @@ export function buildOutfit(req:GenerationRequest):Outfit{
   result={...result,productIds:[...look.productIds],avatar:look.avatar,lockedIds:result.lockedIds.filter(id=>look.productIds.includes(id)),selectedIds:look.productIds.filter(id=>product(id).source!=='已购'),conditions:{...result.conditions,scene:look.scene}};
   if(result.productIds.some(id=>product(id).stock<=0))throw new Error('该搭配暂不可售');
   if(result.productIds.some(id=>!result.lockedIds.includes(id)&&!result.conditions.sources.includes(product(id).source)))throw new Error('当前来源不包含此搭配，请调整来源');
-  if(replenishment(result)>result.conditions.budget)throw new Error('此搭配超出待购预算，请调整预算');
+  if(replenishment(result)>(result.conditions.budget??Infinity))throw new Error('此搭配超出待购预算，请调整预算');
  }
 
  if(req.conditions){
@@ -42,7 +42,7 @@ export function buildOutfit(req:GenerationRequest):Outfit{
   const pants=result.productIds.find(id=>slot(product(id).category)==='下装')!;
   const candidates=products.filter(p=>slot(p.category)==='下装'&&p.stock>0&&result.conditions.sources.includes(p.source)).sort((a,b)=>a.price-b.price);
   const currentAllowed=result.conditions.sources.includes(product(pants).source)||result.lockedIds.includes(pants);
-  if(!currentAllowed||replenishment(result)>result.conditions.budget){
+  if(!currentAllowed||replenishment(result)>(result.conditions.budget??Infinity)){
    const candidate=candidates.find(p=>{try{replaceProduct(result,pants,p.id);return true}catch{return false}});
    if(!candidate)throw new Error('当前来源、锁定项和预算下没有可用方案，请放宽条件');
    result=replaceProduct(result,pants,candidate.id);

@@ -25,7 +25,7 @@ export async function requestChat(request:ChatRequest,signal:AbortSignal):Promis
  try{result=await res.json()}catch{throw new Error('对话服务返回异常，原搭配已保留')}
  if(!res.ok)throw new Error(result.error||'对话暂时不可用，请稍后重试');
  if(result.baseId!==request.base.id||typeof result.reply!=='string')throw new Error('对话版本不匹配，请重试');
- if(result.outfit){const o=result.outfit,r=findRender(o);if(!r||r.id!==o.imageTaskId||o.avatar!==request.base.avatar||JSON.stringify(o.lockedIds)!==JSON.stringify(request.base.lockedIds)||!o.lockedIds.every(id=>o.productIds.includes(id))||o.selectedIds.some(id=>!request.base.selectedIds.includes(id)||!o.productIds.includes(id)))throw new Error('搭配结果校验失败，原搭配已保留')}
+ if(result.outfit){const o=result.outfit,r=findRender(o);if(!r||r.id!==o.imageTaskId||JSON.stringify(o.lockedIds)!==JSON.stringify(request.base.lockedIds)||!o.lockedIds.every(id=>o.productIds.includes(id))||o.selectedIds.some(id=>!request.base.selectedIds.includes(id)||!o.productIds.includes(id)))throw new Error('搭配结果校验失败，原搭配已保留')}
  return result;
 }
 const key='outfit-master.curated-real.v1';
