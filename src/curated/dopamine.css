@@ -80,13 +80,14 @@
 .curated-commerce .sets-toolbar{color:#61657e}
 .curated-commerce .sets-toolbar button{color:#515878}
 .curated-commerce .sets-toolbar button span{background:var(--lavender);color:var(--blue);font-weight:700}
-.curated-commerce .sets-intro{position:relative;padding:22px 28px 26px;background:#eae6ff;border-radius:24px;border:1px solid #ddd6ff;overflow:hidden}
+.curated-commerce .sets-discovery-card{margin:8px 0 30px;border:1px solid #ddd6ef;border-radius:24px;background:#fff;box-shadow:0 5px 0 #eeebf7;overflow:hidden}
+.curated-commerce .sets-intro{position:relative;padding:22px 28px 26px;margin:0;background:#eae6ff;border-radius:0;border:0;border-bottom:1px solid #ddd6ef;overflow:hidden}
 .curated-commerce .sets-intro:after{content:'';position:absolute;right:30px;top:-24px;width:150px;height:150px;border:28px solid #cfbbfa;border-radius:50%;opacity:.45;pointer-events:none}
 .curated-commerce .sets-intro>div{position:relative;z-index:1}
 .curated-commerce .sets-intro h1{font-family:inherit;font-size:35px;font-weight:750;letter-spacing:-1px;color:#312651}
 .curated-commerce .sets-intro p{color:#665b7d}
 .curated-commerce .om-eyebrow{color:#67508e;font-weight:700;letter-spacing:2px}
-.curated-commerce .sets-preferences{background:#fff;border:1px solid #ded9ed;border-radius:20px;box-shadow:0 5px 0 #eeebf7}
+.curated-commerce .sets-preferences{background:#fff;border:0;border-radius:0;box-shadow:none;margin:0;padding:22px 28px 26px}
 .curated-commerce .sets-filter-title{color:var(--ink);font-weight:650}
 .curated-commerce .sets-filter-title button{color:var(--blue)!important}
 .curated-commerce .sets-filter-fields label{color:#67657d}
@@ -220,7 +221,9 @@
  .curated-commerce .source-filters button{padding:10px 12px}
  .curated-commerce .om-shop-card{padding:8px;border-radius:15px}
  .curated-commerce .om-shop-card>.om-match-button{font-size:12px!important}
- .curated-commerce .sets-intro{padding:20px 18px;border-radius:20px}
+ .curated-commerce .sets-discovery-card{border-radius:20px}
+ .curated-commerce .sets-intro{padding:20px 18px}
+ .curated-commerce .sets-preferences{padding:20px 18px}
  .curated-commerce .sets-intro h1{font-size:26px;line-height:1.5}
  .curated-commerce .sets-intro:after{right:-40px}
  .curated-commerce .sets-intro p{max-width:255px}

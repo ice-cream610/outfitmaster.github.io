@@ -24,10 +24,12 @@ export function Wardrobe({setId,onOpen,onProduct,onStyle}:{setId?:string;onStyle
   <div className="sets-toolbar"><button onClick={()=>onOpen()} className="sets-back">{setId?<><ArrowLeft size={15}/> 返回精选搭配</>:<><Sparkles size={15}/> 从一整套喜欢开始</>}</button><div><button onClick={()=>setPanel('bag')}><ShoppingBag size={15}/> 购物袋 <span>{shopping.bag.length}</span></button><button onClick={()=>setPanel('orders')}>模拟订单 <span>{shopping.orders.length}</span></button></div></div>
   {notice&&<p className="sets-notice" role="status">{notice}<button aria-label="关闭提示" onClick={()=>setNotice('')}>×</button></p>}
   {!setId?<>
+   <div className="sets-discovery-card">
    <section className="sets-intro"><div><span className="om-eyebrow">THE WHOLE LOOK, JUST FOR YOU</span><h1>今天，想穿出哪种自己？</h1><p>告诉我们你的偏好，从完整搭配里，找到一整套心动。</p></div></section>
    <section className="sets-preferences" aria-label="整套搭配偏好"><div className="sets-filter-title"><span>你的穿搭偏好</span><button onClick={()=>updatePreferences({...defaultPreferences})}>重置偏好</button></div>
     <div className="sets-filter-fields"><label>穿搭场景<select aria-label="穿搭场景" value={preferences.scene} onChange={e=>updatePreferences({...preferences,scene:e.target.value})}><option>全部</option>{scenes.map(s=><option key={s}>{s}</option>)}</select></label><label>风格偏好<select aria-label="风格偏好" value={preferences.style} onChange={e=>updatePreferences({...preferences,style:e.target.value})}><option>全部</option>{styles.map(s=><option key={s}>{s}</option>)}</select></label><label>整套预算上限（元）<input type="number" min="1" step="100" aria-label="整套预算上限" placeholder="不限预算" value={preferences.budget} onChange={e=>updatePreferences({...preferences,budget:e.target.value})}/></label></div>
    </section>
+   </div>
    <div className="sets-results"><h2>{preferences.scene==='全部'&&preferences.style==='全部'&&!preferences.budget?'为你精选的完整搭配':'符合你偏好的搭配'} <span>{matches.length} 套</span></h2><p>按场景、风格与整套参考价匹配 · 偏好保存在当前浏览器</p></div>
    {matches.length?<div className="sets-grid">{matches.map(r=><article className="set-card" key={r.id} data-set-id={r.id}>
     <button className={'set-card-cover theme-'+r.family} onClick={()=>onOpen(r.id)} aria-label={'查看套装：'+r.name}><Preview outfit={asOutfit(r)}/><span className="set-cover-label">{familyFor(r).label}</span><span className="set-cover-action">查看整套 <ChevronRight size={14}/></span></button>
