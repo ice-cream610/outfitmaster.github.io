@@ -8,6 +8,7 @@ import type {SavedSession,ChatRequest,ChatStatus} from './services';
 import {Modal,ProductImage,Preview,ProductGallery,renderStyle,preloadOutfit} from './components';
 
 import {readShopping,mergeBag,shoppingKey,sets,familyFor} from './sets';
+import {garmentCategories} from './categories';
 
 type Panel='filters'|'avatar'|'saved'|'history'|'purchase'|'detail'|'unlock'|'look-switch'|null;
 export function CuratedStudio({entryId,onBack,startingOutfit}:{entryId:string;onBack:()=>void;startingOutfit?:Outfit}){
@@ -82,7 +83,7 @@ export function CuratedStudio({entryId,onBack,startingOutfit}:{entryId:string;on
   <main className="workspace">
    <section className="products-panel" aria-label="搭配商品">
     <div className="wardrobe-tools"><button disabled={busy} onClick={()=>{setDraft(structuredClone(current.conditions));setPanel('filters')}}><SlidersHorizontal size={16}/>搭配偏好</button><button disabled={busy} onClick={()=>{setAvatarDraft(current.avatar);setPanel('avatar')}}><Settings2 size={16}/>形象调整</button></div>
-    <div className="wardrobe-browser"><nav className="garment-nav" aria-label="服饰分类">{['整套搭配推荐','外套','内搭','裤装','裙装','连衣裙','鞋履','帽饰','包袋'].map(c=><button key={c} className={category===c?'active':''} disabled={busy} aria-pressed={category===c} onClick={()=>setCategory(c)}>{c}</button>)}</nav>
+    <div className="wardrobe-browser"><nav className="garment-nav" aria-label="服饰分类">{['整套搭配推荐',...garmentCategories].map(c=><button key={c} className={category===c?'active':''} disabled={busy} aria-pressed={category===c} onClick={()=>setCategory(c)}>{c}</button>)}</nav>
     <div className="product-scroll"><div className="product-grid">{category==='整套搭配推荐'?completeLooks.map(r=><button key={r.id} className={'outfit-choice '+(findRender(current)?.id===r.id?'active':'')} disabled={busy} aria-label={r.name} onClick={()=>selectSet(r)}><Preview outfit={{...current,avatar:r.avatar,productIds:r.productIds}}/></button>):shown.map(p=><article className="product-card" key={p.id} data-product={p.id}><button className="image-button" aria-label={'查看'+p.name} onClick={()=>{setDetail(p);setPanel('detail')}}><ProductImage item={p}/></button><button className="product-name" onClick={()=>{setDetail(p);setPanel('detail')}}>{p.name}</button><div className="product-price"><strong>¥{p.price}</strong></div><div className="try-actions"><button disabled={busy||(current.productIds.includes(p.id)&&(!tryBase||tryBase.productIds.includes(p.id)))} onClick={()=>tryProduct(p)}>{current.productIds.includes(p.id)&&tryBase&&!tryBase.productIds.includes(p.id)?'还原':'替换上身'}</button><button disabled={busy} onClick={()=>{setCartItem(p);setCartSize('')}}>加入购物车</button></div></article>)}</div></div></div>
    </section>
    <section className="stage-panel" aria-label="搭配效果">

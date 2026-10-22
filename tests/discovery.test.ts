@@ -4,6 +4,15 @@ import {discoveryProducts} from '../src/curated/discovery.ts';
 import {idFor,product,products} from '../src/curated/data.ts';
 import {unitPrice} from '../src/curated/domain.ts';
 const empty={bag:[],orders:[]};
+test('garment category intersects source and search without leaking other products',()=>{
+ const skirt=product(idFor('plum-skirt'));
+ assert.deepEqual(discoveryProducts('owned','李子紫',empty,'裙装').map(p=>p.id),[skirt.id]);
+ assert.equal(discoveryProducts('owned','李子紫',empty,'裤装').length,0);
+ assert.equal(discoveryProducts('cart','李子紫',empty,'裙装').length,0);
+ const tops=discoveryProducts('recommend','',empty,'内搭');
+ assert(tops.length>0);assert(tops.every(p=>p.category==='内搭'));
+ assert.deepEqual(discoveryProducts('recommend','',empty,'全部'),discoveryProducts('recommend','',empty));
+});
 test('discovery sources select distinct demo products and intersect with search',()=>{
  assert.equal(discoveryProducts('recommend','',empty).length,18);
  const cart=discoveryProducts('cart','',empty),owned=discoveryProducts('owned','',empty);
