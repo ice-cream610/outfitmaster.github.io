@@ -64,7 +64,7 @@
 .curated-commerce .free-experience-intro h2:before{content:'';width:13px;height:29px;border-radius:8px;background:var(--blue);transform:rotate(15deg)}
 .curated-commerce .free-experience-intro p{color:var(--muted)}
 .curated-commerce .discovery-sources{margin-top:24px}
-.curated-commerce #curated-catalog{border-top:1px solid #dedbea;border-bottom:0;margin-top:20px;padding-top:18px;padding-bottom:0;margin-bottom:22px;flex-wrap:wrap}
+.curated-commerce #curated-catalog{border-top:0;border-bottom:0;margin-top:12px;padding-top:0;padding-bottom:0;margin-bottom:18px;flex-wrap:wrap}
 .curated-commerce .garment-filters{display:flex;gap:6px;flex-wrap:wrap;flex:1 1 520px}
 .curated-commerce .garment-filters button{padding:10px 14px;border-radius:14px;font-size:13px;color:#6b6281;white-space:nowrap}
 .curated-commerce .garment-filters button.active{background:var(--blue);color:#fff;font-weight:650;box-shadow:0 3px 0 #dcd9f6}
@@ -96,7 +96,10 @@
 .curated-commerce .sets-toolbar button{color:#515878}
 .curated-commerce .sets-toolbar button span{background:var(--lavender);color:var(--blue);font-weight:700}
 .curated-commerce .sets-discovery-card{margin:8px 0 30px;border:1px solid #ddd6ef;border-radius:24px;background:#fff;box-shadow:0 5px 0 #eeebf7;overflow:hidden}
-.curated-commerce .sets-intro{position:relative;padding:22px 28px 26px;margin:0;background:#c3f0ff;border-radius:0;border:0;border-bottom:1px solid #ddd6ef;overflow:hidden}
+.curated-commerce .sets-intro{position:relative;padding:22px 28px 26px;margin:0;background:#faf0ff;border-radius:0;border:0;border-bottom:1px solid #ddd6ef;overflow:hidden}
+.curated-commerce .sets-shopping-actions{display:flex;align-items:center;gap:22px;flex-shrink:0}
+.curated-commerce .sets-shopping-actions button{display:flex;align-items:center;gap:7px;padding:8px 0;color:#515878;font-size:12px;white-space:nowrap}
+.curated-commerce .sets-shopping-actions button span{background:var(--lavender);color:var(--blue);font-weight:700;border-radius:20px;min-width:20px;text-align:center;font-size:10px;padding:3px}
 .curated-commerce .sets-intro:after{content:'';position:absolute;right:30px;top:-24px;width:150px;height:150px;border:28px solid #cfbbfa;border-radius:50%;opacity:.45;pointer-events:none}
 .curated-commerce .sets-intro>div{position:relative;z-index:1}
 .curated-commerce .sets-intro h1{font-family:inherit;font-size:35px;font-weight:750;letter-spacing:-1px;color:#312651}
@@ -125,8 +128,8 @@
 .curated-commerce .set-description-price p{color:#707085}
 .curated-commerce .set-card-copy strong{color:var(--blue);font-weight:750}
 .curated-commerce .set-card-copy strong small{color:#75778e;font-weight:400}
-.curated-commerce .set-style-entry{background:#5fc0e6;border-color:#5fc0e6;border-radius:12px;color:#183b50;font-weight:650}
-.curated-commerce .set-style-entry:hover{background:#48b3dc;color:#183b50;border-color:#48b3dc}
+.curated-commerce .set-style-entry{background:#6cd5ff;border-color:#6cd5ff;border-radius:12px;color:#183b50;font-weight:650}
+.curated-commerce .set-style-entry:hover{background:#5fc0e6;color:#183b50;border-color:#5fc0e6}
 /* Product and set details share the same visual vocabulary. */
 .curated-commerce :is(.merchant-product-info h1,.set-detail-info h1,.set-products-heading h2,.merchant-story h2,.merchant-story h3,.set-related h2){color:var(--ink);font-weight:700}
 .curated-commerce :is(.detail-breadcrumb,.detail-breadcrumb button,.original-title,.om-note,.curated-description,.set-description,.set-disclaimer,.merchant-product-info dt,.merchant-product-info dd,.set-item-info>span,.set-item-info label,.set-item-info small,.set-full-price>span){color:var(--muted)!important}
@@ -217,6 +220,8 @@
  .curated-commerce .sets-intro h1{font-size:30px}
 }
 @media(max-width:650px){
+ .curated-commerce .sets-intro{flex-wrap:wrap;gap:14px}
+ .curated-commerce .sets-intro>.sets-shopping-actions{width:100%;justify-content:flex-end;gap:18px}
  .curated-commerce .sets-filter-fields{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
  .curated-commerce .sets-filter-fields>label:nth-child(3){grid-column:1}
  .curated-commerce .sets-reset{grid-column:2}
