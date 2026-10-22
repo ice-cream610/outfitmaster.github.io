@@ -32,18 +32,33 @@
 .curated-commerce .quick-product-name{color:var(--ink);font-weight:650}
 .curated-commerce .quick-product-info p,.curated-commerce .quick-product-info span{color:#65617d}
 .curated-commerce .quick-product-info strong{color:var(--blue);font-family:inherit;font-weight:750;letter-spacing:-1px}
-.curated-commerce .quick-play{background:#f7acd0;padding-top:35px;grid-template-rows:104px 1fr}
+.curated-commerce .quick-play{background:#fdcde4;padding-top:35px;grid-template-rows:104px 1fr}
 .curated-commerce .quick-play:before{background:#eff6a4;border-radius:160px 160px 0 0;right:-4%;width:53%;height:88%;transform:rotate(-8deg)}
 .curated-commerce .quick-play:after{width:62px;height:62px;left:auto;right:32%;top:25px;background:var(--blue);clip-path:polygon(50% 0,60% 34%,86% 14%,67% 42%,100% 50%,67% 59%,86% 86%,58% 68%,50% 100%,40% 67%,14% 86%,33% 58%,0 50%,33% 40%,14% 14%,41% 33%);transform:rotate(12deg)}
 .curated-commerce .quick-experience h1{font-family:inherit;font-size:38px;font-weight:800;letter-spacing:-1px;color:#322545;position:relative;z-index:1;text-align:center;margin-top:22px}
+.curated-commerce #quick-title{font-family:'Arial Rounded MT Bold','Microsoft YaHei','PingFang SC',sans-serif;font-weight:900;letter-spacing:.03em;text-shadow:2px 2px 0 #fff9f0,4px 4px 0 #dfa0c4}
+.curated-commerce #quick-title>span{display:inline-flex;gap:.12em}
+.curated-commerce #quick-title>span>span{display:inline-block;transform:rotate(-4deg);animation:quick-letter-wave 8s ease-in-out 2;transform-origin:50% 80%}
+.curated-commerce #quick-title>span>span:nth-child(2){animation-delay:.1s}
+.curated-commerce #quick-title>span>span:nth-child(3){animation-delay:.2s;color:#334be8}
+.curated-commerce #quick-title>span>span:nth-child(4){animation-delay:.3s;color:#334be8}
 .curated-commerce .quick-speech{background:#fffdf8;color:#493452;border-radius:20px 20px 5px 20px;border:1px solid #dfa1c1;font-family:inherit;font-size:17px;box-shadow:5px 6px 0 #d879a633;line-height:1.95}
 .curated-commerce .quick-speech:after{background:#fffdf8}
 .curated-commerce .quick-speech{text-align:center;padding-inline:24px}
+.curated-commerce .quick-speech{transform-origin:100% 45%;animation:quick-speaking-bubble 8s ease-in-out 2}
+.curated-commerce .quick-speech>span{display:block;animation:quick-speaking-line 8s ease-in-out 2}
+.curated-commerce .quick-speech>span+span{animation-delay:1.6s}
 .curated-commerce .quick-invitation .om-primary{background:var(--blue)!important;color:white;border:1px solid var(--blue);border-radius:28px!important;padding:13px 40px!important;letter-spacing:0;box-shadow:4px 4px 0 #df80ad;justify-content:center;position:relative}
 .curated-commerce .quick-invitation .om-primary>svg{position:absolute;right:17px;top:50%;transform:translateY(-50%)}
+.curated-commerce .quick-invitation .om-primary>span{font-size:18px;line-height:1.4}
 .curated-commerce .quick-invitation .om-primary:hover{background:#2237c9!important;color:#fff}
 .curated-commerce .quick-mascot{overflow:visible}
-.curated-commerce .quick-mascot img{animation:none;filter:drop-shadow(0 14px 8px #74574725);transform:scale(1.08);transform-origin:50% 70%}
+.curated-commerce .quick-mascot img{--hero-scale:1.08;animation:quick-speaking-mascot 8s ease-in-out 2;filter:drop-shadow(0 14px 8px #74574725);transform:scale(var(--hero-scale));transform-origin:50% 90%}
+/* Two gentle invitations, then rest. Each nod aligns with a speech-line emphasis. */
+@keyframes quick-letter-wave{0%,15%,100%{transform:translateY(0) rotate(-4deg)}5%{transform:translateY(-7px) rotate(3deg)}10%{transform:translateY(2px) rotate(-6deg)}}
+@keyframes quick-speaking-mascot{0%,6%,48%,100%{transform:scale(var(--hero-scale)) translateY(0) rotate(0)}12%,32%{transform:scale(var(--hero-scale)) translateY(-5px) rotate(-1.6deg)}19%,39%{transform:scale(var(--hero-scale)) translateY(1px) rotate(.8deg)}24%,44%{transform:scale(var(--hero-scale)) translateY(0) rotate(0)}}
+@keyframes quick-speaking-bubble{0%,6%,24%,46%,100%{transform:scale(1)}12%,32%{transform:scale(1.025)}19%,39%{transform:scale(1.008)}}
+@keyframes quick-speaking-line{0%,6%,25%,100%{color:#493452;transform:translateY(0)}12%,19%{color:#334be8;transform:translateY(-1px)}}
 .curated-commerce .free-experience-intro{border-top:2px solid #dcd8ec;padding-top:28px;margin-top:46px}
 .curated-commerce .free-experience-intro h2{font-family:inherit;font-size:35px;font-weight:750;letter-spacing:0;color:var(--ink);display:flex;align-items:center;gap:12px}
 .curated-commerce .free-experience-intro h2:before{content:'';width:13px;height:29px;border-radius:8px;background:var(--blue);transform:rotate(15deg)}
@@ -218,7 +233,7 @@
  .curated-commerce .quick-speech{padding-inline:10px}
  .curated-commerce .quick-invitation .om-primary{padding:12px 28px!important;font-size:13px!important}
  .curated-commerce .quick-invitation .om-primary>svg{right:12px}
- .curated-commerce .quick-mascot img{transform:scale(1.06)}
+ .curated-commerce .quick-mascot img{--hero-scale:1.06}
  .curated-commerce .free-experience-intro h2{font-size:28px}
  .curated-commerce .discovery-sources{margin-top:20px}
  .curated-commerce #curated-catalog .garment-filters{flex-basis:100%}
